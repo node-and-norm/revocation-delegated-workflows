@@ -1,0 +1,863 @@
+{
+  "wrong_rejection_cause": {
+    "trace": {
+      "case": "C1",
+      "arm": "commit_fenced",
+      "snapshot": {
+        "events": [
+          {
+            "seq": 1,
+            "kind": "bootstrap",
+            "data": {
+              "child": "childC",
+              "epoch": 7,
+              "parent": "parentP",
+              "parent_grant": "parent-0",
+              "root": "rootR",
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "seq": 2,
+            "kind": "receipt",
+            "data": {
+              "actor": "parentP",
+              "request": {
+                "child": "childC",
+                "claim": "parentP",
+                "grant": "parent-0",
+                "id": "delegate-1",
+                "op": "delegate",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 3,
+            "kind": "grant",
+            "data": {
+              "request_id": "delegate-1",
+              "result": {
+                "epoch": 7,
+                "grant": "child-1",
+                "outcome": "grant",
+                "owner": "childC",
+                "parent_grant": "parent-0",
+                "root": "rootR",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 4,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "grant": "child-1",
+                "id": "prepare-1",
+                "op": "prepare",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 5,
+            "kind": "admission",
+            "data": {
+              "request_id": "prepare-1",
+              "result": {
+                "epoch": 7,
+                "grant": "child-1",
+                "outcome": "admission",
+                "root": "rootR",
+                "scope": "summary:task1",
+                "ticket": "ticket-1"
+              }
+            }
+          },
+          {
+            "seq": 6,
+            "kind": "receipt",
+            "data": {
+              "actor": "controller",
+              "request": {
+                "claim": "controller",
+                "id": "revoke-1",
+                "op": "revoke"
+              }
+            }
+          },
+          {
+            "seq": 7,
+            "kind": "revocation",
+            "data": {
+              "request_id": "revoke-1",
+              "result": {
+                "new_epoch": 8,
+                "outcome": "revocation",
+                "root": "rootR",
+                "withdrawn_epoch": 7
+              }
+            }
+          },
+          {
+            "seq": 8,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "grant": "child-1",
+                "id": "execute-1",
+                "op": "execute",
+                "payload": "inert summary",
+                "scope": "summary:task1",
+                "ticket": "ticket-1"
+              }
+            }
+          },
+          {
+            "seq": 9,
+            "kind": "denied",
+            "data": {
+              "request_id": "execute-1",
+              "result": {
+                "outcome": "denied",
+                "reason": "scope_expansion"
+              }
+            }
+          },
+          {
+            "seq": 10,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "for_request": "execute-1",
+                "id": "ack-1",
+                "op": "ack"
+              }
+            }
+          },
+          {
+            "seq": 11,
+            "kind": "ack",
+            "data": {
+              "request_id": "ack-1",
+              "result": {
+                "for_request": "execute-1",
+                "outcome": "ack"
+              }
+            }
+          }
+        ],
+        "authority": [
+          {
+            "root": "rootR",
+            "epoch": 8,
+            "active": 0
+          }
+        ],
+        "grants": [
+          {
+            "token": "child-1",
+            "owner": "childC",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 0
+          },
+          {
+            "token": "parent-0",
+            "owner": "parentP",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 1
+          }
+        ],
+        "tickets": [
+          {
+            "token": "ticket-1",
+            "grant_token": "child-1",
+            "owner": "childC",
+            "scope": "summary:task1"
+          }
+        ],
+        "effects": []
+      },
+      "workers": {
+        "parentP": [
+          {
+            "kind": "intent",
+            "request": {
+              "id": "delegate-1",
+              "op": "delegate",
+              "claim": "parentP",
+              "grant": "parent-0",
+              "scope": "summary:task1",
+              "child": "childC"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "delegate-1",
+            "response": {
+              "outcome": "grant",
+              "grant": "child-1",
+              "owner": "childC",
+              "root": "rootR",
+              "epoch": 7,
+              "scope": "summary:task1",
+              "parent_grant": "parent-0"
+            }
+          },
+          {
+            "kind": "delivery_sent",
+            "grant": "child-1",
+            "peer": "childC"
+          }
+        ],
+        "childC": [
+          {
+            "kind": "delivery_received",
+            "grant": "child-1",
+            "peer": "parentP"
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "prepare-1",
+              "op": "prepare",
+              "claim": "childC",
+              "grant": "child-1",
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "prepare-1",
+            "response": {
+              "outcome": "admission",
+              "ticket": "ticket-1",
+              "grant": "child-1",
+              "root": "rootR",
+              "epoch": 7,
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "execute-1",
+              "op": "execute",
+              "claim": "childC",
+              "grant": "child-1",
+              "scope": "summary:task1",
+              "payload": "inert summary",
+              "ticket": "ticket-1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "execute-1",
+            "response": {
+              "outcome": "denied",
+              "reason": "scope_expansion"
+            }
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "ack-1",
+              "op": "ack",
+              "claim": "childC",
+              "for_request": "execute-1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "ack-1",
+            "response": {
+              "outcome": "ack",
+              "for_request": "execute-1"
+            }
+          }
+        ]
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "effects": 0,
+      "attempts": 1,
+      "post_fence_effect_sequences": []
+    }
+  },
+  "admission_without_child_grant": {
+    "trace": {
+      "case": "C1",
+      "arm": "commit_fenced",
+      "snapshot": {
+        "events": [
+          {
+            "seq": 1,
+            "kind": "bootstrap",
+            "data": {
+              "child": "childC",
+              "epoch": 7,
+              "parent": "parentP",
+              "parent_grant": "parent-0",
+              "root": "rootR",
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "seq": 2,
+            "kind": "receipt",
+            "data": {
+              "actor": "parentP",
+              "request": {
+                "child": "childC",
+                "claim": "parentP",
+                "grant": "parent-0",
+                "id": "delegate-1",
+                "op": "delegate",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 3,
+            "kind": "denied",
+            "data": {
+              "request_id": "delegate-1",
+              "result": {
+                "outcome": "denied",
+                "reason": "delegation_forbidden"
+              }
+            }
+          },
+          {
+            "seq": 4,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "grant": "child-1",
+                "id": "prepare-1",
+                "op": "prepare",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 5,
+            "kind": "admission",
+            "data": {
+              "request_id": "prepare-1",
+              "result": {
+                "epoch": 7,
+                "grant": "child-1",
+                "outcome": "admission",
+                "root": "rootR",
+                "scope": "summary:task1",
+                "ticket": "ticket-1"
+              }
+            }
+          },
+          {
+            "seq": 6,
+            "kind": "receipt",
+            "data": {
+              "actor": "controller",
+              "request": {
+                "claim": "controller",
+                "id": "revoke-1",
+                "op": "revoke"
+              }
+            }
+          },
+          {
+            "seq": 7,
+            "kind": "revocation",
+            "data": {
+              "request_id": "revoke-1",
+              "result": {
+                "new_epoch": 8,
+                "outcome": "revocation",
+                "root": "rootR",
+                "withdrawn_epoch": 7
+              }
+            }
+          },
+          {
+            "seq": 8,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "grant": "child-1",
+                "id": "execute-1",
+                "op": "execute",
+                "payload": "inert summary",
+                "scope": "summary:task1",
+                "ticket": "ticket-1"
+              }
+            }
+          },
+          {
+            "seq": 9,
+            "kind": "denied",
+            "data": {
+              "request_id": "execute-1",
+              "result": {
+                "outcome": "denied",
+                "reason": "revoked"
+              }
+            }
+          },
+          {
+            "seq": 10,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "for_request": "execute-1",
+                "id": "ack-1",
+                "op": "ack"
+              }
+            }
+          },
+          {
+            "seq": 11,
+            "kind": "ack",
+            "data": {
+              "request_id": "ack-1",
+              "result": {
+                "for_request": "execute-1",
+                "outcome": "ack"
+              }
+            }
+          }
+        ],
+        "authority": [
+          {
+            "root": "rootR",
+            "epoch": 8,
+            "active": 0
+          }
+        ],
+        "grants": [
+          {
+            "token": "parent-0",
+            "owner": "parentP",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 1
+          }
+        ],
+        "tickets": [
+          {
+            "token": "ticket-1",
+            "grant_token": "child-1",
+            "owner": "childC",
+            "scope": "summary:task1"
+          }
+        ],
+        "effects": []
+      },
+      "workers": {
+        "parentP": [
+          {
+            "kind": "intent",
+            "request": {
+              "id": "delegate-1",
+              "op": "delegate",
+              "claim": "parentP",
+              "grant": "parent-0",
+              "scope": "summary:task1",
+              "child": "childC"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "delegate-1",
+            "response": {
+              "outcome": "denied",
+              "reason": "delegation_forbidden"
+            }
+          },
+          {
+            "kind": "delivery_sent",
+            "grant": "child-1",
+            "peer": "childC"
+          }
+        ],
+        "childC": [
+          {
+            "kind": "delivery_received",
+            "grant": "child-1",
+            "peer": "parentP"
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "prepare-1",
+              "op": "prepare",
+              "claim": "childC",
+              "grant": "child-1",
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "prepare-1",
+            "response": {
+              "outcome": "admission",
+              "ticket": "ticket-1",
+              "grant": "child-1",
+              "root": "rootR",
+              "epoch": 7,
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "execute-1",
+              "op": "execute",
+              "claim": "childC",
+              "grant": "child-1",
+              "scope": "summary:task1",
+              "payload": "inert summary",
+              "ticket": "ticket-1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "execute-1",
+            "response": {
+              "outcome": "denied",
+              "reason": "revoked"
+            }
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "ack-1",
+              "op": "ack",
+              "claim": "childC",
+              "for_request": "execute-1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "ack-1",
+            "response": {
+              "outcome": "ack",
+              "for_request": "execute-1"
+            }
+          }
+        ]
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "effects": 0,
+      "attempts": 1,
+      "post_fence_effect_sequences": []
+    }
+  },
+  "execution_without_prior_admission": {
+    "trace": {
+      "case": "C1",
+      "arm": "commit_fenced",
+      "snapshot": {
+        "events": [
+          {
+            "seq": 1,
+            "kind": "bootstrap",
+            "data": {
+              "child": "childC",
+              "epoch": 7,
+              "parent": "parentP",
+              "parent_grant": "parent-0",
+              "root": "rootR",
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "seq": 2,
+            "kind": "receipt",
+            "data": {
+              "actor": "parentP",
+              "request": {
+                "child": "childC",
+                "claim": "parentP",
+                "grant": "parent-0",
+                "id": "delegate-1",
+                "op": "delegate",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 3,
+            "kind": "grant",
+            "data": {
+              "request_id": "delegate-1",
+              "result": {
+                "epoch": 7,
+                "grant": "child-1",
+                "outcome": "grant",
+                "owner": "childC",
+                "parent_grant": "parent-0",
+                "root": "rootR",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 4,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "grant": "child-1",
+                "id": "prepare-1",
+                "op": "prepare",
+                "scope": "summary:task1"
+              }
+            }
+          },
+          {
+            "seq": 5,
+            "kind": "denied",
+            "data": {
+              "request_id": "prepare-1",
+              "result": {
+                "outcome": "denied",
+                "reason": "invalid_ticket"
+              }
+            }
+          },
+          {
+            "seq": 6,
+            "kind": "receipt",
+            "data": {
+              "actor": "controller",
+              "request": {
+                "claim": "controller",
+                "id": "revoke-1",
+                "op": "revoke"
+              }
+            }
+          },
+          {
+            "seq": 7,
+            "kind": "revocation",
+            "data": {
+              "request_id": "revoke-1",
+              "result": {
+                "new_epoch": 8,
+                "outcome": "revocation",
+                "root": "rootR",
+                "withdrawn_epoch": 7
+              }
+            }
+          },
+          {
+            "seq": 8,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "grant": "child-1",
+                "id": "execute-1",
+                "op": "execute",
+                "payload": "inert summary",
+                "scope": "summary:task1",
+                "ticket": "ticket-1"
+              }
+            }
+          },
+          {
+            "seq": 9,
+            "kind": "denied",
+            "data": {
+              "request_id": "execute-1",
+              "result": {
+                "outcome": "denied",
+                "reason": "revoked"
+              }
+            }
+          },
+          {
+            "seq": 10,
+            "kind": "receipt",
+            "data": {
+              "actor": "childC",
+              "request": {
+                "claim": "childC",
+                "for_request": "execute-1",
+                "id": "ack-1",
+                "op": "ack"
+              }
+            }
+          },
+          {
+            "seq": 11,
+            "kind": "ack",
+            "data": {
+              "request_id": "ack-1",
+              "result": {
+                "for_request": "execute-1",
+                "outcome": "ack"
+              }
+            }
+          }
+        ],
+        "authority": [
+          {
+            "root": "rootR",
+            "epoch": 8,
+            "active": 0
+          }
+        ],
+        "grants": [
+          {
+            "token": "child-1",
+            "owner": "childC",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 0
+          },
+          {
+            "token": "parent-0",
+            "owner": "parentP",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 1
+          }
+        ],
+        "tickets": [],
+        "effects": []
+      },
+      "workers": {
+        "parentP": [
+          {
+            "kind": "intent",
+            "request": {
+              "id": "delegate-1",
+              "op": "delegate",
+              "claim": "parentP",
+              "grant": "parent-0",
+              "scope": "summary:task1",
+              "child": "childC"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "delegate-1",
+            "response": {
+              "outcome": "grant",
+              "grant": "child-1",
+              "owner": "childC",
+              "root": "rootR",
+              "epoch": 7,
+              "scope": "summary:task1",
+              "parent_grant": "parent-0"
+            }
+          },
+          {
+            "kind": "delivery_sent",
+            "grant": "child-1",
+            "peer": "childC"
+          }
+        ],
+        "childC": [
+          {
+            "kind": "delivery_received",
+            "grant": "child-1",
+            "peer": "parentP"
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "prepare-1",
+              "op": "prepare",
+              "claim": "childC",
+              "grant": "child-1",
+              "scope": "summary:task1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "prepare-1",
+            "response": {
+              "outcome": "denied",
+              "reason": "invalid_ticket"
+            }
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "execute-1",
+              "op": "execute",
+              "claim": "childC",
+              "grant": "child-1",
+              "scope": "summary:task1",
+              "payload": "inert summary",
+              "ticket": "ticket-1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "execute-1",
+            "response": {
+              "outcome": "denied",
+              "reason": "revoked"
+            }
+          },
+          {
+            "kind": "intent",
+            "request": {
+              "id": "ack-1",
+              "op": "ack",
+              "claim": "childC",
+              "for_request": "execute-1"
+            }
+          },
+          {
+            "kind": "response",
+            "request_id": "ack-1",
+            "response": {
+              "outcome": "ack",
+              "for_request": "execute-1"
+            }
+          }
+        ]
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "effects": 0,
+      "attempts": 1,
+      "post_fence_effect_sequences": []
+    }
+  }
+}

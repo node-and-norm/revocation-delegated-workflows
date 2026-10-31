@@ -1,0 +1,171 @@
+{
+  "version": "0.2.0",
+  "root": "rootR",
+  "grant_epoch": 7,
+  "delegation_depth": 1,
+  "workers_per_case": 2,
+  "cases": [
+    {
+      "case": "C0",
+      "arm": "admission_only",
+      "description": "no revocation liveness",
+      "category": "positive_liveness_control",
+      "expected_attempts": 1,
+      "expected_effects": 1,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C0",
+      "arm": "commit_fenced",
+      "description": "no revocation liveness",
+      "category": "positive_liveness_control",
+      "expected_attempts": 1,
+      "expected_effects": 1,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C1",
+      "arm": "admission_only",
+      "description": "root revoked before child commit",
+      "category": "post_revocation_control",
+      "expected_attempts": 1,
+      "expected_effects": 1,
+      "expected_label": "VIOLATION"
+    },
+    {
+      "case": "C1",
+      "arm": "commit_fenced",
+      "description": "root revoked before child commit",
+      "category": "post_revocation_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C2",
+      "arm": "admission_only",
+      "description": "pre-fence commit with delayed explicit ack",
+      "category": "positive_liveness_control",
+      "expected_attempts": 1,
+      "expected_effects": 1,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C2",
+      "arm": "commit_fenced",
+      "description": "pre-fence commit with delayed explicit ack",
+      "category": "positive_liveness_control",
+      "expected_attempts": 1,
+      "expected_effects": 1,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C3",
+      "arm": "admission_only",
+      "description": "three stale retries, one logical operation",
+      "category": "post_revocation_control",
+      "expected_attempts": 3,
+      "expected_effects": 1,
+      "expected_label": "VIOLATION"
+    },
+    {
+      "case": "C3",
+      "arm": "commit_fenced",
+      "description": "three stale retries, one logical operation",
+      "category": "post_revocation_control",
+      "expected_attempts": 3,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C4",
+      "arm": "admission_only",
+      "description": "child scope expansion denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C4",
+      "arm": "commit_fenced",
+      "description": "child scope expansion denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C5",
+      "arm": "admission_only",
+      "description": "child claimed caller mismatch denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C5",
+      "arm": "commit_fenced",
+      "description": "child claimed caller mismatch denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C6",
+      "arm": "admission_only",
+      "description": "child foreign parent grant denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C6",
+      "arm": "commit_fenced",
+      "description": "child foreign parent grant denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 1,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C7",
+      "arm": "admission_only",
+      "description": "parent delegation scope expansion denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 0,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C7",
+      "arm": "commit_fenced",
+      "description": "parent delegation scope expansion denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 0,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C8",
+      "arm": "admission_only",
+      "description": "child grant issuance after root revocation denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 0,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    },
+    {
+      "case": "C8",
+      "arm": "commit_fenced",
+      "description": "child grant issuance after root revocation denied",
+      "category": "negative_authority_control",
+      "expected_attempts": 0,
+      "expected_effects": 0,
+      "expected_label": "NO_VIOLATION"
+    }
+  ]
+}
