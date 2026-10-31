@@ -1,0 +1,456 @@
+{
+  "checks": [
+    {
+      "name": "admission_only: gateway ready",
+      "got": {
+        "ok": true
+      },
+      "expected": {
+        "ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: child cannot invoke controller revoke",
+      "got": {
+        "outcome": "denied",
+        "reason": "operation_forbidden"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "operation_forbidden"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: child cannot claim controller",
+      "got": {
+        "outcome": "denied",
+        "reason": "caller_mismatch"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "caller_mismatch"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: child cannot use parent grant",
+      "got": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: unknown grant",
+      "got": {
+        "outcome": "denied",
+        "reason": "unknown_grant"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "unknown_grant"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: parent cannot delegate different recipient",
+      "got": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: parent delegates child",
+      "got": {
+        "outcome": "grant",
+        "grant": "child-1",
+        "owner": "childC",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1",
+        "parent_grant": "parent-0"
+      },
+      "expected": {
+        "outcome": "grant",
+        "grant": "child-1",
+        "owner": "childC",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1",
+        "parent_grant": "parent-0"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: parent cannot use child grant",
+      "got": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: child lacks redelegation right",
+      "got": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: valid child admission",
+      "got": {
+        "outcome": "admission",
+        "ticket": "ticket-1",
+        "grant": "child-1",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1"
+      },
+      "expected": {
+        "outcome": "admission",
+        "ticket": "ticket-1",
+        "grant": "child-1",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: changed payload",
+      "got": {
+        "outcome": "denied",
+        "reason": "scope_expansion"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "scope_expansion"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: foreign ticket",
+      "got": {
+        "outcome": "denied",
+        "reason": "invalid_ticket"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "invalid_ticket"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: root revocation",
+      "got": {
+        "outcome": "revocation",
+        "root": "rootR",
+        "withdrawn_epoch": 7,
+        "new_epoch": 8
+      },
+      "expected": {
+        "outcome": "revocation",
+        "root": "rootR",
+        "withdrawn_epoch": 7,
+        "new_epoch": 8
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: post-revoke new child grant rejected",
+      "got": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: stale child final effect",
+      "got": {
+        "outcome": "effect",
+        "effect_key": "summary:task1",
+        "payload": "inert summary",
+        "root": "rootR",
+        "epoch": 7
+      },
+      "expected": {
+        "outcome": "effect",
+        "effect_key": "summary:task1",
+        "payload": "inert summary",
+        "root": "rootR",
+        "epoch": 7
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: shutdown",
+      "got": {
+        "ok": true
+      },
+      "expected": {
+        "ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "admission_only: process exit",
+      "got": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "admission_only: independently counted sink rows",
+      "got": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: gateway ready",
+      "got": {
+        "ok": true
+      },
+      "expected": {
+        "ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: child cannot invoke controller revoke",
+      "got": {
+        "outcome": "denied",
+        "reason": "operation_forbidden"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "operation_forbidden"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: child cannot claim controller",
+      "got": {
+        "outcome": "denied",
+        "reason": "caller_mismatch"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "caller_mismatch"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: child cannot use parent grant",
+      "got": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: unknown grant",
+      "got": {
+        "outcome": "denied",
+        "reason": "unknown_grant"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "unknown_grant"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: parent cannot delegate different recipient",
+      "got": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: parent delegates child",
+      "got": {
+        "outcome": "grant",
+        "grant": "child-1",
+        "owner": "childC",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1",
+        "parent_grant": "parent-0"
+      },
+      "expected": {
+        "outcome": "grant",
+        "grant": "child-1",
+        "owner": "childC",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1",
+        "parent_grant": "parent-0"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: parent cannot use child grant",
+      "got": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "foreign_grant"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: child lacks redelegation right",
+      "got": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "delegation_forbidden"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: valid child admission",
+      "got": {
+        "outcome": "admission",
+        "ticket": "ticket-1",
+        "grant": "child-1",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1"
+      },
+      "expected": {
+        "outcome": "admission",
+        "ticket": "ticket-1",
+        "grant": "child-1",
+        "root": "rootR",
+        "epoch": 7,
+        "scope": "summary:task1"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: changed payload",
+      "got": {
+        "outcome": "denied",
+        "reason": "scope_expansion"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "scope_expansion"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: foreign ticket",
+      "got": {
+        "outcome": "denied",
+        "reason": "invalid_ticket"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "invalid_ticket"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: root revocation",
+      "got": {
+        "outcome": "revocation",
+        "root": "rootR",
+        "withdrawn_epoch": 7,
+        "new_epoch": 8
+      },
+      "expected": {
+        "outcome": "revocation",
+        "root": "rootR",
+        "withdrawn_epoch": 7,
+        "new_epoch": 8
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: post-revoke new child grant rejected",
+      "got": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: stale child final effect",
+      "got": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "expected": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: shutdown",
+      "got": {
+        "ok": true
+      },
+      "expected": {
+        "ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: process exit",
+      "got": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "commit_fenced: independently counted sink rows",
+      "got": 0,
+      "expected": 0,
+      "passed": true
+    }
+  ],
+  "passed": 36,
+  "total": 36
+}

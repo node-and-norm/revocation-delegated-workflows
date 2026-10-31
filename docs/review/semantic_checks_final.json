@@ -1,0 +1,1791 @@
+{
+  "checks": [
+    {
+      "name": "preserved counterexample:wrong_rejection_cause",
+      "passed": true,
+      "detail": {
+        "qualified": false,
+        "errors": [
+          "causal_denial_reason_mismatch"
+        ],
+        "endpoint": {
+          "label": "NO_VIOLATION",
+          "errors": [],
+          "effects": 0,
+          "attempts": 1,
+          "post_fence_effect_sequences": []
+        }
+      }
+    },
+    {
+      "name": "preserved counterexample:admission_without_child_grant",
+      "passed": true,
+      "detail": {
+        "qualified": false,
+        "errors": [
+          "invalid_evidence"
+        ],
+        "endpoint": {
+          "label": "INVALID",
+          "errors": [
+            "admission_without_delegation"
+          ],
+          "effects": 0,
+          "attempts": 0,
+          "post_fence_effect_sequences": []
+        }
+      }
+    },
+    {
+      "name": "preserved counterexample:execution_without_prior_admission",
+      "passed": true,
+      "detail": {
+        "qualified": false,
+        "errors": [
+          "invalid_evidence"
+        ],
+        "endpoint": {
+          "label": "INVALID",
+          "errors": [
+            "execution_without_admission"
+          ],
+          "effects": 0,
+          "attempts": 0,
+          "post_fence_effect_sequences": []
+        }
+      }
+    },
+    {
+      "name": "admission_only_C0:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C0:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:deleted event 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C1:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:deleted event 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C2:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:deleted event 18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C3:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C4:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C5:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C6:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C7:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "admission_only_C8:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C0:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:deleted event 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C1:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:deleted event 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C2:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:deleted event 18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C3:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C4:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C5:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:deleted event 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:missing child evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C6:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C7:raw child grant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:deleted event 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:deleted event 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:deleted event 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:deleted event 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:deleted event 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:extra event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:grant epoch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:grant owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:grant scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:boolean sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:raw sink row count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:raw post-fence effect count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:raw payload and ancestry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "commit_fenced_C8:raw child grant",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 349,
+  "total": 349
+}
