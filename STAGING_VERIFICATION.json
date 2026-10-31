@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-31",
+  "scope": "Local staging only; no GitHub creation, upload, remote verification or public release performed by this check.",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "copied_files_identical_to_originals": 30,
+  "reviewed_source_hashes_verified": {
+    "gateway.py": "98445edd61af21bc5c740053f8a93f6c179e4c5efa7b28dd7363e779b8f059a9",
+    "harness.py": "36daa6d7d8f400fde26a180a5a939ba4afcce549efa2b25688c7086d9adceed7",
+    "observer.py": "88e8b83d5f9af9fbc1fa2743d4d9f102cf908109186f9952328f615ee6d1c329",
+    "oracle.py": "e6a36cc46ff8fd98a36a177d605d1a2e2adfe0f94d55c89798c1bfed5b1ecfce",
+    "test_qualification.py": "e1e385e83260040f953326a903f7515a0362e2f9f1ae6d6be28c918025aa5f04",
+    "worker.py": "513fff722d3e6d01f0099c7ca4d627751ab3cc8a6375c65411e344eb6fc53995"
+  },
+  "tests": {
+    "unit": {
+      "passed": 19,
+      "exit_code": 0,
+      "log_sha256": "f059819e4e2cad152c77fae16428b0d3bc9a11fb566f0c18d155381cb9a9a3d9"
+    },
+    "direct": {
+      "passed": 19,
+      "exit_code": 0,
+      "log_sha256": "876ae831ff6f734374e0af39d59b06720658f4d99f1f287460ff256fdc1b7d86"
+    },
+    "legacy": {
+      "passed": 18,
+      "exit_code": 0,
+      "log_sha256": "a3ef9c9847b21bf9ed09c3e76b7975628fc51386ffaf353b6240b17c01ca5830"
+    }
+  },
+  "fresh_qualification": {
+    "status": "QUALIFIED",
+    "fixtures": 18,
+    "exact_manifest_reconciliation": "PASS: labels, effect counts, attempt counts, qualification_pass and empty errors",
+    "results_sha256": "bdbbdba76081d5a63f02757126ddeb4f18c4cb6c4ea3336ec228e6f896c7e1a9",
+    "runtime_sha256": "e44d92b9b4507b3e2f602d74224fa7b0ac5c93ffd5a9c850de9fa8a8a63817a5",
+    "evidence_location": "Fresh evidence retained outside staged repository in review_staging_verification/fresh_qualification; use README command to generate portable new evidence."
+  },
+  "frozen_archives": {
+    "qualification_revocation_v01.zip": {
+      "sha256": "ce289cb5b8a4402fd08c6db25b00fc41866f9f8e0637730c1757e706f1c09d66",
+      "manifest_entries_verified": 151,
+      "zip_integrity": "PASS"
+    },
+    "qualification_revocation_v02.zip": {
+      "sha256": "7355be609c634bdf48de8b3582ea4018f2e48ed0a47d421afbb073d24190d386",
+      "manifest_entries_verified": 351,
+      "zip_integrity": "PASS"
+    }
+  },
+  "historical_review_counts": {
+    "semantic_database_assertions": 349,
+    "real_ipc_assertions": 36,
+    "rerun_during_staging": false,
+    "interpretation": "Overlapping historical engineering assertions; not independent samples or human validation."
+  },
+  "preservation": "All copied artifact and source bytes match originals; originals were not edited.",
+  "excluded": "No separate conversation export, internal notes, tool prompts, credentials, unrelated personal records, bytecode, CI workflows or license grants added."
+}

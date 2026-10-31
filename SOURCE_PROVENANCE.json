@@ -1,0 +1,122 @@
+{
+  "qualification/v0.2/gateway.py": {
+    "source": "qualification_revocation_v02/gateway.py",
+    "sha256": "98445edd61af21bc5c740053f8a93f6c179e4c5efa7b28dd7363e779b8f059a9"
+  },
+  "qualification/v0.2/harness.py": {
+    "source": "qualification_revocation_v02/harness.py",
+    "sha256": "36daa6d7d8f400fde26a180a5a939ba4afcce549efa2b25688c7086d9adceed7"
+  },
+  "qualification/v0.2/observer.py": {
+    "source": "qualification_revocation_v02/observer.py",
+    "sha256": "88e8b83d5f9af9fbc1fa2743d4d9f102cf908109186f9952328f615ee6d1c329"
+  },
+  "qualification/v0.2/oracle.py": {
+    "source": "qualification_revocation_v02/oracle.py",
+    "sha256": "e6a36cc46ff8fd98a36a177d605d1a2e2adfe0f94d55c89798c1bfed5b1ecfce"
+  },
+  "qualification/v0.2/test_qualification.py": {
+    "source": "qualification_revocation_v02/test_qualification.py",
+    "sha256": "e1e385e83260040f953326a903f7515a0362e2f9f1ae6d6be28c918025aa5f04"
+  },
+  "qualification/v0.2/worker.py": {
+    "source": "qualification_revocation_v02/worker.py",
+    "sha256": "513fff722d3e6d01f0099c7ca4d627751ab3cc8a6375c65411e344eb6fc53995"
+  },
+  "qualification/v0.2/SCENARIOS.json": {
+    "source": "qualification_revocation_v02/SCENARIOS.json",
+    "sha256": "5ca462d65487a591ae19de0c66e7b8c4e79419fcd03140ed29a1ab2312e8d021"
+  },
+  "qualification/v0.2/PROTOCOL.md": {
+    "source": "qualification_revocation_v02/PROTOCOL.md",
+    "sha256": "5333ba2513c077c2069b8db3a36ff78f2ad9c0e1803a731136edd2241a25f7b4"
+  },
+  "qualification/v0.2/qualification_summary.json": {
+    "source": "qualification_revocation_v02/qualification_summary.json",
+    "sha256": "42373291be17137a6790c6df2211cd9351110f9459e1fcbf4dc11763a497a67f"
+  },
+  "qualification/v0.2/review_counterexamples01.json": {
+    "source": "qualification_revocation_v02/review_counterexamples01.json",
+    "sha256": "ef07fb8faf5bb50ab4fab17ce446e8309c17d0d3f0a7b6054ed1d4d077f5c1d9"
+  },
+  "qualification/v0.2/legacy_v01/harness.py": {
+    "source": "qualification_revocation_v02/legacy_v01/harness.py",
+    "sha256": "30278f4c3a4e019f9dfc4ed970c22796a1eb224ebe6b521088a39c87b780fc0b"
+  },
+  "qualification/v0.2/legacy_v01/oracle.py": {
+    "source": "qualification_revocation_v02/legacy_v01/oracle.py",
+    "sha256": "fdb3f6e4532684a79d36adb1317f1f282929d3a34733cddd968a6b17c0dc5497"
+  },
+  "qualification/v0.2/legacy_v01/test_oracle.py": {
+    "source": "qualification_revocation_v02/legacy_v01/test_oracle.py",
+    "sha256": "3037ce22b4c8684107ca16b2d314872f869b2dd857b8f70213682aed85af7c58"
+  },
+  "qualification/v0.2/legacy_v01/prior_checker_counterexamples.json": {
+    "source": "qualification_revocation_v02/legacy_v01/prior_checker_counterexamples.json",
+    "sha256": "e95bc69a7e41b78d3c5b619b509b41c9051b3b935e4d3b3264d0457b84c99131"
+  },
+  "docs/review/REVIEW.md": {
+    "source": "qualification_revocation_v02/independent_review/REVIEW.md",
+    "sha256": "1947ae775f7232e1cf3512d0e95fda3d063b8f6c851c9696a431b3978525dea7"
+  },
+  "docs/review/semantic_checks_final.json": {
+    "source": "qualification_revocation_v02/independent_review/semantic_checks_final.json",
+    "sha256": "3f75432bdb4d96831eb9523f07dd7139aca2a4b34efd78d3c034354dbc9f831b"
+  },
+  "docs/review/ipc_checks.json": {
+    "source": "qualification_revocation_v02/independent_review/ipc_checks.json",
+    "sha256": "b45449e57284770f1a92ec5b07b785b0a01e6365bb2486e7b854bdae0b9e0165"
+  },
+  "docs/review/final_source_hashes.json": {
+    "source": "qualification_revocation_v02/independent_review/final_source_hashes.json",
+    "sha256": "55a81704e1b8c731d3afb6f50da9f1ade54b1a179fcd7b1500446f5fa90cbac6"
+  },
+  "docs/review/ORIGINAL_PACKAGE_README.md": {
+    "source": "qualification_revocation_v02/README.md",
+    "sha256": "8b13f84d1e719de9e5f564e136bd96cef4180d1c6eda094c76f5441d1d28502e"
+  },
+  "archives/qualification_revocation_v01.zip": {
+    "source": "qualification_revocation_v01.zip",
+    "sha256": "ce289cb5b8a4402fd08c6db25b00fc41866f9f8e0637730c1757e706f1c09d66"
+  },
+  "archives/qualification_revocation_v02.zip": {
+    "source": "qualification_revocation_v02.zip",
+    "sha256": "7355be609c634bdf48de8b3582ea4018f2e48ed0a47d421afbb073d24190d386"
+  },
+  "docs/specification/Testing_Revocation_in_Delegated_Workflows_v0.1.docx": {
+    "source": "outputs/authority_revocation_design_v01/Testing_Revocation_in_Delegated_Workflows_v0.1.docx",
+    "sha256": "dc0ade776a556befd523d92cc73dda9ea557eb92b3679bb9898366b4b946af69"
+  },
+  "docs/traceability/disclosure_rules.csv": {
+    "source": "outputs/revocation_traceability_v01/disclosure_rules.csv",
+    "sha256": "2fae5094f2288b7522a215c665f5afa793d225a813521cc75dd663d782f1e54c"
+  },
+  "docs/traceability/literature_sources.csv": {
+    "source": "outputs/revocation_traceability_v01/literature_sources.csv",
+    "sha256": "915bad8f735948e9ebe4adec17f090f8b3312b3579d04c3d32d5f634cb9d5915"
+  },
+  "docs/traceability/decision_trace.csv": {
+    "source": "outputs/revocation_traceability_v01/decision_trace.csv",
+    "sha256": "43f2ca932e203a38ce24e6cddc7fd6c1b3dd19838dec58cbf1e7c0b28c2c6c69"
+  },
+  "docs/traceability/artifact_registry.csv": {
+    "source": "outputs/revocation_traceability_v01/artifact_registry.csv",
+    "sha256": "b213857c760e34aa66a37bd57f8773c27b887c8b1a9bc39421274ba77caa314b"
+  },
+  "docs/traceability/open_questions.csv": {
+    "source": "outputs/revocation_traceability_v01/open_questions.csv",
+    "sha256": "4f4def1934ea0435a4deac336d3aa77d7b42a580aea32bf219b8a9c865902768"
+  },
+  "docs/traceability/revocation_traceability_content_v01.json": {
+    "source": "outputs/revocation_traceability_v01/revocation_traceability_content_v01.json",
+    "sha256": "85982e920d2946ac7bcc8a3a0e9d8563f882df424a4709394b7c8e4da1f1c8aa"
+  },
+  "docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.1.xlsx": {
+    "source": "outputs/revocation_traceability_v01/Revocation_AI_Use_and_Research_Decision_Traceability_v0.1.xlsx",
+    "sha256": "c9989eb1ee3dced5892fb63a13a8fc827f8ec16a8b026250cb7177a5b79a5163"
+  },
+  "notebook/Revocation_Research_Notebook_v0.1.zip": {
+    "source": "outputs/revocation_traceability_v01/Revocation_Research_Notebook_v0.1.zip",
+    "sha256": "f6dae570f76ecb312c2e6b3c3280170cf9ea79540f253aa2ca607d99ff5f7208"
+  }
+}

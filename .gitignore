@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+# Fresh generated evidence should be written outside this compact record.
