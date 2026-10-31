@@ -1,0 +1,281 @@
+{
+  "duplicate_without_prior_effect": {
+    "trace": {
+      "case": "C1",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "admission",
+          "data": {
+            "root": "rootR",
+            "epoch": 7,
+            "allowed": true
+          }
+        },
+        {
+          "seq": 2,
+          "kind": "prepared",
+          "data": {
+            "effect_key": "summary:task1",
+            "payload": "inert summary"
+          }
+        },
+        {
+          "seq": 3,
+          "kind": "revocation",
+          "data": {
+            "root": "rootR",
+            "withdrawn_epoch": 7,
+            "new_epoch": 8
+          }
+        },
+        {
+          "seq": 4,
+          "kind": "attempt",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 5,
+          "kind": "duplicate",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 6,
+          "kind": "ack",
+          "data": {
+            "attempt": 1,
+            "outcome": "duplicate"
+          }
+        }
+      ],
+      "effects": [],
+      "authority": {
+        "root": "rootR",
+        "epoch": 8,
+        "active": 0
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "post_fence_effect_sequences": [],
+      "attempts": 1,
+      "effects": 0
+    }
+  },
+  "extra_unmatched_outcome": {
+    "trace": {
+      "case": "C1",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "admission",
+          "data": {
+            "root": "rootR",
+            "epoch": 7,
+            "allowed": true
+          }
+        },
+        {
+          "seq": 2,
+          "kind": "prepared",
+          "data": {
+            "effect_key": "summary:task1",
+            "payload": "inert summary"
+          }
+        },
+        {
+          "seq": 3,
+          "kind": "revocation",
+          "data": {
+            "root": "rootR",
+            "withdrawn_epoch": 7,
+            "new_epoch": 8
+          }
+        },
+        {
+          "seq": 4,
+          "kind": "attempt",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 5,
+          "kind": "denied",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 6,
+          "kind": "ack",
+          "data": {
+            "attempt": 1,
+            "outcome": "denied"
+          }
+        },
+        {
+          "seq": 7,
+          "kind": "denied",
+          "data": {
+            "attempt": 999
+          }
+        }
+      ],
+      "effects": [],
+      "authority": {
+        "root": "rootR",
+        "epoch": 8,
+        "active": 0
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "post_fence_effect_sequences": [],
+      "attempts": 1,
+      "effects": 0
+    }
+  },
+  "wrong_prepared_target": {
+    "trace": {
+      "case": "C1",
+      "events": [
+        {
+          "seq": 1,
+          "kind": "admission",
+          "data": {
+            "root": "rootR",
+            "epoch": 7,
+            "allowed": true
+          }
+        },
+        {
+          "seq": 2,
+          "kind": "prepared",
+          "data": {
+            "effect_key": "wrong",
+            "payload": "wrong"
+          }
+        },
+        {
+          "seq": 3,
+          "kind": "revocation",
+          "data": {
+            "root": "rootR",
+            "withdrawn_epoch": 7,
+            "new_epoch": 8
+          }
+        },
+        {
+          "seq": 4,
+          "kind": "attempt",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 5,
+          "kind": "denied",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 6,
+          "kind": "ack",
+          "data": {
+            "attempt": 1,
+            "outcome": "denied"
+          }
+        }
+      ],
+      "effects": [],
+      "authority": {
+        "root": "rootR",
+        "epoch": 8,
+        "active": 0
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "post_fence_effect_sequences": [],
+      "attempts": 1,
+      "effects": 0
+    }
+  },
+  "boolean_sequence": {
+    "trace": {
+      "case": "C1",
+      "events": [
+        {
+          "seq": true,
+          "kind": "admission",
+          "data": {
+            "root": "rootR",
+            "epoch": 7,
+            "allowed": true
+          }
+        },
+        {
+          "seq": 2,
+          "kind": "prepared",
+          "data": {
+            "effect_key": "summary:task1",
+            "payload": "inert summary"
+          }
+        },
+        {
+          "seq": 3,
+          "kind": "revocation",
+          "data": {
+            "root": "rootR",
+            "withdrawn_epoch": 7,
+            "new_epoch": 8
+          }
+        },
+        {
+          "seq": 4,
+          "kind": "attempt",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 5,
+          "kind": "denied",
+          "data": {
+            "attempt": 1
+          }
+        },
+        {
+          "seq": 6,
+          "kind": "ack",
+          "data": {
+            "attempt": 1,
+            "outcome": "denied"
+          }
+        }
+      ],
+      "effects": [],
+      "authority": {
+        "root": "rootR",
+        "epoch": 8,
+        "active": 0
+      }
+    },
+    "assessment": {
+      "label": "NO_VIOLATION",
+      "errors": [],
+      "post_fence_effect_sequences": [],
+      "attempts": 1,
+      "effects": 0
+    }
+  }
+}
