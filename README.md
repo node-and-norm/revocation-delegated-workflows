@@ -15,6 +15,10 @@ The current result is **finite instrument qualification**, not a new research fi
 
 Three v0.2 causal-treatment checker defects were found after initial apparent passes and corrected. A no-effect endpoint alone had accepted the wrong denial cause or broken delegation/preparation dependencies. The endpoint and treatment qualification are now separate. Earlier source, failed controls, corrections and counterexamples remain in the frozen archives. Four v0.1 checker blind spots and their regression history are retained there too; earlier runs must not be described as passing later controls.
 
+## Next design step
+
+[Design decision, 2026-10-31](docs/decisions/2026-10-31-checkpointed-workflow-candidate.md): assess a checkpointed LangGraph workflow to ask whether resumed or retried delegated work can create a new protected effect after durable authority revocation.  This is a candidate direction; a specific workflow and protocol remain to be selected, and no framework-based experiment has run.  The note records source rationale, comparison requirements, deferred alternatives and the distinction between an authorized intent and an external effect.  Historical qualification and traceability artifacts remain unchanged.
+
 ## Read and navigate
 
 | Record | Location |
