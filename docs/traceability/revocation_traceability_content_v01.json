@@ -1,0 +1,869 @@
+{
+  "title": "Revocation AI Use and Research Decision Traceability",
+  "version": "v0.1",
+  "studyId": "RV-2026-01",
+  "project": "Revocation in Delegated AI Workflows",
+  "owner": "Mark Banasihan",
+  "assistant": "OpenAI assistant (alfred)",
+  "createdDate": "2026-10-31",
+  "updatedDate": "2026-10-31",
+  "description": "Private study-specific record. Distinct from the earlier Approval Evidence Sufficiency ledger; source-based, bounded and editable.",
+  "traceHeaders": [
+    "Trace ID",
+    "Event UTC",
+    "Record type",
+    "Human reference and request",
+    "AI contribution",
+    "Decision and brief reason",
+    "Source / response reference",
+    "Affected artifact / section",
+    "Checks actually recorded",
+    "Reported or unverified checks",
+    "Human status",
+    "Human evidence / scope",
+    "Remaining limits",
+    "Publication handling",
+    "Captured UTC"
+  ],
+  "traceRows": [
+    [
+      "RV-TR-001",
+      "2026-10-31 17:47:19 UTC",
+      "Retrospective",
+      "2026-10-31 17:47:19 UTC; Sentinel_629e8490cf8481918441fc96624d67a3\nExact quote: “Let's go with one shared research program with the three questions tested in sequence.”",
+      "Focused the shared frontier-AI assurance program on the first question: whether withdrawing permission prevents a new protected commit in one delegated workflow.",
+      "Keep only Q1 active. Evidence veracity (Q2) and oversight scaling (Q3) are deferred; AGI readiness is long-term motivation, not an outcome.",
+      "2026-10-31 17:47:19 UTC; Sentinel_629e8490cf8481918441fc96624d67a3; RV-A-001, page 1",
+      "RV-A-001 v0.1: program and question",
+      "The preserved specification states the single active question and exclusions.",
+      "No evidence-veracity, oversight-scaling or AGI-readiness result is established.",
+      "Explicit request",
+      "The user selected sequential questions. This does not validate the resulting method or claims.",
+      "No general claim about all AI workflows or AGI readiness.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-002",
+      "2026-10-31 17:47:19 UTC",
+      "Retrospective",
+      "2026-10-31 17:47:19 UTC; Sentinel_629e8490cf8481918441fc96624d67a3\nExact quote: “let's hone in on one and really get good at it and produce really good findings or discoveries. Yes, really rock-solid quality.”",
+      "Treated measurement validity, failure preservation and bounded claims as priorities rather than increasing the number of studies.",
+      "Prefer a reliable narrow foundation over an unsupported novelty claim.",
+      "2026-10-31 17:47:19 UTC; Sentinel_629e8490cf8481918441fc96624d67a3; 2026-10-31 17:48:56 UTC; Sentinel_540651e0030c8191951994b1ee3a2ff9",
+      "RV-A-001 and RV-A-002: scope and qualification",
+      "User-visible quality preference and subsequent instruction to proceed are recorded.",
+      "The preference does not establish that any result is novel or independently validated.",
+      "Explicit request",
+      "The user requested depth and quality; at 17:48:56 said, “Let's go ahead and accelerate it, proceed.”",
+      "Proceeding does not itself approve model costs, public release or every future research stage.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-003",
+      "2026-10-31",
+      "Retrospective",
+      "Research framing under RV-TR-001; no separate human factual review recorded.",
+      "Compared revocation, delegated authorization, cancellation/effect gates and auditability work; rejected adaptivity alone as a differentiator.",
+      "Novelty remains unestablished. Related work already addresses major proposed mechanisms and adaptive evaluations.",
+      "RV-A-001, pages 1 and 6; RV-S-001 through RV-S-005",
+      "RV-A-001: related work and novelty gate",
+      "The specification contains versioned primary-source references and scoped comparisons.",
+      "These literature summaries are carried forward from the specification; they were not newly re-reviewed for this documentation package.",
+      "Not recorded",
+      "No claim of citation-by-citation human verification.",
+      "No new revocation method, upstream vulnerability or uniquely unexplored contrast is established.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-004",
+      "2026-10-31",
+      "Retrospective",
+      "Continue the focused question; exact human wording for this source inspection is not recorded here.",
+      "Compared three candidate families for the stronger final sink-commit endpoint; inspected the pinned Stop Means Stop artifact.",
+      "No verified drop-in candidate for the stronger endpoint. An unchanged admission-boundary artifact can only be a conditional admission-replication candidate.",
+      "RV-A-001, page 5; RV-S-006; pin 4bcb42cb52aa46be5714af5d28c516caa5e13e39",
+      "RV-A-001: Gate 0",
+      "Recorded source inspection: soundgate releases before the effect callback; native task.cancel / asyncio.to_thread and mediated spawned-thread / gate.cancel paths are unmatched.",
+      "No installation or execution of the pinned upstream artifact; no runtime conformance result.",
+      "Not recorded",
+      "No human source-code verification recorded.",
+      "Admission is not protected commit. This contract mismatch is not an upstream defect discovery; the pinned snapshot postdates the paper.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-005",
+      "2026-10-31",
+      "Retrospective",
+      "Prior user direction: focus Q1 and proceed (RV-TR-001 and RV-TR-002).",
+      "Authored a six-page protocol with an authority contract, finite scenarios, independent observation and decision gates.",
+      "Freeze the design separately from subsequent narrower qualification. A specification is not evidence that its requirements were implemented.",
+      "RV-A-001; document checksum in Artifacts",
+      "RV-A-001 v0.1: whole specification",
+      "Documentation preparation re-extracted the document and verified its SHA-256 and byte count.",
+      "Original source-review and document-layout checks are not rerun by this ledger.",
+      "Not recorded",
+      "No exhaustive human review of the final specification recorded.",
+      "The document itself authorizes no model call, installation, repository edit or publication; later executed qualification has a separate narrower scope.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-006",
+      "2026-10-31",
+      "Retrospective",
+      "Research continuation within the bounded foundation; specific qualifying-run authorization wording is not reproduced here.",
+      "Built a model-free SQLite transaction and evidence-oracle fixture rather than silently substituting admission for final commit.",
+      "Use deterministic measurement qualification to test the instrument before considering an agent-system experiment.",
+      "RV-A-002: README.md and qualification_summary.json",
+      "RV-A-002 v0.1: harness, oracle and fixture contract",
+      "The frozen package records five schedules in two arms, with separate attempt, effect, revocation and acknowledgement events.",
+      "No upstream system or adaptive agent is evaluated.",
+      "Not recorded",
+      "No inference of human methods validation from permission to continue.",
+      "C2 is controller-mediated process handoff, not actual delegation. Trusted workers contain the gate and can write the database.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-007",
+      "2026-10-31",
+      "Retrospective",
+      "No separate human approval of individual results recorded.",
+      "Executed the initial fixture and unit suite; retained the original source and outputs. A cleanup-only revision followed.",
+      "Keep attempts 01 and 02 as historical evidence, without retroactively crediting them with later checks.",
+      "RV-A-002: runs/attempt01, runs/attempt02, qualification_summary.json",
+      "RV-A-002: preserved attempt history",
+      "Each early attempt met 10 fixture expectations and 13 then-existing tests. Attempt02 changed defensive process cleanup only.",
+      "The initial tests missed four oracle false-pass classes found later.",
+      "Not recorded",
+      "No human result verification recorded.",
+      "A then-passing test suite did not establish oracle adequacy; early artifacts remain unchanged.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-008",
+      "2026-10-31",
+      "Correction",
+      "Quality priority recorded in RV-TR-002.",
+      "Separate AI-assisted review preserved four false-pass counterexamples: duplicate without prior effect, unmatched attempt 999, wrong prepared binding and boolean sequence number.",
+      "Treat these as oracle defects requiring repair, not as failures of the transaction enforcement gate.",
+      "RV-A-002: independent_review/REVIEW.md and counterexamples01.json",
+      "RV-A-002: oracle.py; initial review evidence",
+      "The final review identifies the four accepted malformed traces and the affected evidence checks.",
+      "Separate AI review is not independent human validation.",
+      "Not recorded",
+      "No claim that Mark personally reproduced the counterexamples.",
+      "The review is finite; discovering these defects does not show exhaustive corruption detection.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-009",
+      "2026-10-31",
+      "Correction",
+      "Continuation of the recorded quality and foundation request.",
+      "Added strict schema/types, outcome/attempt coverage, preparation binding, duplicate provenance and retry-order checks; preserved attempts 01/02 and ran corrected attempt03.",
+      "Complete only the stated v0.1 finite instrument qualification after correction verification.",
+      "RV-A-002: qualification_summary.json; independent_review/REVIEW.md; corrected replay and checks",
+      "RV-A-002 v0.1: final attempt03",
+      "18 unit tests; 10 arm-by-schedule fixtures; 74 reviewer oracle correction/deletion assertions; 36 direct-database/observer assertions. All stated final checks passed.",
+      "These overlapping engineering checks are not independent research samples, statistical estimates or human validation.",
+      "Not recorded",
+      "No exhaustive human verification or publication approval recorded.",
+      "The admission-only arm is an intentionally seeded stale-authority race. The result is neither an upstream vulnerability nor a new mechanism.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-010",
+      "2026-10-31",
+      "Retrospective",
+      "Foundation focus; no claim expansion requested.",
+      "Separated attempted actions, actual committed effects and late acknowledgements; retained liveness and intentional positive-violation controls.",
+      "A commit before the durable fence is permitted even when acknowledged later. An incomplete observation cannot count as a safe stop.",
+      "RV-A-001, pages 2–4; RV-A-002: README.md and final results",
+      "RV-A-001/RV-A-002: endpoint and result interpretation",
+      "Admission-only C1/C2/C3 produced seeded post-fence effects; commit-fenced produced none there. Both arms produced one legitimate effect in C0/C4.",
+      "No exhaustive interleavings, crash durability, remote effects or adversarial confinement were tested.",
+      "Not recorded",
+      "No human endpoint validation recorded.",
+      "C3 is three attempts of one logical effect, not three independent samples. Trusted SQLite ordering is the measured boundary.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-011",
+      "2026-10-31 18:40:34 UTC",
+      "Contemporaneous",
+      "2026-10-31 18:40:34 UTC; Sentinel_70e4082931ec819184a2f584ae1227ed\nExact quote: “Let's continue where we left off”. Paraphrase: asks for a solid foundation for the established revocation and delegated-workflows study.",
+      "Scoped v0.2 to model-free one-edge protocol delegation, gateway-owned writes, server-bound IPC identity and a separate observer.",
+      "Address v0.1 topology and code-path mediation limits without rewriting the frozen v0.1 evidence.",
+      "RV-A-003: PROTOCOL.md; 2026-10-31 18:40:34 UTC; Sentinel_70e4082931ec819184a2f584ae1227ed",
+      "RV-A-003 v0.2: bounded qualification protocol",
+      "Protocol specifies parent-requested child-specific grants, child-bound channel identity and atomic current-epoch check plus commit in the fenced arm.",
+      "Implementation, execution and review were pending at initial capture; see RV-TR-012 for the final snapshot state.",
+      "Explicit request",
+      "The user requested continuation and a solid foundation; dictation is paraphrased, not silently presented as an exact corrected quote.",
+      "Same-OS-user accessible filesystem is not malicious-process confinement. No model, actual user data, remote sink or broader hierarchy.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-012",
+      "2026-10-31",
+      "Contemporaneous",
+      "Continuation of RV-TR-011; no new human validation recorded.",
+      "Implemented and qualified a model-free one-edge parent-to-child protocol grant, gateway-owned writes, server-bound IPC identities and a separate read-only observer; corrected three causal-treatment checker weaknesses after separate AI review.",
+      "Complete only the declared v0.2 finite instrument qualification on final attempt04. Keep its source/results/review separate from frozen v0.1 and any future agent experiment.",
+      "RV-A-003: qualification_summary.json; SCENARIOS.json; runs/attempt04; independent_review/REVIEW.md and replay03. Report SHA-256 1947ae775f7232e1cf3512d0e95fda3d063b8f6c851c9696a431b3978525dea7.",
+      "RV-A-003 v0.2",
+      "18 fixtures (9 schedules × 2 arms); 19 current unit tests; 18 legacy v0.1 tests separately; 349 reviewer semantic/database assertions; 36 actual IPC assertions. Final source cleared by separate AI review. Summary, manifest, review and ZIP hash inspected for this record.",
+      "Discovery and direct invocation repeat the same 19 tests, not 38 distinct tests. All engineering counts overlap and are not independent research samples, population estimates or human validation.",
+      "Not recorded",
+      "No human validation of implementation, results or manuscript claims recorded.",
+      "One-edge deterministic protocol delegation; gateway-only write code, but same OS user is not hostile-process confinement. Inert SQLite sink, trusted same-host observer, direct delivery as worker evidence. No model, remote service, distributed revocation or novelty claim.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-013",
+      "2026-10-31 18:42:01 UTC",
+      "Contemporaneous",
+      "2026-10-31 18:42:01 UTC; Sentinel_c9dbc13c82f48191a8e842518c2859d9\nExact quote: “I'm assuming that you're keeping all of this documented in the background so that we can update the GitHub repository or whatever it is that we need to create to showcase this work.” Paraphrase: the existing Excel and Obsidian records belonged to the old study; asks what to do for the new one.",
+      "Created a new study-specific ledger and portable Markdown notebook using the established traceability conventions.",
+      "Give the revocation study its own identity. Cross-reference prior approval work rather than relabeling its results or altering its records.",
+      "2026-10-31 18:42:01 UTC; Sentinel_c9dbc13c82f48191a8e842518c2859d9; RV-A-004 through RV-A-006",
+      "RV-A-004/RV-A-005/RV-A-006: new research record",
+      "Prior approval workbook, JSON and notebook hashes captured read-only for a before/after preservation check.",
+      "No automatic chat capture, synchronization, local Obsidian installation or Mac update is established.",
+      "Explicit request",
+      "The user requested documentation continuity for the new study; not a claim that all background work is already published.",
+      "Selected decision record, not a complete transcript or immutable audit. Private identifiers require review before release.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-014",
+      "2026-10-31",
+      "Contemporaneous",
+      "Repository/showcase question in RV-TR-013.",
+      "Prepared a proposed private-first repository layout and documentation/claim checklist without creating or changing a repository.",
+      "Distinguish current verified artifacts from a proposed future canonical GitHub repository. No repository URL is invented.",
+      "2026-10-31 18:42:01 UTC; Sentinel_c9dbc13c82f48191a8e842518c2859d9; GitHub proposal note in RV-A-006",
+      "RV-A-006: GitHub structure proposal",
+      "The package contains a proposal only. Current evidence is the versioned specification and qualification packages.",
+      "No new-study repository creation, push, public publication or public-safety claim has occurred.",
+      "Not recorded",
+      "No separate repository-creation or publication approval recorded.",
+      "Public-safe summary: Research in development; deterministic measurement qualification only; no agent-system evaluation or novelty established.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-015",
+      "2026-10-31",
+      "Contemporaneous",
+      "Documentation request in RV-TR-013.",
+      "Generated workbook and notebook views from the same structured trace record; included canonical artifact copies and inspectable JSON/CSV exports.",
+      "Keep one coherent record. The notebook workbook attachment is the same file bytes, not a second independently maintained dataset.",
+      "RV-A-005: shared structured record; QA.md and SHA256SUMS accompanying RV-A-006",
+      "RV-A-004/RV-A-005/RV-A-006",
+      "Final artifact QA is recorded in QA.md: IDs, row counts, links, hashes, workbook renders and frozen-record preservation.",
+      "The package has not been opened in desktop Excel or Obsidian; no app-level synchronization is claimed.",
+      "Not recorded",
+      "No human review or release approval of these new documentation artifacts recorded.",
+      "Edits in Excel and Markdown do not automatically reconcile. Preserve snapshots and intentionally update the shared source before a new export.",
+      "Review before release",
+      "2026-10-31"
+    ],
+    [
+      "RV-TR-016",
+      "2026-10-31",
+      "Correction",
+      "Quality and foundation requests recorded in RV-TR-002 and RV-TR-011.",
+      "Separate AI review found three v0.2 causal-treatment false qualifications despite zero effects: wrong denial cause, no issued child grant, and no successful preparation/admission.",
+      "Zero effects alone do not prove that revocation caused a stop. Require the declared grant, admission and denial-cause dependencies before qualifying a treatment.",
+      "RV-A-003: independent_review/counterexamples01.json; independent_review/REVIEW.md; qualification_summary.json attempt history.",
+      "RV-A-003 v0.2: oracle and causal-treatment validation",
+      "Three preserved examples are now nonqualified: wrong denial cause retains the observational no-effect endpoint but fails treatment qualification; missing grant and missing admission are INVALID. Final 19 tests and 18 fixtures passed. Reviewer checks include three regressions within 349 assertions.",
+      "No enforcement bypass was found by these counterexamples. An initially passing suite did not establish causal-treatment validity.",
+      "Not recorded",
+      "No human reproduction or validation of these findings recorded.",
+      "Attempts01/02 retain the original weakness; attempt03 corrects dependencies and treatment checks; attempt04 fixes test-runner placement so direct execution includes all 19 tests. Three v0.2 classes are separate from four v0.1 oracle defects, not seven research samples.",
+      "Review before release",
+      "2026-10-31"
+    ]
+  ],
+  "template": {
+    "label": "FUTURE LOG TEMPLATE — not an event",
+    "headers": [
+      "Trace ID",
+      "Event UTC",
+      "Record type",
+      "Human reference and request",
+      "AI contribution",
+      "Decision and brief reason",
+      "Source / response reference",
+      "Affected artifact / section",
+      "Checks actually recorded",
+      "Reported or unverified checks",
+      "Human status",
+      "Human evidence / scope",
+      "Remaining limits",
+      "Publication handling",
+      "Captured UTC"
+    ],
+    "row": [
+      "",
+      "",
+      "Template",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "readme": [
+    [
+      "Study identity",
+      "Revocation in Delegated AI Workflows. New study record RV-2026-01; separate from Approval Evidence Sufficiency."
+    ],
+    [
+      "Current claim",
+      "Research in development; deterministic measurement qualification only; no agent-system evaluation or novelty established."
+    ],
+    [
+      "Active question",
+      "Q1 only: does withdrawing permission prevent a new protected commit in one delegated workflow? Q2 evidence veracity and Q3 oversight scaling are deferred."
+    ],
+    [
+      "Current verified artifacts",
+      "The attached v0.1 specification and versioned qualification packages are current evidence. A future GitHub repository is proposed, not established."
+    ],
+    [
+      "Version boundary",
+      "Specification v0.1 is a design. Qualification v0.1 is a completed narrower transaction/oracle fixture. Qualification v0.2 is completed only within the separately reviewed finite model-free scope. A future agent experiment is a distinct stage."
+    ],
+    [
+      "Researcher and AI tool",
+      "Mark Banasihan is the researcher. OpenAI assistant (alfred) is an AI tool, not a human coauthor, participant or independent human reviewer. Exact underlying model version is not recorded/verified."
+    ],
+    [
+      "What AI did",
+      "Source comparison, question selection, protocol and code authoring, deterministic execution, separate critique, oracle defect diagnosis, repairs, artifact preparation and checks. Do not describe this as grammar-only assistance."
+    ],
+    [
+      "Time precision",
+      "Created on 2026-10-31. Exact UTC times are used only for supplied visible user-message references; other events use date precision. Capture date is not an authenticated event timestamp."
+    ],
+    [
+      "Evidence boundary",
+      "Selected visible requests, the preserved specification, qualification source/results/review and explicit provenance. Literature summaries are carried forward from the specification, not newly re-reviewed for this package."
+    ],
+    [
+      "Record limits",
+      "Selected editable decision record, not a complete transcript, prompt archive, immutable audit or record of internal AI reasoning. Missing review evidence means not recorded, not proven absent."
+    ],
+    [
+      "Human status",
+      "Requests, scope permissions, feedback, specified factual checks and release approval are separate. No exhaustive human review or public release approval is documented here."
+    ],
+    [
+      "Counts and claims",
+      "v0.1: 10 fixtures, 18 final unit tests, 74 oracle-review assertions and 36 direct-database/observer assertions. These overlap and are not statistical samples; v0.2 counts, if complete, belong to its own package."
+    ],
+    [
+      "Checks actually recorded",
+      "Recorded runtime checks are distinct from source inspection, artifact QA, hashes and human validation. An intentionally detected violation is a positive detector control, not a safety result."
+    ],
+    [
+      "Workbook use",
+      "Filter the tables. Header rows and IDs remain frozen in long tables. Dropdowns support future trace entry status. There are no study-result formulas, scores or independently recalculated research datasets."
+    ],
+    [
+      "One source, multiple views",
+      "revocation_traceability_content_v01.json supplies the workbook and Markdown. CSV exports are inspectable table views. The notebook workbook copy is byte-identical to the delivered XLSX. No automatic synchronization exists."
+    ],
+    [
+      "Maintain the history",
+      "Check for researcher edits before updating. Append stable RV IDs, preserve failures and old versions, and reconcile the JSON/workbook/notes deliberately. Do not overwrite historical approval-study records."
+    ],
+    [
+      "Artifact registry hashes",
+      "Known external artifact hashes and sizes are recorded. This workbook, shared JSON and notebook use external SHA256SUMS to avoid circular self-hashes. Blank hash/size for pending or self-referential artifacts is not zero."
+    ],
+    [
+      "Open questions",
+      "OpenQuestions separates pending qualification, unresolved research decisions, human review and release authorization. Deferred Q2/Q3 are not hidden active work."
+    ],
+    [
+      "Privacy and release",
+      "Private working record. Message and Library IDs are locators, not public links. Prepare a separately reviewed redacted copy and obtain explicit release permission before publication. No target venue compliance claim."
+    ],
+    [
+      "Prior-work cross-reference",
+      "Prior Approval Evidence Sufficiency records remain unchanged. WC-001 modeled Python, WC-002 extracted .NET methods and static export/retention inspection supply background only, not revocation results."
+    ],
+    [
+      "Application and repository status",
+      "This portable record does not update the local Mac vault, open Obsidian or Excel, create a repository, push code or publish. GitHub structure is a proposal only."
+    ],
+    [
+      "RV-S-001 — primary source",
+      "Authorization Revocation for Long-Running AI Agents; arXiv:2609.21284v1.\nhttps://arxiv.org/html/2609.21284v1\nFull-text sections 3 and 6–8 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-002 — primary source",
+      "DelegateGuard; arXiv:2610.16005v1.\nhttps://arxiv.org/html/2610.16005v1\nFull-text sections 2–6 and limits recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-003 — primary source",
+      "Stop Means Stop; arXiv:2607.14166v3.\nhttps://arxiv.org/pdf/2607.14166v3\nFull-text sections 2–5 and 6.4 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-004 — primary source",
+      "Auditable Agents; arXiv:2604.05485v4.\nhttps://arxiv.org/html/2604.05485v4\nFull-text sections 2, 4 and 7 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-005 — primary source",
+      "Recursive Language Models; arXiv:2512.24601v3.\nhttps://arxiv.org/html/2512.24601v3\nIntroduction and section 2 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-006 — primary source",
+      "Stop Means Stop source artifact; Commit 4bcb42cb52aa46be5714af5d28c516caa5e13e39.\nhttps://github.com/sajjadanwar0/soundgate-paper/tree/4bcb42cb52aa46be5714af5d28c516caa5e13e39\nRead-only inspection of langgraph_probes.py, e2e_langgraph.py and README recorded in RV-A-001. Not executed; snapshot postdates paper."
+    ]
+  ],
+  "artifactHeaders": [
+    "Artifact ID",
+    "Title",
+    "Version",
+    "Format",
+    "Library reference",
+    "First delivered UTC",
+    "Delivery message",
+    "Relevant scope / section",
+    "Evidence / check status",
+    "SHA-256",
+    "Bytes",
+    "Remaining limits"
+  ],
+  "artifactRows": [
+    [
+      "RV-A-001",
+      "Testing Revocation in Delegated Workflows",
+      "v0.1",
+      "DOCX",
+      "libfile_54a59b0a9c3c81919b59a3e3883a0d5b, version 1",
+      "2026-10-31 18:00:13 UTC",
+      "Sentinel_3a76e1144c308191bd1548f381e7c19c",
+      "Six-page research specification; active Q1, endpoint and gates",
+      "SHA-256 and size rechecked during documentation preparation",
+      "dc0ade776a556befd523d92cc73dda9ea557eb92b3679bb9898366b4b946af69",
+      46562,
+      "Design, not execution. Linked in Attachments; source-review details are recorded, not re-performed here."
+    ],
+    [
+      "RV-A-002",
+      "Deterministic Revocation Measurement Qualification",
+      "v0.1",
+      "ZIP",
+      "libfile_f6ade2000eec8191a5a28ec06d48f070, version 0",
+      "2026-10-31 18:16:19 UTC",
+      "Sentinel_298317db44f48191a235e837658b8768",
+      "Frozen attempts 01–03, source, raw results, oracle, review and checksums",
+      "Final bounded qualification complete after four oracle corrections; 10 fixtures and 18 final unit tests",
+      "ce289cb5b8a4402fd08c6db25b00fc41866f9f8e0637730c1757e706f1c09d66",
+      161833,
+      "Controller-mediated handoff; trusted worker-writable database. Not actual delegation, external gateway validation or an agent evaluation."
+    ],
+    [
+      "RV-A-003",
+      "Delegated Gateway Measurement Qualification",
+      "v0.2",
+      "ZIP",
+      "New artifact; Library identity to be assigned at delivery",
+      "",
+      "Included with this documentation delivery; no earlier delivery message recorded",
+      "Model-free one-edge delegation; server-bound IPC identity; gateway-owned database; separate observer",
+      "Final attempt04 qualified and separately AI-reviewed after three causal-treatment corrections. ZIP hash and 508,334-byte size rechecked; detailed manifests and review retained.",
+      "7355be609c634bdf48de8b3582ea4018f2e48ed0a47d421afbb073d24190d386",
+      508334,
+      "One-edge deterministic protocol delegation; gateway-only write code, but same OS user is not hostile-process confinement. Inert SQLite sink, trusted same-host observer, direct delivery as worker evidence. No model, remote service, distributed revocation or novelty claim."
+    ],
+    [
+      "RV-A-004",
+      "Revocation AI Use and Research Decision Traceability",
+      "v0.1",
+      "XLSX",
+      "New identity; not the old approval-study workbook",
+      "",
+      "Prepared for current delivery; no earlier delivery message",
+      "Editable decision/AI-use ledger, artifacts, disclosure rules and open questions",
+      "Artifact-tool authoring and QA recorded in QA.md; checksum in external SHA256SUMS",
+      "",
+      null,
+      "No self-referential checksum inside the workbook. No desktop Excel opening or automatic synchronization claimed."
+    ],
+    [
+      "RV-A-005",
+      "Revocation structured traceability record",
+      "v0.1",
+      "JSON and CSV",
+      "Included in this documentation package",
+      "",
+      "Prepared for current delivery; no earlier delivery message",
+      "Single structured source for workbook and Markdown views",
+      "ID, schema and row-count validation; checksum in external SHA256SUMS",
+      "",
+      null,
+      "Editable snapshot, not complete conversation capture or immutable audit. Self-checksum excluded to avoid a circular record."
+    ],
+    [
+      "RV-A-006",
+      "Revocation research notebook",
+      "v0.1",
+      "Markdown notebook ZIP",
+      "New identity; not the old approval-study vault",
+      "",
+      "Prepared for current delivery; no earlier delivery message",
+      "Portable Obsidian-compatible notes, canonical artifact copies, shared source and identical workbook copy",
+      "Relative-path and package-integrity checks recorded in QA.md; checksum supplied with delivery",
+      "",
+      null,
+      "Not installed in an existing vault or opened in Obsidian. Private; no repository or public publication."
+    ]
+  ],
+  "ruleHeaders": [
+    "Rule ID",
+    "Topic / source",
+    "Recorded guidance or definition",
+    "Apply to this study",
+    "Evidence / access qualification",
+    "Source URL",
+    "Checked UTC",
+    "Publication action"
+  ],
+  "ruleRows": [
+    [
+      "RV-DR-001",
+      "Substantive AI use",
+      "Disclose source comparison, scope selection, protocol/code/oracle authoring, execution, critique, corrections and documentation—not grammar only.",
+      "Use the decision trace to identify substantive contributions.",
+      "OpenAI assistant (alfred); exact underlying model version not recorded or verified.",
+      "",
+      "2026-10-31",
+      "Prepare an honest methods disclosure; human authors remain responsible."
+    ],
+    [
+      "RV-DR-002",
+      "Human review scope",
+      "A request, permission to proceed, positive feedback, factual verification and release approval are distinct evidence states.",
+      "Use Verified specified claims or Approved for release only with explicit scoped evidence.",
+      "No independent human validation or release approval of this record is documented.",
+      "",
+      "2026-10-31",
+      "Record actual human review before reliance or publication."
+    ],
+    [
+      "RV-DR-003",
+      "No novelty inflation",
+      "Research in development; deterministic measurement qualification only; no agent-system evaluation or novelty established.",
+      "Do not turn a seeded stale-authority race or source-contract mismatch into a new method or upstream vulnerability claim.",
+      "See RV-A-001 Gate 0 and RV-A-002 review.",
+      "",
+      "2026-10-31",
+      "Use this bounded summary in a future reviewed public description."
+    ],
+    [
+      "RV-DR-004",
+      "Primary endpoint",
+      "Measure a new protected commit after the durable revocation fence. A denied proposal or late acknowledgement is not that endpoint.",
+      "Preserve attempt, admission, effect and acknowledgement distinctions.",
+      "The local SQLite transaction domain is narrower than remote admission/settlement.",
+      "",
+      "2026-10-31",
+      "Require a protocol amendment before changing the endpoint or adapter."
+    ],
+    [
+      "RV-DR-005",
+      "Counts and denominators",
+      "Fixture, unit-test, mutation and direct-database assertions overlap and are engineering checks, not independent research samples.",
+      "Do not pool counts across arms, versions or prior approval studies into an accuracy estimate.",
+      "C3 retries share one logical effect. No population or power claim.",
+      "",
+      "2026-10-31",
+      "Label each count by its actual unit and scope."
+    ],
+    [
+      "RV-DR-006",
+      "Version and failure preservation",
+      "Retain original source, failures, counterexamples, corrections and regression evidence.",
+      "Keep v0.1 attempts 01–03 frozen; keep v0.2 separate.",
+      "Earlier passing tests are not retroactively credited with later controls.",
+      "",
+      "2026-10-31",
+      "Append corrections with stable IDs and affected versions."
+    ],
+    [
+      "RV-DR-007",
+      "Incomplete observations",
+      "Missing evidence, failed controls, timeouts or observer errors do not establish a safe stop.",
+      "Retain failure status and causal evidence; do not remove failed assignments from interpretation.",
+      "A qualified positive-violation control is detector validation, not a safety pass.",
+      "",
+      "2026-10-31",
+      "Stop and diagnose unexpected protected effects before expansion."
+    ],
+    [
+      "RV-DR-008",
+      "Publication and private data",
+      "The working record is private and selected. No public publication or repository creation is implied.",
+      "Review private message/Library identifiers and artifact content before any public extract.",
+      "No target venue selected; current venue policy must be checked at submission time.",
+      "",
+      "2026-10-31",
+      "Get explicit release authorization and prepare a separate redacted copy."
+    ],
+    [
+      "RV-DR-009",
+      "Checksum meaning",
+      "A matching SHA-256 identifies checked bytes; it does not prove truth, authorship or authenticated event time.",
+      "Use external SHA256SUMS for the self-referential workbook/record/package.",
+      "No signing, notarization or tamper-proof audit is claimed.",
+      "",
+      "2026-10-31",
+      "Keep semantic validation separate from integrity checks."
+    ],
+    [
+      "RV-DR-010",
+      "One study record",
+      "Workbook and Markdown are views of one shared JSON source, with matching trace IDs.",
+      "Reconcile edits deliberately and export a new version; there is no automatic sync.",
+      "Notebook attachment is byte-identical to the separately delivered workbook.",
+      "",
+      "2026-10-31",
+      "Do not maintain competing copies or silently overwrite user edits."
+    ],
+    [
+      "RV-DR-011",
+      "Prior-work boundary",
+      "Approval Evidence Sufficiency is a different study with its own IDs and evidence.",
+      "Cross-reference WC-001, WC-002 and the static export inspection as methods background only.",
+      "WC-001 Python model; WC-002 extracted .NET methods; full lifecycle and export restart not run.",
+      "",
+      "2026-10-31",
+      "Do not relabel prior results as revocation observations."
+    ],
+    [
+      "RV-DR-012",
+      "Future agent phase",
+      "A later model phase requires a remaining non-tautological question, frozen design, exact model/data/cost/budget approval and valid observation.",
+      "No agent experiment follows automatically from deterministic qualification.",
+      "Q2/Q3 stay deferred. Same-host fixture evidence does not imply universal mediation or confinement.",
+      "",
+      "2026-10-31",
+      "Reopen the design gate before any model call or broader experiment."
+    ]
+  ],
+  "humanStatuses": [
+    "Not recorded",
+    "Explicit request",
+    "Explicit constraint",
+    "Scope authorization",
+    "Read / positive feedback",
+    "Verified specified claims",
+    "Approved for release"
+  ],
+  "publicationFlags": [
+    "Review before release",
+    "Redact private IDs",
+    "Retain public source",
+    "Hold",
+    "Approved redacted extract"
+  ],
+  "recordTypes": [
+    "Retrospective",
+    "Contemporaneous",
+    "Correction",
+    "Template"
+  ],
+  "questionStatuses": [
+    "Open",
+    "Pending",
+    "Completed within scope",
+    "Deferred",
+    "Awaiting authorization"
+  ],
+  "questionHeaders": [
+    "Question ID",
+    "Area",
+    "Status",
+    "Question / outcome",
+    "Evidence / dependency",
+    "Next gate / action",
+    "Boundary"
+  ],
+  "questionRows": [
+    [
+      "RV-Q-001",
+      "Decision-relevant contribution",
+      "Open",
+      "What specific implementation boundary or assurance decision remains unmeasured after the closest prior work?",
+      "RV-A-001 Gate 0; RV-S-001/RV-S-002/RV-S-003",
+      "State the decision and comparison before claiming a new study contribution.",
+      "Novelty is not established."
+    ],
+    [
+      "RV-Q-002",
+      "v0.2 instrument qualification",
+      "Completed within scope",
+      "Completed the declared one-edge delegated gateway fixture: final results match the scenario manifest and separate AI review found no remaining blocker for that finite scope.",
+      "RV-A-003; RV-TR-012",
+      "Preserve the qualified package; use RV-Q-003 onward for remaining research gates.",
+      "Completion applies only to the finite model-free fixture."
+    ],
+    [
+      "RV-Q-003",
+      "Confinement and trust",
+      "Open",
+      "Is assumed worker code-path mediation sufficient for the next question, or is a separately confined boundary necessary?",
+      "RV-A-002 limits; RV-A-003 protocol",
+      "Choose an explicit threat model before extending beyond trusted same-host workers.",
+      "Same OS user is not malicious-process confinement."
+    ],
+    [
+      "RV-Q-004",
+      "Model-phase justification",
+      "Deferred",
+      "Could a model phase answer anything not already forced to zero by a correct complete mediator?",
+      "RV-A-001 Gate 2",
+      "Define an informative question or stop; do not substitute denied attempts for realized effects.",
+      "No adaptive-agent experiment has run."
+    ],
+    [
+      "RV-Q-005",
+      "Human review",
+      "Open",
+      "Which claims, source comparisons, method definitions and artifacts has Mark personally checked?",
+      "DecisionTrace human-status and evidence columns",
+      "Record claim-level review and remaining reservations.",
+      "No exhaustive human validation inferred."
+    ],
+    [
+      "RV-Q-006",
+      "Repository and release",
+      "Awaiting authorization",
+      "Should a separate private study repository be created, and which redacted materials may later be public?",
+      "GitHub structure proposal; RV-TR-014",
+      "Obtain specific authorization; then check repository content and links before release.",
+      "No new repository URL or publication exists."
+    ],
+    [
+      "RV-Q-007",
+      "Notebook maintenance",
+      "Open",
+      "Which copy is the next working source after Mark edits the workbook or Markdown?",
+      "RV-A-005; maintenance rules",
+      "Inspect user edits, reconcile into the structured source and save a new version.",
+      "No automatic Excel–Obsidian–GitHub synchronization."
+    ],
+    [
+      "RV-Q-008",
+      "Q2 evidence veracity",
+      "Deferred",
+      "When should evidence truth and authenticity become an active research question?",
+      "RV-TR-001; RV-A-001 page 1",
+      "Revisit only after the Q1 decision gate, not as an implicit extension.",
+      "The observer is not independently authenticated or host-tamper-proof."
+    ],
+    [
+      "RV-Q-009",
+      "Q3 oversight scaling",
+      "Deferred",
+      "When should scaling of human oversight become an active research question?",
+      "RV-TR-001; RV-A-001 page 1",
+      "Revisit only after the preceding questions and an explicit study design.",
+      "No human-benefit or oversight-scaling outcome measured."
+    ]
+  ],
+  "sourceHeaders": [
+    "Source ID",
+    "Title",
+    "Pinned version",
+    "Primary URL",
+    "Relevance / decision",
+    "Reading status"
+  ],
+  "sourceRows": [
+    [
+      "RV-S-001",
+      "Authorization Revocation for Long-Running AI Agents",
+      "arXiv:2609.21284v1",
+      "https://arxiv.org/html/2609.21284v1",
+      "Prior work on root-scoped quiescence, cancellation, cuts, sink fencing and restart. Replication is not a new mechanism.",
+      "Full-text sections 3 and 6–8 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-002",
+      "DelegateGuard",
+      "arXiv:2610.16005v1",
+      "https://arxiv.org/html/2610.16005v1",
+      "Prior work on external mediation, attenuated capabilities and cascading revocation, including adaptive evaluation. Adaptivity alone is not a contribution.",
+      "Full-text sections 2–6 and limits recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-003",
+      "Stop Means Stop",
+      "arXiv:2607.14166v3",
+      "https://arxiv.org/pdf/2607.14166v3",
+      "Closest empirical overlap: model-free framework probes, live-model reachability and an external effect gate.",
+      "Full-text sections 2–5 and 6.4 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-004",
+      "Auditable Agents",
+      "arXiv:2604.05485v4",
+      "https://arxiv.org/html/2604.05485v4",
+      "Separates execution evidence from accountability claims. This study defers evidence veracity and human accountability.",
+      "Full-text sections 2, 4 and 7 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-005",
+      "Recursive Language Models",
+      "arXiv:2512.24601v3",
+      "https://arxiv.org/html/2512.24601v3",
+      "Inference-time scaffolding context; recursion does not itself establish self-improvement. Not a measured system in this study.",
+      "Introduction and section 2 recorded in RV-A-001. Carried forward; not re-reviewed for this package."
+    ],
+    [
+      "RV-S-006",
+      "Stop Means Stop source artifact",
+      "Commit 4bcb42cb52aa46be5714af5d28c516caa5e13e39",
+      "https://github.com/sajjadanwar0/soundgate-paper/tree/4bcb42cb52aa46be5714af5d28c516caa5e13e39",
+      "Gate 0 conditional fit for admission only. Gate release precedes callback; native/mediated paths unmatched. No upstream defect or drop-in final-commit fit established.",
+      "Read-only inspection of langgraph_probes.py, e2e_langgraph.py and README recorded in RV-A-001. Not executed; snapshot postdates paper."
+    ]
+  ],
+  "qualificationV02": "Completed within stated scope",
+  "sourceLinks": [
+    "https://arxiv.org/html/2609.21284v1",
+    "https://arxiv.org/html/2610.16005v1",
+    "https://arxiv.org/pdf/2607.14166v3",
+    "https://arxiv.org/html/2604.05485v4",
+    "https://arxiv.org/html/2512.24601v3",
+    "https://github.com/sajjadanwar0/soundgate-paper/tree/4bcb42cb52aa46be5714af5d28c516caa5e13e39"
+  ]
+}
