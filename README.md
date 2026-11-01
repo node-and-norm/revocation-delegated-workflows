@@ -17,7 +17,9 @@ Three v0.2 causal-treatment checker defects were found after initial apparent pa
 
 ## Next design step
 
-[Design decision, 2026-10-31](docs/decisions/2026-10-31-checkpointed-workflow-candidate.md): assess a checkpointed LangGraph workflow to ask whether resumed or retried delegated work can create a new protected effect after durable authority revocation.  This is a candidate direction; a specific workflow and protocol remain to be selected, and no framework-based experiment has run.  The note records source rationale, comparison requirements, deferred alternatives and the distinction between an authorized intent and an external effect.  Historical qualification and traceability artifacts remain unchanged.
+[Workflow selection and contribution gate, 2026-11-01](docs/decisions/2026-11-01-workflow-selection-and-contribution-gate.md): **recommendation to hold on freezing a novel-study protocol**.  The official LangChain personal-assistant email branch is a source-qualified candidate for a LangGraph adaptation, not a tested deployment or qualified runtime.  The researcher’s choice between a bounded conformance milestone and further search for a distinct question remains pending.  No framework-based experiment has run; the dependency lock, runtime and contribution gates remain open.
+
+The [October 31 candidate note](docs/decisions/2026-10-31-checkpointed-workflow-candidate.md) remains preserved.  Historical qualification and traceability artifacts are unchanged.
 
 ## Read and navigate
 
