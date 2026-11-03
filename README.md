@@ -16,6 +16,10 @@ The eight-run matrix compares direct reference and framework restart under match
 
 See the [bounded pilot decision](docs/decisions/2026-11-03-bounded-integration-pilot.md) and [pilot protocol](integration/v0.3/PROTOCOL.md).  This is integration conformance, not a novel protocol or an AGI-readiness finding.  The [November 1 selection note](docs/decisions/2026-11-01-workflow-selection-and-contribution-gate.md) and [October 31 candidate note](docs/decisions/2026-10-31-checkpointed-workflow-candidate.md) remain unchanged as historical records.
 
+## Request-to-fence interface study
+
+The [request-to-fence interface study](docs/decisions/2026-11-03-request-to-fence-interface-study.md) is complete across 12 fixed cases: six effects and six revoked denials, with no post-fence effects. It separates request acceptance, fence installation and caller-visible completion across direct and native checkpoint/resume paths. The [measured summary](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json), [post-run AI-assisted audit](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md) and [complete archive](archives/withdrawal_interface_study_v01_20261103.zip) preserve the evidence. This bounded local study uses scripted responses and trusted instrumentation. It establishes no production failure, reliability estimate or new general control principle.
+
 ## Retrospective evidence review: design and artifact qualification
 
 The [retrospective packet qualification record](docs/decisions/2026-11-03-retrospective-packet-qualification.md) preserves a frozen specification, eight derivative packets, extraction code and correction reports from two historical pilot cases. Artifact qualification is complete; reviewer evaluation remains unperformed. This complementary package preserves the execution-grounded study's original records. The complete archive is for administrators and contains answers; blinded reviewers must receive only an individually assigned packet.
@@ -45,7 +49,8 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Measured pilot summary and separate AI-assisted review | [Summary](integration/v0.3/evidence/measured01_summary.json), [review](integration/v0.3/evidence/reviewer_final.json) |
 | Full v0.3 source and evidence package | [Pilot archive](archives/revocation_integration_pilot_v03_20261103.zip) |
 | Current pilot decision and evidence boundary | [Decision, 2026-11-03](docs/decisions/2026-11-03-bounded-integration-pilot.md) |
-| Latest committed traceability snapshot: operating-stack formatting correction | [Workbook v0.4](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.4.xlsx) |
+| Latest traceability snapshot: request-to-fence study, corrections and AI disclosure | [Workbook v0.5](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.5.xlsx) |
+| Historical traceability snapshot: operating-stack formatting correction | [Workbook v0.4](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.4.xlsx) |
 | Historical v0.3 AI-use, research decisions and AI Disclosure Guidance | [Workbook v0.3](docs/traceability/v0.3/Revocation_AI_Use_and_Research_Decision_Traceability_v0.3.xlsx), [version notes](docs/traceability/v0.3/README.md) |
 | Historical v0.2 AI-use and research-decision records | [Workbook v0.2](docs/traceability/v0.2/Revocation_AI_Use_and_Research_Decision_Traceability_v0.2.xlsx), [JSON and tables](docs/traceability/v0.2/) |
 | Historical portable research notebook snapshot | [Notebook v0.2](notebook/v0.2/Revocation_Research_Notebook_v0.2.zip) |
