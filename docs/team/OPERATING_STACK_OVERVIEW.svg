@@ -36,7 +36,7 @@
 <rect x="40" y="575" width="735" height="130" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
 <text x="62" y="608" font-size="19" fill="#243349" font-weight="bold">04  EVIDENCE AND ARTIFACTS</text>
 <text x="62" y="637" font-size="16" fill="#243349" font-weight="normal">Private repository: protocols, code, raw archives and review records</text>
-<text x="62" y="662" font-size="16" fill="#243349" font-weight="normal">Workbook v0.3: decisions and AI Disclosure Guidance</text>
+<text x="62" y="662" font-size="16" fill="#243349" font-weight="normal">Workbook v0.8: decisions and AI Disclosure Guidance</text>
 <text x="62" y="687" font-size="16" fill="#243349" font-weight="normal">Historical notebook snapshots: version labels preserved</text>
 <rect x="815" y="595" width="345" height="110" rx="12" fill="white" stroke="#9a6b1b" stroke-width="2" stroke-dasharray="7 5"/>
 <text x="837" y="628" font-size="19" fill="#243349" font-weight="bold">FUTURE INFRASTRUCTURE</text>
@@ -46,7 +46,7 @@
 <rect x="40" y="750" width="1120" height="115" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
 <text x="62" y="783" font-size="19" fill="#243349" font-weight="bold">BOUNDED REVOCATION INSTRUMENT</text>
 <text x="62" y="812" font-size="16" fill="#243349" font-weight="normal">Implemented and executed: scripted framework workflow, trusted local gateway and ordered effect ledger.</text>
-<text x="62" y="837" font-size="16" fill="#243349" font-weight="normal">Eight fixed cases and 18 pilot instrument tests. The local effect check covers the declared study setup.</text>
+<text x="62" y="837" font-size="16" fill="#243349" font-weight="normal">v0.3 pilot: eight cases and 18 instrument tests. Later request-to-fence work has its own records.</text>
 <text x="62" y="862" font-size="16" fill="#243349" font-weight="normal">Team-wide technical permission enforcement, autonomous orchestration and broader reliability remain open.</text>
 <text x="40" y="902" font-size="16" fill="#243349" font-weight="normal">Solid boxes: recorded work / existing artifacts     Dashed boxes: proposed capacity</text>
 <text x="40" y="928" font-size="15" fill="#243349" font-weight="normal">Arrows describe the working arrangement. They do not establish automated routing or enforcement.</text>

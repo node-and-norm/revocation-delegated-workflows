@@ -1,6 +1,6 @@
 # Node & Norm: Technical Spec of the Research Operating Stack
 
-Version 0.2 · 3 November 2026 · Draft for Mark Julius Banasihan's review
+Version 0.3 · 3 November 2026 · Draft for Mark Julius Banasihan's review
 
 **Contents:** [System overview](#system-overview) · [Human layer](#human-layer-research-lead-and-specialist-bench) · [Agent layer](#agent-layer-capabilities-and-permissions) · [Data](#data-sources-and-maintained-artifacts) · [Workflows](#core-workflows) · [Controls](#control-model-and-observed-failure-modes) · [Operator modes](#operator-modes) · [Performance](#reported-performance) · [Implementation](#reference-implementation-current-components-and-proposed-extensions) · [AI disclosure](#ai-disclosure-and-research-integrity) · [Open questions](#undisclosed-elements-and-open-questions) · [Sources](#sources)
 
@@ -92,13 +92,15 @@ Each workflow begins with a bounded question, named inputs, a permitted action a
 
 ### W2. Evidence package review
 
-**Status: design-only extension for the current study.**
+**Status: packet preparation and artifact qualification complete; reviewer evaluation remains proposed and unperformed.**
 
-1. Define the review question and scoring rubric before packet construction.
-2. A custodian would prepare packets from preserved records, remove revealing labels and retain the case map separately.
+The [qualification record](../decisions/2026-11-03-retrospective-packet-qualification.md) preserves the frozen specification, eight derivative packets, extraction code and corrections from two historical pilot cases. The complete administrator archive contains answer material; each blinded reviewer would receive only an assigned packet. Repository access itself provides no file-level separation.
+
+1. The preserved specification defines the review question and scoring rubric before packet construction.
+2. Packet preparation and qualification checked source fidelity, neutral labels and case-map handling. Future administration must maintain separation between reviewer packets and administrator materials.
 3. Reviewers would assess the resumed attempt, earlier effects, ordering, provenance and missing evidence.
 4. Scoring would assess both agreement with the ledger and what the supplied packet justified. A lucky unsupported guess receives no evidence-quality credit.
-5. Record ambiguity, abstention, leakage checks and corrections. Packet construction and evaluation await their applicable approval.
+5. Qualification records retain leakage checks and corrections. Reviewer administration and evaluation require their applicable approval; no reviewer-performance result exists.
 
 ### W3. Decision propagation
 
@@ -138,7 +140,7 @@ Each workflow begins with a bounded question, named inputs, a permitted action a
 | Local effect-boundary authority check | Implemented and executed in the bounded pilot | A new protected local effect after the declared withdrawal boundary | Trusted gateway, one host, scripted workers and limited schedules |
 | Separate AI-assisted review | Recorded | Instrument errors and unsupported interpretations | Shared models and assumptions can limit independence |
 | Fixed transcript and binding checks | Implemented in the pilot checker | Wrong denial cause or inconsistent event bindings | Complete-transcript checker needs redesign for limited-evidence review |
-| Evidence-entitlement rubric | Proposed | Confident conclusions from insufficient review packets | No reviewer-performance result exists yet |
+| Evidence-entitlement rubric | Documented in the qualified packet specification | Confident conclusions from insufficient review packets | No reviewer-performance result exists yet |
 | Source-linked claim ledger | Proposed common template | Silent assumptions and untraceable extracted figures | Coverage and review quality need evaluation |
 | Human release decision | Required by current working arrangement | Unapproved public claims or disclosure | Technical enforcement requires a separate runtime design |
 
@@ -165,8 +167,11 @@ A change from reading or design to execution, external sharing or persistent acc
 | --- | --- | --- |
 | v0.3 declared cases | Eight fixed cases matched expected results | Bounded integration conformance |
 | v0.3 instrument tests | 18 passed in the recorded qualification | Engineering checks of this instrument |
-| Revoked attempts | Four denied; no post-fence effects recorded | Applies to the declared test configuration and observations |
-| Live controls | Four produced their expected new-effect or duplicate disposition | Supports the matched authorized paths |
+| v0.3 revoked attempts | Four denied; no post-fence effects recorded | Applies to the declared test configuration and observations |
+| v0.3 live controls | Four produced their expected new-effect or duplicate disposition | Supports the matched authorized paths |
+| Request-to-fence collection | 12 fixed cases: six effects and six revoked denials; no post-fence effects recorded | [Separate bounded interface study](../decisions/2026-11-03-request-to-fence-interface-study.md); counts remain separate from v0.3 |
+| Same-host reproduction | 12 fresh cases matched the unchanged frozen checker | [Fresh virtual environment on the same host](../review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md); same instrument, no independent implementation |
+| Protocol-first artifact audit | 12 saved cases passed; 20 artifact mutants rejected | [Separately authored AI-assisted checker](../review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md); no new collection or human validation |
 | Team throughput, cost and review time | Unmeasured | No productivity gain or staffing multiplier established |
 | Reviewer reconstruction and abstention | Proposed measures | Requires a fixed rubric and authorized evaluation |
 | Jev calibration and incremental benefit | Unestablished for this study | Requires a task-specific comparison |
@@ -184,7 +189,7 @@ The reference below separates existing study components from proposed team infra
 | Compute | Reproduce declared bounded cases | [Pilot package](../../archives/revocation_integration_pilot_v03_20261103.zip) and [setup instructions](../../integration/v0.3/README.md) | Executed synthetic configuration; scripted model responses |
 | Effect control | Check current authority at protected commit | Trusted local gateway with shared SQLite ordering | Tested under declared assumptions; one authority root and parent–child edge |
 | Assignment routing | Give each role scope, inputs and a handoff | Coordinator-led assignments and [workflow](WORKFLOW.md) | Recorded manual coordination; automated routing proposed |
-| Research continuity | Preserve decisions and AI contributions | Workbook v0.3 and versioned notebook snapshots | Existing records; explicit synchronization needed |
+| Research continuity | Preserve decisions and AI contributions | [Workbook v0.8](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx) and historical notebook snapshots | Existing records; explicit synchronization needed |
 | Semantic triage | Assess support, conflict or missing evidence | Proposed TypeSafe AI Jev comparison | No new study integration or evaluation established |
 | Multi-study catalog | Link reusable sources without erasing context | Proposed study/source/claim/decision IDs and connection register | Schema, rights and update process await review |
 | Persistent runtime | Schedule, isolate, stop and recover bounded work | Hosting, identity, credentials and scheduler undecided | Proposed; implementation requires separate authorization |
@@ -194,7 +199,7 @@ The reference below separates existing study components from proposed team infra
 The current repository supplies a foundation for a reusable operating system for research.  Further implementation should proceed through explicit decisions:
 
 1. Stabilize the charter, handoff format, claim ledger and decision register.
-2. Prepare the reconstruction packet specification and scoring rubric while preserving raw evidence.
+2. Use the completed reconstruction packet specification and qualification record as the starting point for an evaluation decision, preserving raw evidence.
 3. Review the protocol, baseline, leakage risks and permission requirements.
 4. Conduct a bounded evaluation only after approval, recording failures and corrections.
 5. Evaluate shared catalog and cross-study synthesis needs using verified source inventories and rights.
@@ -210,7 +215,7 @@ Earlier TAE × Jev work includes live calls and remains relevant experience.  It
 
 ## AI disclosure and research integrity
 
-The [workbook v0.3](../traceability/v0.3/Revocation_AI_Use_and_Research_Decision_Traceability_v0.3.xlsx) includes **AI Disclosure Guidance**, the original publisher-policy references, their recorded access dates and qualifications. Those references are a retained guidance snapshot. This revision performs no fresh policy verification. The applicable publisher, conference, funder or institutional requirements must be checked against current official sources before submission.
+The [workbook v0.8](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx) includes **AI Disclosure Guidance**, the original publisher-policy references, their recorded access dates and qualifications. Those references are a retained guidance snapshot. This revision performs no fresh policy verification. The applicable publisher, conference, funder or institutional requirements must be checked against current official sources before submission.
 
 | Disclosure element | Research record to preserve | Review action before release |
 | --- | --- | --- |
@@ -224,7 +229,7 @@ The [workbook v0.3](../traceability/v0.3/Revocation_AI_Use_and_Research_Decision
 
 Publisher policies, voluntary standards, organizational practice and legal obligations have distinct scopes. The workbook does not establish a universal industry standard or certify compliance. AI-assisted review is disclosed separately from independent human review. Constrained output formats and completed checklists leave factual verification as a separate responsibility.
 
-**Synchronization:** workbook v0.3 is the committed snapshot for the earlier November 3 team and operating-stack decisions. The v0.2 JSON, tables and notebook retain their historical capture state. This specification revision adds presentation and disclosure detail; the workbook has not been rewritten to imply it already records this later revision. The next traceability update should capture the formatting correction, sources used and checks performed.
+**Synchronization:** workbook v0.8 is the current committed traceability snapshot. It records packet qualification, the request-to-fence collection, local reproduction, protocol-first audit and prior-art comparison, alongside earlier team and disclosure decisions. The v0.2 JSON, tables and notebook retain their historical capture state. This presentation revision updates status and navigation only. It leaves workbook v0.8 unchanged and does not imply that snapshot already records this later correction.
 
 The coordinator should reconcile material decisions across the repository, workbook and notebook, retaining exact versions and synchronization status. Record AI assistance, source evidence, human decisions, review performed and corrections for each material assignment.
 
@@ -255,6 +260,8 @@ Use the [long-term decision record](CHARTER.md#long-term-roles-and-decision-reco
 - [Current pilot protocol](../../integration/v0.3/PROTOCOL.md), [results](../../integration/v0.3/RESULTS.json), [separate AI-assisted review](../../integration/v0.3/evidence/reviewer_final.json), and [full evidence archive](../../archives/revocation_integration_pilot_v03_20261103.zip): Node & Norm's recorded implementation and execution evidence.
 - [Pilot decision](../decisions/2026-11-03-bounded-integration-pilot.md), [team charter](CHARTER.md), and [assignment workflow](WORKFLOW.md): scope, responsibilities and proposed next work.
 
-Revision 0.2 aligns the section structure and tables with the supplied reference, adds the system diagram and operator modes, expands the reference implementation, and links the committed disclosure workbook. AI assisted this revision and its artifact checks. Mark Julius Banasihan's review remains pending.
+Revision 0.3 corrects current packet status, surfaces the separate request-to-fence collection and review records, and updates navigation to workbook v0.8. Historical study artifacts remain unchanged.
+
+Revision 0.2 aligned the section structure and tables with the supplied reference, added the system diagram and operator modes, expanded the reference implementation, and linked the then-current disclosure workbook. AI assisted both revisions and their artifact checks. Mark Julius Banasihan's review remains pending.
 
 This adaptation adds documentation only.  Existing experimental artifacts, implementation status, permissions and release limits remain in force.
