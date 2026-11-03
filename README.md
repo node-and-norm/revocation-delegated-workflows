@@ -20,6 +20,8 @@ See the [bounded pilot decision](docs/decisions/2026-11-03-bounded-integration-p
 
 The [request-to-fence interface study](docs/decisions/2026-11-03-request-to-fence-interface-study.md) is complete across 12 fixed cases: six effects and six revoked denials, with no post-fence effects. It separates request acceptance, fence installation and caller-visible completion across direct and native checkpoint/resume paths. The [measured summary](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json), [post-run AI-assisted audit](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md) and [complete archive](archives/withdrawal_interface_study_v01_20261103.zip) preserve the evidence. This bounded local study uses scripted responses and trusted instrumentation. It establishes no production failure, reliability estimate or new general control principle.
 
+A [prior-art and future interface comparison note](docs/decisions/2026-11-03-prior-art-and-future-interface-comparison.md) records the overlap with existing research and Temporal cancellation contracts. Further integration remains proposed.
+
 ## Retrospective evidence review: design and artifact qualification
 
 The [retrospective packet qualification record](docs/decisions/2026-11-03-retrospective-packet-qualification.md) preserves a frozen specification, eight derivative packets, extraction code and correction reports from two historical pilot cases. Artifact qualification is complete; reviewer evaluation remains unperformed. This complementary package preserves the execution-grounded study's original records. The complete archive is for administrators and contains answers; blinded reviewers must receive only an individually assigned packet.
