@@ -1,0 +1,234 @@
+{
+  "status": "measured collection complete; independent post-run audit passed",
+  "created_utc": "2026-11-03T19:15:52.849007+00:00",
+  "fixed_cases": 12,
+  "checker_passes": 12,
+  "rows": [
+    {
+      "path": "direct",
+      "schedule": "S0",
+      "caller_state": "IDLE",
+      "attempt_result": {
+        "effect_key": "summary:task1",
+        "epoch": 7,
+        "outcome": "effect",
+        "payload": "inert summary",
+        "root": "rootR"
+      },
+      "effect_count": 1,
+      "fence_seq": null,
+      "effect_sequences": [
+        7
+      ],
+      "post_fence_effect_count": 0,
+      "worker_pids": []
+    },
+    {
+      "path": "direct",
+      "schedule": "S1",
+      "caller_state": "INSTALLED_CONFIRMED",
+      "attempt_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "effect_count": 0,
+      "fence_seq": 7,
+      "effect_sequences": [],
+      "post_fence_effect_count": 0,
+      "worker_pids": []
+    },
+    {
+      "path": "direct",
+      "schedule": "S2",
+      "caller_state": "INSTALLED_CONFIRMED",
+      "attempt_result": {
+        "effect_key": "summary:task1",
+        "epoch": 7,
+        "outcome": "effect",
+        "payload": "inert summary",
+        "root": "rootR"
+      },
+      "effect_count": 1,
+      "fence_seq": 9,
+      "effect_sequences": [
+        7
+      ],
+      "post_fence_effect_count": 0,
+      "worker_pids": []
+    },
+    {
+      "path": "direct",
+      "schedule": "S3",
+      "caller_state": "INSTALLED_CONFIRMED",
+      "attempt_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "effect_count": 0,
+      "fence_seq": 7,
+      "effect_sequences": [],
+      "post_fence_effect_count": 0,
+      "worker_pids": []
+    },
+    {
+      "path": "direct",
+      "schedule": "S4",
+      "caller_state": "UNCONFIRMED_AT_OBSERVATION_END",
+      "attempt_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "effect_count": 0,
+      "fence_seq": 7,
+      "effect_sequences": [],
+      "post_fence_effect_count": 0,
+      "worker_pids": []
+    },
+    {
+      "path": "direct",
+      "schedule": "S5",
+      "caller_state": "UNCONFIRMED_AT_OBSERVATION_END",
+      "attempt_result": {
+        "effect_key": "summary:task1",
+        "epoch": 7,
+        "outcome": "effect",
+        "payload": "inert summary",
+        "root": "rootR"
+      },
+      "effect_count": 1,
+      "fence_seq": null,
+      "effect_sequences": [
+        7
+      ],
+      "post_fence_effect_count": 0,
+      "worker_pids": []
+    },
+    {
+      "path": "framework",
+      "schedule": "S0",
+      "caller_state": "IDLE",
+      "attempt_result": {
+        "outcome": "effect",
+        "effect_key": "summary:task1",
+        "payload": "inert summary",
+        "root": "rootR",
+        "epoch": 7
+      },
+      "effect_count": 1,
+      "fence_seq": null,
+      "effect_sequences": [
+        7
+      ],
+      "post_fence_effect_count": 0,
+      "worker_pids": [
+        17,
+        29
+      ]
+    },
+    {
+      "path": "framework",
+      "schedule": "S1",
+      "caller_state": "INSTALLED_CONFIRMED",
+      "attempt_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "effect_count": 0,
+      "fence_seq": 7,
+      "effect_sequences": [],
+      "post_fence_effect_count": 0,
+      "worker_pids": [
+        42,
+        55
+      ]
+    },
+    {
+      "path": "framework",
+      "schedule": "S2",
+      "caller_state": "INSTALLED_CONFIRMED",
+      "attempt_result": {
+        "outcome": "effect",
+        "effect_key": "summary:task1",
+        "payload": "inert summary",
+        "root": "rootR",
+        "epoch": 7
+      },
+      "effect_count": 1,
+      "fence_seq": 9,
+      "effect_sequences": [
+        7
+      ],
+      "post_fence_effect_count": 0,
+      "worker_pids": [
+        67,
+        78
+      ]
+    },
+    {
+      "path": "framework",
+      "schedule": "S3",
+      "caller_state": "INSTALLED_CONFIRMED",
+      "attempt_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "effect_count": 0,
+      "fence_seq": 7,
+      "effect_sequences": [],
+      "post_fence_effect_count": 0,
+      "worker_pids": [
+        90,
+        102
+      ]
+    },
+    {
+      "path": "framework",
+      "schedule": "S4",
+      "caller_state": "UNCONFIRMED_AT_OBSERVATION_END",
+      "attempt_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "effect_count": 0,
+      "fence_seq": 7,
+      "effect_sequences": [],
+      "post_fence_effect_count": 0,
+      "worker_pids": [
+        114,
+        125
+      ]
+    },
+    {
+      "path": "framework",
+      "schedule": "S5",
+      "caller_state": "UNCONFIRMED_AT_OBSERVATION_END",
+      "attempt_result": {
+        "outcome": "effect",
+        "effect_key": "summary:task1",
+        "payload": "inert summary",
+        "root": "rootR",
+        "epoch": 7
+      },
+      "effect_count": 1,
+      "fence_seq": null,
+      "effect_sequences": [
+        7
+      ],
+      "post_fence_effect_count": 0,
+      "worker_pids": [
+        136,
+        147
+      ]
+    }
+  ],
+  "limits": [
+    "scripted model responses",
+    "trusted single local sink",
+    "one root and one edge",
+    "one outstanding withdrawal",
+    "relay withholding is deliberate",
+    "no crash recovery or distributed closure",
+    "no statistical reliability or novelty claim"
+  ],
+  "independent_audit": "INDEPENDENT_POSTRUN_REVIEW.md"
+}
