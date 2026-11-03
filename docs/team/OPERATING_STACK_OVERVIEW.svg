@@ -36,7 +36,7 @@
 <rect x="40" y="575" width="735" height="130" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
 <text x="62" y="608" font-size="19" fill="#243349" font-weight="bold">04  EVIDENCE AND ARTIFACTS</text>
 <text x="62" y="637" font-size="16" fill="#243349" font-weight="normal">Private repository: protocols, code, raw archives and review records</text>
-<text x="62" y="662" font-size="16" fill="#243349" font-weight="normal">Workbook v0.8: decisions and AI Disclosure Guidance</text>
+<text x="62" y="662" font-size="16" fill="#243349" font-weight="normal">Workbook v0.9: decisions and AI Disclosure Guidance</text>
 <text x="62" y="687" font-size="16" fill="#243349" font-weight="normal">Historical notebook snapshots: version labels preserved</text>
 <rect x="815" y="595" width="345" height="110" rx="12" fill="white" stroke="#9a6b1b" stroke-width="2" stroke-dasharray="7 5"/>
 <text x="837" y="628" font-size="19" fill="#243349" font-weight="bold">FUTURE INFRASTRUCTURE</text>

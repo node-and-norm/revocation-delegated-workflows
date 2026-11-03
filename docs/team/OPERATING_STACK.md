@@ -189,7 +189,7 @@ The reference below separates existing study components from proposed team infra
 | Compute | Reproduce declared bounded cases | [Pilot package](../../archives/revocation_integration_pilot_v03_20261103.zip) and [setup instructions](../../integration/v0.3/README.md) | Executed synthetic configuration; scripted model responses |
 | Effect control | Check current authority at protected commit | Trusted local gateway with shared SQLite ordering | Tested under declared assumptions; one authority root and parent–child edge |
 | Assignment routing | Give each role scope, inputs and a handoff | Coordinator-led assignments and [workflow](WORKFLOW.md) | Recorded manual coordination; automated routing proposed |
-| Research continuity | Preserve decisions and AI contributions | [Workbook v0.8](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx) and historical notebook snapshots | Existing records; explicit synchronization needed |
+| Research continuity | Preserve decisions and AI contributions | [Workbook v0.9](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.9.xlsx) and historical notebook snapshots | Existing records; explicit synchronization needed |
 | Semantic triage | Assess support, conflict or missing evidence | Proposed TypeSafe AI Jev comparison | No new study integration or evaluation established |
 | Multi-study catalog | Link reusable sources without erasing context | Proposed study/source/claim/decision IDs and connection register | Schema, rights and update process await review |
 | Persistent runtime | Schedule, isolate, stop and recover bounded work | Hosting, identity, credentials and scheduler undecided | Proposed; implementation requires separate authorization |
@@ -215,7 +215,7 @@ Earlier TAE × Jev work includes live calls and remains relevant experience.  It
 
 ## AI disclosure and research integrity
 
-The [workbook v0.8](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx) includes **AI Disclosure Guidance**, the original publisher-policy references, their recorded access dates and qualifications. Those references are a retained guidance snapshot. This revision performs no fresh policy verification. The applicable publisher, conference, funder or institutional requirements must be checked against current official sources before submission.
+The [workbook v0.9](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.9.xlsx) includes **AI Disclosure Guidance**, the original publisher-policy references, their recorded access dates and qualifications. Those references are a retained guidance snapshot. This revision performs no fresh policy verification. The applicable publisher, conference, funder or institutional requirements must be checked against current official sources before submission.
 
 | Disclosure element | Research record to preserve | Review action before release |
 | --- | --- | --- |
@@ -229,7 +229,7 @@ The [workbook v0.8](../traceability/Revocation_AI_Use_and_Research_Decision_Trac
 
 Publisher policies, voluntary standards, organizational practice and legal obligations have distinct scopes. The workbook does not establish a universal industry standard or certify compliance. AI-assisted review is disclosed separately from independent human review. Constrained output formats and completed checklists leave factual verification as a separate responsibility.
 
-**Synchronization:** workbook v0.8 is the current committed traceability snapshot. It records packet qualification, the request-to-fence collection, local reproduction, protocol-first audit and prior-art comparison, alongside earlier team and disclosure decisions. The v0.2 JSON, tables and notebook retain their historical capture state. This presentation revision updates status and navigation only. It leaves workbook v0.8 unchanged and does not imply that snapshot already records this later correction.
+**Synchronization:** workbook v0.9 is the current committed traceability snapshot. It includes the presentation corrections and proposed Temporal design alongside earlier packet qualification, execution, reproduction and audit records. Earlier workbooks and the v0.2 JSON, tables and notebook retain their historical capture state. This navigation synchronization changes no study result or execution status.
 
 The coordinator should reconcile material decisions across the repository, workbook and notebook, retaining exact versions and synchronization status. Record AI assistance, source evidence, human decisions, review performed and corrections for each material assignment.
 
