@@ -49,7 +49,8 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Measured pilot summary and separate AI-assisted review | [Summary](integration/v0.3/evidence/measured01_summary.json), [review](integration/v0.3/evidence/reviewer_final.json) |
 | Full v0.3 source and evidence package | [Pilot archive](archives/revocation_integration_pilot_v03_20261103.zip) |
 | Current pilot decision and evidence boundary | [Decision, 2026-11-03](docs/decisions/2026-11-03-bounded-integration-pilot.md) |
-| Latest traceability snapshot: local reproduction and AI disclosure | [Workbook v0.6](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.6.xlsx) |
+| Latest traceability snapshot: protocol-first artifact audit and AI disclosure | [Workbook v0.7](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.7.xlsx) |
+| Historical traceability snapshot: local reproduction and AI disclosure | [Workbook v0.6](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.6.xlsx) |
 | Historical traceability snapshot: request-to-fence study, corrections and AI disclosure | [Workbook v0.5](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.5.xlsx) |
 | Historical traceability snapshot: operating-stack formatting correction | [Workbook v0.4](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.4.xlsx) |
 | Historical v0.3 AI-use, research decisions and AI Disclosure Guidance | [Workbook v0.3](docs/traceability/v0.3/Revocation_AI_Use_and_Research_Decision_Traceability_v0.3.xlsx), [version notes](docs/traceability/v0.3/README.md) |
