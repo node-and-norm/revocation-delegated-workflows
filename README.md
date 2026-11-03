@@ -6,6 +6,14 @@ Private Node & Norm research record for `node-and-norm/revocation-delegated-work
 
 **Q1 only:** when authority is withdrawn, does the tested delegated workflow prevent a new protected effect from committing after the revocation fence? Evidence veracity (Q2) and oversight scaling (Q3) remain deferred.
 
+## Start here
+
+The latest execution-grounded result is a 12-case request-to-fence study: six effects and six revoked denials, with no post-fence effects in the fixed schedules. Scripted workers and a trusted local sink bound the result. The local reproduction uses the same instrument; the separate artifact audit adds AI-assisted checking. No population reliability estimate, production readiness or independent human validation is established.
+
+- [Result and evidence boundaries](docs/decisions/2026-11-03-request-to-fence-interface-study.md)
+- [Local reproduction report and environment limits](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md)
+- [Current research traceability and AI Disclosure Guidance](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx)
+
 ## Current integration pilot
 
 The researcher authorized a bounded synthetic integration-conformance pilot on November 3 UTC (November 2 local evening), resolving the earlier pending choice.  The pilot adapts the official LangChain personal-assistant email branch through actual supervisor/subagent `create_agent`, human-in-the-loop middleware and persistent checkpoint machinery.  Model responses are scripted; no live model, email or calendar service is used.
@@ -19,6 +27,8 @@ See the [bounded pilot decision](docs/decisions/2026-11-03-bounded-integration-p
 ## Request-to-fence interface study
 
 The [request-to-fence interface study](docs/decisions/2026-11-03-request-to-fence-interface-study.md) is complete across 12 fixed cases: six effects and six revoked denials, with no post-fence effects. It separates request acceptance, fence installation and caller-visible completion across direct and native checkpoint/resume paths. The [measured summary](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json), [post-run AI-assisted audit](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md) and [complete archive](archives/withdrawal_interface_study_v01_20261103.zip) preserve the evidence. This bounded local study uses scripted responses and trusted instrumentation. It establishes no production failure, reliability estimate or new general control principle.
+
+The [same-host reproduction](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) preserves a fresh-virtual-environment rerun. The [protocol-first artifact audit](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md) checks saved records with separately authored AI-assisted code. These activities retain their distinct evidence and independence limits.
 
 A [prior-art and future interface comparison note](docs/decisions/2026-11-03-prior-art-and-future-interface-comparison.md) records the overlap with existing research and Temporal cancellation contracts. Further integration remains proposed.
 
@@ -71,9 +81,13 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Provenance and local staging verification | [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json), [STAGING_VERIFICATION.json](STAGING_VERIFICATION.json) |
 | Integrity | [SHA256SUMS](SHA256SUMS) |
 
-Workbook v0.4 adds the operating-stack formatting correction to v0.3's November 3 team and disclosure records. The later retrospective qualification package is documented separately above and awaits the next workbook synchronization. The v0.2 JSON, tables and notebook remain historical snapshots; they have not been synchronized with v0.3. AI Disclosure Guidance retains its recorded source dates and qualifications. The workbook update does not establish fresh policy verification.
+Workbook v0.8 is the current traceability snapshot. It records the retrospective packet qualification, request-to-fence collection, local reproduction, protocol-first artifact audit and prior-art comparison, alongside earlier team and disclosure decisions. Earlier workbook versions and the v0.2 JSON, tables and notebook remain historical snapshots. AI Disclosure Guidance retains its recorded source dates and qualifications; this navigation update performs no fresh policy verification.
 
 The compact repository tree does not duplicate every run or test fixture.  The v0.3 code and selected summaries are included for inspection; the full pilot archive retains the raw databases, qualification fixtures, reference sources and licenses needed for reproduction.  Extract the v0.3 archive before running its tests.  The two historical qualification archives separately retain their complete raw SQLite data, traces, exact source snapshots, logs, original manifests and counterexamples. Relative paths in the unchanged historical README/review refer to those original package/reviewer layouts, not this compact tree. The copied review reports are records, not runnable scripts; full historical review scripts and evidence are inside the v0.2 archive.
+
+## Reproduce the request-to-fence study
+
+Start with the [current reproduction report](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) and [reproduction instructions](docs/review/WITHDRAWAL_INTERFACE_REPRODUCTION_v0.1.md). Extract the [complete study archive](archives/withdrawal_interface_study_v01_20261103.zip), retain its layout and use `frozen_candidate_v02`. The reported local reproduction used an existing external wheelhouse; the ZIP does not contain every dependency. Preserve original files and use new output directories. Earlier pending-state text inside frozen documents remains historical; the measured summary, freeze and reproduction report identify the executed version.
 
 ## Reproduce the v0.3 pilot
 
