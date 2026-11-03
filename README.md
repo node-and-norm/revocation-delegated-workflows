@@ -29,6 +29,8 @@ Three v0.2 causal-treatment checker defects were found after initial apparent pa
 
 ## Research team documents
 
+The [research operating stack](docs/team/OPERATING_STACK.md) maps the current human and AI roles, evidence sources, workflows, controls and results to proposed capabilities and open decisions.
+
 The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment workflow](docs/team/WORKFLOW.md) are draft operating documents for review. They cover the current study and conditional longer-term collaboration across studies. They do not create a persistent agent runtime, expand permissions, or change the recorded experimental results.
 
 ## Read and navigate
