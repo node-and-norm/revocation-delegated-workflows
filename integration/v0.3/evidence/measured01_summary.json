@@ -1,0 +1,62 @@
+{
+  "qualified": true,
+  "complete_matrix": true,
+  "results": [
+    {
+      "name": "direct_prior0_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "effect",
+      "errors": []
+    },
+    {
+      "name": "direct_prior0_revoked1",
+      "qualified": true,
+      "operation_outcome": "no_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    },
+    {
+      "name": "direct_prior1_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "duplicate",
+      "errors": []
+    },
+    {
+      "name": "direct_prior1_revoked1",
+      "qualified": true,
+      "operation_outcome": "pre_fence_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    },
+    {
+      "name": "framework_prior0_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "effect",
+      "errors": []
+    },
+    {
+      "name": "framework_prior0_revoked1",
+      "qualified": true,
+      "operation_outcome": "no_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    },
+    {
+      "name": "framework_prior1_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "duplicate",
+      "errors": []
+    },
+    {
+      "name": "framework_prior1_revoked1",
+      "qualified": true,
+      "operation_outcome": "pre_fence_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "source_hashes_unchanged": true,
+  "cases": [
+    {
+      "name": "direct_prior0_revoked0",
+      "effects": 1,
+      "resumed_result": {
+        "effect_key": "summary:task1",
+        "epoch": 7,
+        "outcome": "effect",
+        "payload": "inert summary",
+        "root": "rootR"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true
+    },
+    {
+      "name": "direct_prior0_revoked1",
+      "effects": 0,
+      "resumed_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true
+    },
+    {
+      "name": "direct_prior1_revoked0",
+      "effects": 1,
+      "resumed_result": {
+        "outcome": "duplicate"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true
+    },
+    {
+      "name": "direct_prior1_revoked1",
+      "effects": 1,
+      "resumed_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true
+    },
+    {
+      "name": "framework_prior0_revoked0",
+      "effects": 1,
+      "resumed_result": {
+        "effect_key": "summary:task1",
+        "epoch": 7,
+        "outcome": "effect",
+        "payload": "inert summary",
+        "root": "rootR"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true,
+      "fresh_worker": true,
+      "persisted_checkpoint_ids_present": true,
+      "checkpoint_rows": 12
+    },
+    {
+      "name": "framework_prior0_revoked1",
+      "effects": 0,
+      "resumed_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true,
+      "fresh_worker": true,
+      "persisted_checkpoint_ids_present": true,
+      "checkpoint_rows": 12
+    },
+    {
+      "name": "framework_prior1_revoked0",
+      "effects": 1,
+      "resumed_result": {
+        "outcome": "duplicate"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true,
+      "fresh_worker": true,
+      "persisted_checkpoint_ids_present": true,
+      "checkpoint_rows": 12
+    },
+    {
+      "name": "framework_prior1_revoked1",
+      "effects": 1,
+      "resumed_result": {
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "post_fence_effects": 0,
+      "sink_matches_record": true,
+      "fresh_worker": true,
+      "persisted_checkpoint_ids_present": true,
+      "checkpoint_rows": 12
+    }
+  ],
+  "qualified": true,
+  "historical_qualification_unchanged": true,
+  "review_kind": "Independent AI-assisted source and artifact review, not human validation",
+  "scope": "Eight fixed runs; no additional measured runs"
+}
