@@ -16,6 +16,10 @@ The eight-run matrix compares direct reference and framework restart under match
 
 See the [bounded pilot decision](docs/decisions/2026-11-03-bounded-integration-pilot.md) and [pilot protocol](integration/v0.3/PROTOCOL.md).  This is integration conformance, not a novel protocol or an AGI-readiness finding.  The [November 1 selection note](docs/decisions/2026-11-01-workflow-selection-and-contribution-gate.md) and [October 31 candidate note](docs/decisions/2026-10-31-checkpointed-workflow-candidate.md) remain unchanged as historical records.
 
+## Retrospective evidence review: design and artifact qualification
+
+The [retrospective packet qualification record](docs/decisions/2026-11-03-retrospective-packet-qualification.md) preserves a frozen specification, eight derivative packets, extraction code and correction reports from two historical pilot cases. Artifact qualification is complete; reviewer evaluation remains unperformed. This complementary package preserves the execution-grounded study's original records. The complete archive is for administrators and contains answers; blinded reviewers must receive only an individually assigned packet.
+
 ## Preserved v0.2 qualification
 
 The preserved v0.2 result is **finite instrument qualification**, not a new research finding or general assurance result. The reviewed v0.2 implementation uses one root, one parent-to-child delegation edge, deterministic workers, a trusted gateway and a separate read-only observer on one host. It compares an intentionally seeded admission-only diagnostic arm with a commit-fenced arm. Revocation and protected effect insertion serialize in the same SQLite transaction domain.
@@ -41,7 +45,8 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Measured pilot summary and separate AI-assisted review | [Summary](integration/v0.3/evidence/measured01_summary.json), [review](integration/v0.3/evidence/reviewer_final.json) |
 | Full v0.3 source and evidence package | [Pilot archive](archives/revocation_integration_pilot_v03_20261103.zip) |
 | Current pilot decision and evidence boundary | [Decision, 2026-11-03](docs/decisions/2026-11-03-bounded-integration-pilot.md) |
-| Current AI-use, research decisions and AI Disclosure Guidance | [Workbook v0.3](docs/traceability/v0.3/Revocation_AI_Use_and_Research_Decision_Traceability_v0.3.xlsx), [version notes](docs/traceability/v0.3/README.md) |
+| Latest committed traceability snapshot: operating-stack formatting correction | [Workbook v0.4](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.4.xlsx) |
+| Historical v0.3 AI-use, research decisions and AI Disclosure Guidance | [Workbook v0.3](docs/traceability/v0.3/Revocation_AI_Use_and_Research_Decision_Traceability_v0.3.xlsx), [version notes](docs/traceability/v0.3/README.md) |
 | Historical v0.2 AI-use and research-decision records | [Workbook v0.2](docs/traceability/v0.2/Revocation_AI_Use_and_Research_Decision_Traceability_v0.2.xlsx), [JSON and tables](docs/traceability/v0.2/) |
 | Historical portable research notebook snapshot | [Notebook v0.2](notebook/v0.2/Revocation_Research_Notebook_v0.2.zip) |
 | Preserved executed v0.2 bounded protocol | [PROTOCOL.md](qualification/v0.2/PROTOCOL.md) |
@@ -56,7 +61,7 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Provenance and local staging verification | [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json), [STAGING_VERIFICATION.json](STAGING_VERIFICATION.json) |
 | Integrity | [SHA256SUMS](SHA256SUMS) |
 
-Workbook v0.3 records the November 3 team, operating-stack and disclosure updates. The v0.2 JSON, tables and notebook remain historical snapshots; they have not been synchronized with v0.3. AI Disclosure Guidance retains its recorded source dates and qualifications. The workbook update does not establish fresh policy verification.
+Workbook v0.4 adds the operating-stack formatting correction to v0.3's November 3 team and disclosure records. The later retrospective qualification package is documented separately above and awaits the next workbook synchronization. The v0.2 JSON, tables and notebook remain historical snapshots; they have not been synchronized with v0.3. AI Disclosure Guidance retains its recorded source dates and qualifications. The workbook update does not establish fresh policy verification.
 
 The compact repository tree does not duplicate every run or test fixture.  The v0.3 code and selected summaries are included for inspection; the full pilot archive retains the raw databases, qualification fixtures, reference sources and licenses needed for reproduction.  Extract the v0.3 archive before running its tests.  The two historical qualification archives separately retain their complete raw SQLite data, traces, exact source snapshots, logs, original manifests and counterexamples. Relative paths in the unchanged historical README/review refer to those original package/reviewer layouts, not this compact tree. The copied review reports are records, not runnable scripts; full historical review scripts and evidence are inside the v0.2 archive.
 
