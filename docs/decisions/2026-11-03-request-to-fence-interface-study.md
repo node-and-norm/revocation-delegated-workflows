@@ -64,3 +64,13 @@ A subsequent execution reproduced all 12 fixed cases in a fresh isolated virtual
 The [local reproduction report](../review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) and [reproduction evidence archive](../../archives/withdrawal_reproduction_evidence_20261103.zip) preserve commands, environment verification, new records and databases. This is a separate execution of the same instrument, with the same trust boundary and checker. It provides no independent implementation, cross-host replication, enlarged statistical sample or production assurance. The wheelhouse lies outside the original study archive.
 
 Reproduction archive SHA-256: `b6e73bc4bffe5b1ff2e56f8d363750ea2d2227f08ce719b83da3fdc2be298035`. The original study archive remains unchanged. Workbook v0.5 predates this reproduction and remains intact. [Workbook v0.6](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.6.xlsx) adds the reproduction record.
+
+## Protocol-first artifact audit
+
+A separately authored AI-assisted checker audited the 12 saved measured cases from the frozen protocol and selected raw JSON/SQLite evidence. Its report records no use of the original implementation or checker. All 660 baseline and 78 supplemental assertions passed. All 20 artifact mutants were rejected: 15 initial controls and five coordinated controls that preserved snapshot consistency while violating the tested semantics. These counts describe engineering checks over the existing collection.
+
+The [audit report](../review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md) and [complete audit package](../../archives/withdrawal_protocol_first_audit_20261103.zip) preserve code, captured outputs, input provenance and selected source records. Extract the package and run the documented audit commands from its parent directory. The package excludes generated Python bytecode; source files and the supplied checksum manifest are unchanged.
+
+The audit ran on the same host and used the same study evidence. It provides a separately implemented artifact checker, with no new collection, human validation or independent implementation of the authority mechanism. It did not inspect checkpoint databases or establish runtime caller access isolation. Agreement among recorded artifacts does not establish recording authenticity. The earlier reproduction and this artifact audit are separate activities.
+
+Archive SHA-256: `20e0b69db2109e862e6d94c1a3697670b760ec62712ae7cee4ddff2fd8dd7a61`. The audit's supplied manifest has 48 verified entries. Original study and reproduction archives remain unchanged. [Workbook v0.7](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.7.xlsx) records this audit; earlier versions remain historical snapshots.
