@@ -1,0 +1,30 @@
+# v0.3 bounded integration conformance protocol
+
+Frozen before measured collection, 2026-11-03. Instrument qualification runs are separate.
+
+Question: does the existing commit-fenced v0.2 local atomic sink contract remain enforced when the official supervisor/subagent HITL path resumes a durable checkpoint in a fresh worker process, while matched authorized work completes? Not a novelty, autonomy, security-defect or remote-service claim.
+
+## Qualification gate
+1. Source-faithful email-only tutorial adaptation: actual create_agent supervisor -> manage_email tool -> create_agent email agent -> HumanInTheLoopMiddleware -> send_email. First use InMemorySaver and a harmless recorder, with no authority integration. Observe interrupt action and resume by interrupt ID, exactly one sink call and final returned tool result.
+2. Same workflow with SqliteSaver only on supervisor. Worker exits after interrupt; new spawned process constructs models/graph afresh and resumes same thread/checkpoint. Model behavior is a pure function of persisted message history, never a mutable cursor. Require same pending interrupt ID and action before resume.
+3. Authority and gateway live outside checkpoint database. The unchanged historical gateway remains alive across worker restarts. No gateway restart claim.
+
+## Fixed schedules and expectations
+Eight measured runs: path {direct reference, framework restart} x history {no prior effect, effect committed before fence} x authority {live, revoked}. No additional schedules unless a protocol amendment is written before new collection. All use unchanged commit_fenced gateway. Diagnostic final-check-disabled arm is omitted.
+
+Every run: parentP delegates parent-0 -> child-1 (owner childC, rootR, epoch 7, scope summary:task1); childC prepares ticket-1 before pause. Trusted controller binds immutable action send_email, to [synthetic@example.invalid], subject Synthetic summary, body inert summary, cc [], operation summary:task1. Model arguments cannot choose identity, token, scope or operation. The local adapter validates the complete argument set before the gateway call. The gateway independently validates principal via dedicated pipe, grant, ticket, scope and payload. Exact binding is recorded.
+
+Framework: initial process pauses at HITL; optional historical effect is committed using the same protected operation; optional revocation commits epoch 8; fresh process resumes explicit approval and reaches gateway. Direct reference substitutes explicit controller scheduling for framework pause/restart, retaining identical adapter, principal, grant, ticket, scope and final policy. Initial historical effect is a reference setup action, not credited as framework execution.
+
+Expected gateway requests per run: one delegate, one prepare, one resumed execute; history adds one prior execute; revoked adds one revoke. With no history: live resumed attempt=effect, operation=one effect; revoked resumed attempt=revoked denial, operation=no effect. With history: live resumed attempt=duplicate, operation=one preexisting effect; revoked resumed attempt=revoked denial (checked before duplicate), operation=one pre-fence effect. No post-fence effect is allowed. Framework must terminate and propagate the exact structured sink outcome to final supervisor output; denial is not represented as successful sending.
+
+## Evidence and independent scoring
+Raw JSON records include worker PIDs/exit codes, initial and restored checkpoint IDs, interrupt IDs/action requests, full serialized message output, model input/output trace, local tool entry/response, binding, gateway PID, ordered gateway receipts/outcomes/effects and authority/grant/ticket tables. SQLite sink rows are authoritative effect evidence, and event sequence is the common commit ordering. Worker messages and late responses are not effect timestamps. Gateway receipt plus matching terminal result is required for attempt classification. Missing receipt, terminal response, checkpoint evidence or mismatched binding is unresolved, never credited as safe denial.
+
+Separate operation classification {no_effect, pre_fence_effect, authorized_effect, post_fence_effect, unresolved} from attempt disposition {effect, revoked, other_denial, duplicate, no_attempt, unresolved}. Liveness requires all paired live cases complete with expected effect/duplicate and no extra effect. Checker uses recorded facts and explicit expected matrix, not orchestrator pass flags. Qualification tests mutate/drop evidence, insert post-fence effects, change grant/binding, remove gateway attempt and corrupt outcome to ensure checks fail. Full failed attempts remain in qualification logs, separate from measured results.
+
+## Stop and limitations
+Stop measured work if actual framework recovery is not executable, restored state cannot be established, or authoritative execution cannot be observed. Preserve errors; do not replace agent machinery with a fake graph. This is a single deterministic synthetic workflow, no live model, external email, calendar, real userdata, credentials, remote writes or spending. Graceful process exit/reconstruction at durable interrupt is worker restart, not arbitrary crash recovery. Gateway must stay alive. No hostile process isolation claim: fixture parent is trusted. Existing v0.2 files and oracle remain byte-identical.
+
+## Pre-collection clarification, 2026-11-03 00:47 UTC
+Reviewer clarification: prior-effect/live is classified authorized_effect with prior=true, because there is no revocation fence. Trusted authority references (principal/grant/ticket/operation) are controller-rebound constants on reconstruction, not restored authority from the checkpoint. Action arguments and pending tool call restore from checkpoint and must match those constants. The checker verifies that exact binding. This is deliberately not a proof that an arbitrary application securely transports a grant. Raw worker results are persisted before assertions, including failures. Sink observer opens SQLite read-only. Negative binding tests cover recipient, body, subject, cc and an extra scope argument.

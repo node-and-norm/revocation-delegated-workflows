@@ -1,0 +1,85 @@
+{
+  "status": "bounded_conformance_pass_independently_reviewed",
+  "utc": "2026-11-03T00:51:16.992043+00:00",
+  "measured_runs": 8,
+  "revoked_attempts_observed": 4,
+  "authorized_controls_completed": 4,
+  "post_fence_effects": 0,
+  "native_framework_runs": 4,
+  "direct_reference_runs": 4,
+  "instrument_tests": 18,
+  "historical_snapshot_preserved": true,
+  "claim": "The existing local atomic commit-fenced sink contract conformed for the fixed eight-case integration pilot. No novelty, autonomy, gateway restart or remote-service conclusion.",
+  "qualification": {
+    "baseline": "native supervisor/subagent HITL in-memory pause/resume",
+    "restart": "fresh spawned worker resumes durable SQLite checkpoint while unchanged gateway stays alive",
+    "binding": "controller-rebound trusted constants checked against restored pending tool arguments"
+  },
+  "results": [
+    {
+      "name": "direct_prior0_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "effect",
+      "errors": []
+    },
+    {
+      "name": "direct_prior0_revoked1",
+      "qualified": true,
+      "operation_outcome": "no_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    },
+    {
+      "name": "direct_prior1_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "duplicate",
+      "errors": []
+    },
+    {
+      "name": "direct_prior1_revoked1",
+      "qualified": true,
+      "operation_outcome": "pre_fence_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    },
+    {
+      "name": "framework_prior0_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "effect",
+      "errors": []
+    },
+    {
+      "name": "framework_prior0_revoked1",
+      "qualified": true,
+      "operation_outcome": "no_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    },
+    {
+      "name": "framework_prior1_revoked0",
+      "qualified": true,
+      "operation_outcome": "authorized_effect",
+      "attempt_disposition": "duplicate",
+      "errors": []
+    },
+    {
+      "name": "framework_prior1_revoked1",
+      "qualified": true,
+      "operation_outcome": "pre_fence_effect",
+      "attempt_disposition": "revoked",
+      "errors": []
+    }
+  ],
+  "AI_use": "AI authored implementation, protocol, checker, test mutations and documentation; separate AI reviewer found/fixed precollection checker gaps and independently checks evidence. No human validation implied.",
+  "corrections": [
+    "Native Interrupt JSON serialization fixed; failed baseline attempt retained.",
+    "Worker error records persisted before assertions; observer opened read-only.",
+    "Malformed delegation scope/admission grant initially false-passed checker; exact transcript/effect checks added.",
+    "Fabricated post-fence mutation fixture updated with missing controller revocation evidence.",
+    "Required checkpoint and interrupt identifiers, exact bindings and request agreement added before collection."
+  ],
+  "independent_review": "evidence/reviewer_final.json"
+}
