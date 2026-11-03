@@ -27,6 +27,10 @@ The preserved v0.2 result is **finite instrument qualification**, not a new rese
 
 Three v0.2 causal-treatment checker defects were found after initial apparent passes and corrected. A no-effect endpoint alone had accepted the wrong denial cause or broken delegation/preparation dependencies. The endpoint and treatment qualification are now separate. Earlier source, failed controls, corrections and counterexamples remain in the frozen archives. Four v0.1 checker blind spots and their regression history are retained there too; earlier runs must not be described as passing later controls.
 
+## Research team documents
+
+The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment workflow](docs/team/WORKFLOW.md) are draft operating documents for review. They cover the current study and conditional longer-term collaboration across studies. They do not create a persistent agent runtime, expand permissions, or change the recorded experimental results.
+
 ## Read and navigate
 
 | Record | Location |
