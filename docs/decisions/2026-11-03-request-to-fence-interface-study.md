@@ -56,3 +56,11 @@ The measured run manifest records commands and environment details after collect
 AI assistance covered design, implementation, checking, review and documentation. Failures and corrections remain available in the archive. [Workbook v0.5](../traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.5.xlsx) records the qualification, corrections, freeze, measured collection and post-run review. Earlier workbook and operating-stack records retain their historical dates. Venue-specific disclosure requirements require checking before any submission. No universal AI-disclosure standard or publication approval is claimed.
 
 The next research decision is whether a narrowly specified extension adds practical information beyond these fixed schedules and existing revocation/recovery work. Additional experiments, human review and public claims require their own documented scope and approval. The current evidence supports the tested interface and its explicit uncertainty states.
+
+## Separate local reproduction
+
+A subsequent execution reproduced all 12 fixed cases in a fresh isolated virtual environment on the same host/runtime, using the unchanged frozen checker and an existing local wheelhouse. The 14 module/failure-preservation tests passed. Deterministic fields matched the original cases; generated process and checkpoint identifiers were checked for correct linkage rather than byte equality. The 40 historical mutation checks were not rerun.
+
+The [local reproduction report](../review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) and [reproduction evidence archive](../../archives/withdrawal_reproduction_evidence_20261103.zip) preserve commands, environment verification, new records and databases. This is a separate execution of the same instrument, with the same trust boundary and checker. It provides no independent implementation, cross-host replication, enlarged statistical sample or production assurance. The wheelhouse lies outside the original study archive.
+
+Reproduction archive SHA-256: `b6e73bc4bffe5b1ff2e56f8d363750ea2d2227f08ce719b83da3fdc2be298035`. The original study archive remains unchanged. Workbook v0.5 predates this reproduction; its historical record remains intact pending the next traceability update.
