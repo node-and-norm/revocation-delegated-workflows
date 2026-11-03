@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="950" viewBox="0 0 1200 950" role="img" aria-labelledby="title desc"><title id="title">Node and Norm research operating model</title><desc id="desc">Four layers link human direction, AI coordination, research roles and preserved evidence. Future specialist capacity and automation are proposed. The bounded revocation instrument is separately implemented and executed.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#52657a" stroke-width="1.5"/></marker></defs><rect width="1200" height="950" fill="#f5f7fa"/><g font-family="DejaVu Sans,Arial,sans-serif">
+<text x="40" y="48" font-size="15" fill="#46718b" font-weight="bold">NODE &amp; NORM</text>
+<text x="40" y="83" font-size="32" fill="#243349" font-weight="bold">Research operating model</text>
+<text x="40" y="113" font-size="17" fill="#243349" font-weight="normal">Recorded coordination • versioned evidence • bounded study execution</text>
+<rect x="40" y="145" width="735" height="105" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
+<text x="62" y="178" font-size="19" fill="#243349" font-weight="bold">01  HUMAN DIRECTION</text>
+<text x="62" y="207" font-size="16" fill="#243349" font-weight="normal">Mark Julius Banasihan: research scope, consequential decisions and release</text>
+<text x="62" y="232" font-size="16" fill="#243349" font-weight="normal">Status: recorded decision ownership</text>
+<rect x="815" y="145" width="345" height="105" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
+<text x="837" y="178" font-size="19" fill="#243349" font-weight="bold">RELEASE BOUNDARY</text>
+<text x="837" y="207" font-size="16" fill="#243349" font-weight="normal">Public sharing requires its</text>
+<text x="837" y="232" font-size="16" fill="#243349" font-weight="normal">specific authorization.</text>
+<path d="M408,250 L408,285" fill="none" stroke="#52657a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="430" y="274" font-size="14" fill="#243349" font-weight="normal">Assignment and review</text>
+<rect x="40" y="285" width="735" height="105" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
+<text x="62" y="318" font-size="19" fill="#243349" font-weight="bold">02  AI COORDINATION</text>
+<text x="62" y="347" font-size="16" fill="#243349" font-weight="normal">Alfred: bounded briefs, source-linked synthesis and decision handoffs</text>
+<text x="62" y="372" font-size="16" fill="#243349" font-weight="normal">Status: recorded practice; persistent runtime remains proposed</text>
+<rect x="815" y="285" width="345" height="105" rx="12" fill="white" stroke="#9a6b1b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="837" y="318" font-size="19" fill="#243349" font-weight="bold">FUTURE SPECIALISTS</text>
+<text x="837" y="347" font-size="16" fill="#243349" font-weight="normal">External human expertise</text>
+<text x="837" y="372" font-size="16" fill="#243349" font-weight="normal">Appointment and scope pending</text>
+<path d="M408,390 L408,425" fill="none" stroke="#52657a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="430" y="414" font-size="14" fill="#243349" font-weight="normal">Roles receive scoped work</text>
+<rect x="40" y="425" width="735" height="105" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
+<text x="62" y="458" font-size="19" fill="#243349" font-weight="bold">03  RESEARCH ROLES</text>
+<text x="62" y="487" font-size="16" fill="#243349" font-weight="normal">Evidence researcher  •  Methods researcher  •  Critical reviewer</text>
+<text x="62" y="512" font-size="16" fill="#243349" font-weight="normal">Status: assignments recorded; review identity and limits retained</text>
+<rect x="815" y="425" width="345" height="130" rx="12" fill="white" stroke="#9a6b1b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="837" y="458" font-size="19" fill="#243349" font-weight="bold">FUTURE AI CAPACITY</text>
+<text x="837" y="487" font-size="16" fill="#243349" font-weight="normal">Data • Test environment</text>
+<text x="837" y="512" font-size="16" fill="#243349" font-weight="normal">Quality • Integrity • Synthesis</text>
+<text x="837" y="537" font-size="16" fill="#243349" font-weight="normal">Jev semantic triage: proposed</text>
+<path d="M408,530 L408,575" fill="none" stroke="#52657a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="430" y="559" font-size="14" fill="#243349" font-weight="normal">Sources, findings and corrections</text>
+<rect x="40" y="575" width="735" height="130" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
+<text x="62" y="608" font-size="19" fill="#243349" font-weight="bold">04  EVIDENCE AND ARTIFACTS</text>
+<text x="62" y="637" font-size="16" fill="#243349" font-weight="normal">Private repository: protocols, code, raw archives and review records</text>
+<text x="62" y="662" font-size="16" fill="#243349" font-weight="normal">Workbook v0.3: decisions and AI Disclosure Guidance</text>
+<text x="62" y="687" font-size="16" fill="#243349" font-weight="normal">Historical notebook snapshots: version labels preserved</text>
+<rect x="815" y="595" width="345" height="110" rx="12" fill="white" stroke="#9a6b1b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="837" y="628" font-size="19" fill="#243349" font-weight="bold">FUTURE INFRASTRUCTURE</text>
+<text x="837" y="657" font-size="16" fill="#243349" font-weight="normal">Shared catalog and scheduler</text>
+<text x="837" y="682" font-size="16" fill="#243349" font-weight="normal">Design and permissions pending</text>
+<path d="M408,705 L408,750" fill="none" stroke="#52657a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="750" width="1120" height="115" rx="12" fill="white" stroke="#29485d" stroke-width="2"/>
+<text x="62" y="783" font-size="19" fill="#243349" font-weight="bold">BOUNDED REVOCATION INSTRUMENT</text>
+<text x="62" y="812" font-size="16" fill="#243349" font-weight="normal">Implemented and executed: scripted framework workflow, trusted local gateway and ordered effect ledger.</text>
+<text x="62" y="837" font-size="16" fill="#243349" font-weight="normal">Eight fixed cases and 18 pilot instrument tests. The local effect check covers the declared study setup.</text>
+<text x="62" y="862" font-size="16" fill="#243349" font-weight="normal">Team-wide technical permission enforcement, autonomous orchestration and broader reliability remain open.</text>
+<text x="40" y="902" font-size="16" fill="#243349" font-weight="normal">Solid boxes: recorded work / existing artifacts     Dashed boxes: proposed capacity</text>
+<text x="40" y="928" font-size="15" fill="#243349" font-weight="normal">Arrows describe the working arrangement. They do not establish automated routing or enforcement.</text>
+</g></svg>
