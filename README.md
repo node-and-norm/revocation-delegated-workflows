@@ -12,7 +12,7 @@ The latest execution-grounded result is a 12-case request-to-fence study: six ef
 
 - [Result and evidence boundaries](docs/decisions/2026-11-03-request-to-fence-interface-study.md)
 - [Local reproduction report and environment limits](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md)
-- [Current research traceability and AI Disclosure Guidance](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx)
+- [Current research traceability and AI Disclosure Guidance](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.9.xlsx)
 
 ## Current integration pilot
 
@@ -30,7 +30,7 @@ The [request-to-fence interface study](docs/decisions/2026-11-03-request-to-fenc
 
 The [same-host reproduction](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) preserves a fresh-virtual-environment rerun. The [protocol-first artifact audit](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md) checks saved records with separately authored AI-assisted code. These activities retain their distinct evidence and independence limits.
 
-A [prior-art and future interface comparison note](docs/decisions/2026-11-03-prior-art-and-future-interface-comparison.md) records the overlap with existing research and Temporal cancellation contracts. Further integration remains proposed.
+A [prior-art and future interface comparison note](docs/decisions/2026-11-03-prior-art-and-future-interface-comparison.md) records the overlap with existing research and Temporal cancellation contracts. Further integration remains proposed. The [reviewed Temporal design package](docs/decisions/2026-11-03-proposed-temporal-interface-design.md) records a six-cell candidate, strong baseline and unresolved qualification gates; no Temporal experiment has run.
 
 ## Retrospective evidence review: design and artifact qualification
 
@@ -61,7 +61,8 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Measured pilot summary and separate AI-assisted review | [Summary](integration/v0.3/evidence/measured01_summary.json), [review](integration/v0.3/evidence/reviewer_final.json) |
 | Full v0.3 source and evidence package | [Pilot archive](archives/revocation_integration_pilot_v03_20261103.zip) |
 | Current pilot decision and evidence boundary | [Decision, 2026-11-03](docs/decisions/2026-11-03-bounded-integration-pilot.md) |
-| Latest traceability snapshot: prior-art comparison and AI disclosure | [Workbook v0.8](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx) |
+| Latest traceability snapshot: presentation corrections and proposed Temporal design | [Workbook v0.9](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.9.xlsx) |
+| Historical traceability snapshot: prior-art comparison and AI disclosure | [Workbook v0.8](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.8.xlsx) |
 | Historical traceability snapshot: protocol-first artifact audit and AI disclosure | [Workbook v0.7](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.7.xlsx) |
 | Historical traceability snapshot: local reproduction and AI disclosure | [Workbook v0.6](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.6.xlsx) |
 | Historical traceability snapshot: request-to-fence study, corrections and AI disclosure | [Workbook v0.5](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.5.xlsx) |
@@ -81,7 +82,7 @@ The [AI-assisted research team charter](docs/team/CHARTER.md) and [assignment wo
 | Provenance and local staging verification | [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json), [STAGING_VERIFICATION.json](STAGING_VERIFICATION.json) |
 | Integrity | [SHA256SUMS](SHA256SUMS) |
 
-Workbook v0.8 is the current traceability snapshot. It records the retrospective packet qualification, request-to-fence collection, local reproduction, protocol-first artifact audit and prior-art comparison, alongside earlier team and disclosure decisions. Earlier workbook versions and the v0.2 JSON, tables and notebook remain historical snapshots. AI Disclosure Guidance retains its recorded source dates and qualifications; this navigation update performs no fresh policy verification.
+Workbook v0.9 is the current traceability snapshot, adding presentation corrections and the proposed Temporal design. It records the retrospective packet qualification, request-to-fence collection, local reproduction, protocol-first artifact audit and prior-art comparison, alongside earlier team and disclosure decisions. Earlier workbook versions and the v0.2 JSON, tables and notebook remain historical snapshots. AI Disclosure Guidance retains its recorded source dates and qualifications; this navigation update performs no fresh policy verification.
 
 The compact repository tree does not duplicate every run or test fixture.  The v0.3 code and selected summaries are included for inspection; the full pilot archive retains the raw databases, qualification fixtures, reference sources and licenses needed for reproduction.  Extract the v0.3 archive before running its tests.  The two historical qualification archives separately retain their complete raw SQLite data, traces, exact source snapshots, logs, original manifests and counterexamples. Relative paths in the unchanged historical README/review refer to those original package/reviewer layouts, not this compact tree. The copied review reports are records, not runnable scripts; full historical review scripts and evidence are inside the v0.2 archive.
 
