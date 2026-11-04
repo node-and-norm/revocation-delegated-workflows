@@ -1,0 +1,29 @@
+{
+  "kind": "documentation_provenance",
+  "date_utc": "2026-11-04",
+  "repository_commit": "5ceceb4b0f30e8c0608b641d71785a6ce2317c8a",
+  "reconciliation_git_blob": "d551cd58ba5309c12b95b102abfd3adb7a5c9ea5",
+  "sources": [
+    {
+      "path": "temporal_checker_spec_20261104/CHECKER_ACCEPTANCE_SPEC.md",
+      "sha256": "4ae65b6ee51ab20d60a53102e1d5b691e8b39a61a71a120eeb58a4b3f148cf6c"
+    },
+    {
+      "path": "temporal_checker_design_20261104/INDEPENDENT_CHECKER_DESIGN.md",
+      "sha256": "bceec7f3f125b64412155958ff66a61097178f5edd0508b2b222f3a47a3fd7b7"
+    },
+    {
+      "path": "temporal_checker_spec_20261104/SOURCE_RECONCILIATION.md",
+      "sha256": "dd04356ef713005e992b15b740ff4f85ba1c87264c184cb6b0bd2c1fce03d81d"
+    },
+    {
+      "path": "temporal_checker_design_20261104/CROSS_REVIEW.md",
+      "sha256": "d33a8628da5c5e253ce66cf154ef288f5f7ae144cdef29bb13a368a6e068f950"
+    },
+    {
+      "path": "temporal_checker_design_20261104/ERRATA_v01.md",
+      "sha256": "3c9cc319f8a437557421c65e177b83f104abbd3acade9043bbe9521a1009a475"
+    }
+  ],
+  "scope": "Documentation only; no candidate modifications, tests or denied-operation retry. Original documents preserved."
+}

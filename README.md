@@ -62,6 +62,8 @@ AI assisted research framing, source analysis, code, tests, artifact review and 
 
 The [stage-one glossary and evidence registry](docs/research-records/v0.1/README.md) separate definitions, claims, evidence status and limits. The [Temporal reconciliation](docs/research-records/v0.1/sources/reconciliation.md) records remaining acceptance gaps. Stable study identifiers and a graph evaluation remain proposed later stages.
 
+The [proposed independent checker design](docs/decisions/2026-11-04-proposed-independent-checker.md) preserves the original specifications, erratum, consolidated account and AI-assisted reviews. It is design-only: native qualification remains blocked, and no new experiment or checker implementation is reported.
+
 ## Earlier stages and detailed research record
 
 The following stage accounts, navigation and reproduction instructions are retained from the verified repository baseline. Their original result counts and qualifications remain separate; they are not pooled into the twelve-case study.
