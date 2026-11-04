@@ -1,18 +1,70 @@
 # Revocation in delegated workflows
 
-Private Node & Norm research record for `node-and-norm/revocation-delegated-workflows`.
 
-## Question and status
+When a caller asks to withdraw authority, what distinguishes receipt of the request, an installed revocation fence and confirmation visible to the caller? This private Node & Norm study tests that distinction in bounded local workflows. [Question and executed study](docs/decisions/2026-11-03-request-to-fence-interface-study.md).
 
-**Q1 only:** when authority is withdrawn, does the tested delegated workflow prevent a new protected effect from committing after the revocation fence? Evidence veracity (Q2) and oversight scaling (Q3) remain deferred.
+[Research reader: understand in 90 seconds](#research-in-90-seconds) · [Reviewer: inspect evidence and limits](#evidence-and-known-limits) · [Engineer: reproduce the fixed study](#reproduce-the-request-to-fence-study)
 
-## Start here
+## At a glance
 
-The latest execution-grounded result is a 12-case request-to-fence study: six effects and six revoked denials, with no post-fence effects in the fixed schedules. Scripted workers and a trusted local sink bound the result. The local reproduction uses the same instrument; the separate artifact audit adds AI-assisted checking. No population reliability estimate, production readiness or independent human validation is established.
+| Record | Current account |
+| --- | --- |
+| Question | Q1: authority withdrawal and protected effects. Evidence veracity (Q2) and oversight scaling (Q3) remain deferred. [Design](docs/specification/Testing_Revocation_in_Delegated_Workflows_v0.1.docx). |
+| Completed evidence | Twelve fixed deterministic request-to-fence cases, across direct and native framework checkpoint/resume paths. [Measured summary](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json). |
+| Review | Post-run artifact checking, same-host reproduction and a separately authored protocol-first artifact audit, all AI-assisted. [Post-run review](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md), [reproduction](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md), [artifact audit](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md). |
+| Next comparison | Temporal qualification remains partial/blocked. No native Workflow/Activity test or measured Temporal experiment ran. [Status](docs/decisions/2026-11-04-temporal-partial-qualification.md). |
+| Traceability | The current recorded snapshot is workbook v0.11; historical versions retain their identities. [Workbook](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.11.xlsx). |
+| Release | Private research record. Public release is not authorized; no open-source license grant for original study materials is made. [Release limits](#limits-disclosure-and-release-status). |
 
-- [Result and evidence boundaries](docs/decisions/2026-11-03-request-to-fence-interface-study.md)
-- [Local reproduction report and environment limits](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md)
-- [Current research traceability and AI Disclosure Guidance](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.11.xlsx)
+## Research in 90 seconds
+
+A withdrawal request can be accepted before authority changes. An installed fence can prevent a protected effect before the caller receives confirmation. The study keeps these facts separate: request acceptance is volatile receipt; fence installation is a committed authority change at the trusted local sink; caller confirmation requires a matching completion envelope. A protected effect is an inert operation committed to that sink. [Executed study and evidence boundary](docs/decisions/2026-11-03-request-to-fence-interface-study.md), [post-run review](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md).
+
+The completed collection contains six schedules on each of two paths: direct reference and native framework checkpoint/resume. All twelve cases matched the frozen checker expectations. Six effects and six revoked denials were expected; no recorded old-authority effect followed a local fence in these fixed cases. The two paths share the authority mechanism, so they are matched conformance controls, not independent security implementations. [Summary](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json), [reproduction and limits](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md).
+
+The key distinction is visible in S4 and S5. In both, a pending caller reaches observation end without valid completion and becomes unconfirmed. S4 has an installed fence and a revoked denial; S5 has no fence in the window and an authorized effect. Caller uncertainty therefore does not establish sink state. S2 also retains its pre-fence effect after confirmation: withdrawal is not rollback. [Case outcomes](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md).
+
+This is a bounded execution-grounded conformance result, not a reliability estimate, new general control principle or production-readiness claim. [Interpretation limits](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md).
+
+## Method in brief
+
+```mermaid
+flowchart LR
+  accTitle: Local request-to-fence study
+  accDescr: A fixed schedule controls withdrawal delivery and worker resume. Caller-visible messages and trusted sink evidence are checked separately, alongside native checkpoint records, to classify each bounded case.
+  A["Six fixed schedules<br/>on two paths"] -->|controls delivery| B["Caller and relay<br/>messages"]
+  A -->|controls resume| C["Direct or native<br/>checkpoint path"]
+  B -->|withdrawal reaches| D["Trusted local gateway<br/>and atomic sink"]
+  C -->|protected attempt reaches| D
+  B -->|caller-visible inputs| E["Separate case checks"]
+  D -->|committed ordering and effects| E
+  C -->|checkpoint and outcome records| E
+  E -->|reports bounded findings| F["Caller knowledge,<br/>effect and limits"]
+```
+
+The text sequence is: select a fixed schedule and execution path; control request delivery and worker resume; record caller-visible messages separately from committed sink evidence; check caller transitions, sink outcomes, framework propagation and completeness; report the case with its observation window and assumptions. The caller cannot read the privileged sink evidence used by the checker. [Study record](docs/decisions/2026-11-03-request-to-fence-interface-study.md), [post-run artifact review](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md).
+
+## Evidence and known limits
+
+| Material | What is available | What it does not establish |
+| --- | --- | --- |
+| Request-to-fence collection | Twelve deterministic cases; six expected effects, six revoked denials; no post-fence effects in the tested schedules. [Summary](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json). | Random sampling, failure probability, production latency, hostile-worker confinement or distributed closure. |
+| Local reproduction | Fresh virtual environment; the same frozen instrument reproduced the fixed matrix on the same host/runtime. [Report](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md). | An independent reimplementation or a larger original campaign. The external wheelhouse is not included in the study ZIP. |
+| Artifact review | Post-run checking and separately authored AI-assisted artifact audit. [Post-run](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md), [protocol-first](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md). | Independent human validation or measured benefit to human reviewers. |
+| Temporal development | Bounded runtime setup checks and four schema-only tests; the bridge attempt failed before dispatch with a socket-permission error, followed by a cleanup error. [Partial qualification](docs/decisions/2026-11-04-temporal-partial-qualification.md). | A bridge-control pass, native Workflow/Activity qualification or a measured Temporal result. Proposed six-cell expectations remain prospective. |
+| Temporal methods review | Source review identifies unresolved qualification, lifecycle-mapping and observation-cut issues. [Review](docs/review/TEMPORAL_METHODS_REVIEW_20261104.md). | Executed controls, repaired runtime behavior or evidence that cancellation means no effect. |
+
+## AI assistance and human review
+
+AI assisted research framing, source analysis, code, tests, artifact review and documentation. A separately authored or executed model-assisted check is not independent human validation. Researcher authorization, recorded human decisions and verification are distinct; the traceability record does not claim exhaustive human review. [Research decisions and AI Disclosure Guidance](docs/traceability/Revocation_AI_Use_and_Research_Decision_Traceability_v0.11.xlsx), [release and disclosure limits](#limits-disclosure-and-release-status).
+
+## Shared research records
+
+The [stage-one glossary and evidence registry](docs/research-records/v0.1/README.md) separate definitions, claims, evidence status and limits. The [Temporal reconciliation](docs/research-records/v0.1/sources/reconciliation.md) records remaining acceptance gaps. Stable study identifiers and a graph evaluation remain proposed later stages.
+
+## Earlier stages and detailed research record
+
+The following stage accounts, navigation and reproduction instructions are retained from the verified repository baseline. Their original result counts and qualifications remain separate; they are not pooled into the twelve-case study.
 
 ## Current integration pilot
 
