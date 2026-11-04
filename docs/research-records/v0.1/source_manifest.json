@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1",
+  "hash_meaning": "Byte identity of retained snapshots, not authenticity, execution attestation or correctness.",
+  "sources": [
+    {
+      "source_key": "reconciliation",
+      "sha256": "ce9ff80337554432817aaec2c57a48d7147b7ab09d5fd41e06dfb67a011dcd7f",
+      "source_kind": "current source review",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "docs/research-records/v0.1/sources/reconciliation.md"
+    },
+    {
+      "source_key": "temporal_contract",
+      "sha256": "b65e6422f80c4e44f9422feb479842dcdea68b5a3b9168726f0f36c19011ac3b",
+      "source_kind": "proposed contract",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "docs/review/TEMPORAL_STATUS_EVIDENCE_CONTRACT_v01.md"
+    },
+    {
+      "source_key": "temporal_status",
+      "sha256": "de63522cf6db0d165cbf3d51b841f10fd8e31f8ffeb9f0bb85f6f6a053ee7c25",
+      "source_kind": "partial execution status",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "original_sha256": "b20c4286be90d47c5a819fa4d6cdf506cef80c9fff3c9771a6cae7a83bc38eb5",
+      "transformation": "Removed Authorization context section containing private conversation identifiers; added this disclosure.",
+      "repository_path": "docs/research-records/v0.1/sources/temporal_status.md"
+    },
+    {
+      "source_key": "runtime_setup",
+      "sha256": "2b0df6c1b1457228d29a1df4d3f93a69780d04bcaa2f9f708777a2d997350b1a",
+      "source_kind": "setup report",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "archives/temporal_qualification_partial_20261104.zip",
+      "archive_member": "temporal_qualification_partial_20261104/runtime_setup/QUALIFICATION_SUMMARY.md"
+    },
+    {
+      "source_key": "withdrawal_protocol",
+      "sha256": "fdf9c7e0190ff39b2c1c9768be84cc2dfc13e6f688968098531d4c6a708806f7",
+      "source_kind": "historical protocol; later result status supersedes drafting status",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_v0.1.md"
+    },
+    {
+      "source_key": "withdrawal_summary",
+      "sha256": "273d485b72bc23327e5931019127f74f8b18764d582ba15bd5d1eda78fd6a751",
+      "source_kind": "historical result summary",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json"
+    },
+    {
+      "source_key": "withdrawal_review",
+      "sha256": "98dc38ffa7fada19a6adb867c8b7b544fec0a78860c87e6119fd815831abd71e",
+      "source_kind": "historical AI-assisted audit report",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md"
+    },
+    {
+      "source_key": "methods_review",
+      "sha256": "ab6001b2d6c56b04373066c0b3be09820b7be1ac808c2d6bfbd390453eb95999",
+      "source_kind": "independent AI-assisted source review",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "docs/review/TEMPORAL_METHODS_REVIEW_20261104.md"
+    },
+    {
+      "source_key": "schema_log",
+      "sha256": "118c3ab1a6b77c17366b784452426efa82e0888264b4fdb64b94b406f21d3e45",
+      "source_kind": "schema-only test log",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "archives/temporal_qualification_partial_20261104.zip",
+      "archive_member": "temporal_qualification_partial_20261104/bridge_qualification/logs/q1_schema.txt"
+    },
+    {
+      "source_key": "blocked_control_log",
+      "sha256": "36d3bcc5c99375dd99ab6017dba77fb0d2515df4a0ae711435a8bdd0f958a889",
+      "source_kind": "failed bridge control log",
+      "access": "Private research repository",
+      "reviewed_utc_date": "2026-11-04",
+      "repository_path": "archives/temporal_qualification_partial_20261104.zip",
+      "archive_member": "temporal_qualification_partial_20261104/bridge_qualification/logs/q2.txt"
+    }
+  ]
+}

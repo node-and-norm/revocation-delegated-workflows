@@ -1,0 +1,179 @@
+{
+  "schema_version": "0.1",
+  "as_of_utc_date": "2026-11-04",
+  "scope": "private revocation research; selected source-linked records, not exhaustive literature or raw-evidence catalog",
+  "records": [
+    {
+      "record_key": "withdrawal_cases",
+      "claim": "Historical withdrawal campaign reports 12 fixed cases, all checker passes, across direct and native checkpoint-resume paths.",
+      "known_status": "reported historical measured result",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_summary",
+          "locator": "status, fixed_cases, checker_passes, rows"
+        },
+        {
+          "source_key": "withdrawal_review",
+          "locator": "Verdict and outcomes"
+        }
+      ],
+      "uncertainty_and_limits": "The historical post-run audit is reported evidence, not rerun here. Trusted local fixture, selected schedules, one authority and one edge; no statistical reliability claim.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "acceptance_not_fence",
+      "claim": "S2 reports an effect after volatile acceptance but before the later fence; later confirmation does not remove that effect.",
+      "known_status": "supported by preserved result summary and audit",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_protocol",
+          "locator": "section 5 S2"
+        },
+        {
+          "source_key": "withdrawal_summary",
+          "locator": "rows path=direct/framework schedule=S2"
+        },
+        {
+          "source_key": "withdrawal_review",
+          "locator": "Outcomes"
+        }
+      ],
+      "uncertainty_and_limits": "This is a selected deterministic schedule, not an estimated race probability.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "confirmation_not_sink_reality",
+      "claim": "S4 and S5 both end unconfirmed, while S4 has a fence and revoked denial, and S5 has no fence and one effect in the window.",
+      "known_status": "supported by preserved result summary and audit",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_summary",
+          "locator": "rows schedule=S4 and S5"
+        },
+        {
+          "source_key": "withdrawal_review",
+          "locator": "Outcomes"
+        }
+      ],
+      "uncertainty_and_limits": "Completion withholding is deliberate relay behavior, not demonstrated network loss or crash recovery.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "runtime_only",
+      "claim": "Temporal SDK 1.25.0, CLI 1.10.0 and reported Server 1.32.2 setup was recorded; health check was SERVING and server then terminated.",
+      "known_status": "reported setup qualification",
+      "source_refs": [
+        {
+          "source_key": "runtime_setup",
+          "locator": "setup bullets and final limitations"
+        }
+      ],
+      "uncertainty_and_limits": "Setup success establishes no Workflow/Activity execution, lifecycle correctness, cancellation delivery or bridge conformance.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "partial_qualification",
+      "claim": "Four schema-only methods passed; Q2 failed with socket EPERM before dispatch and then BrokenPipe during cleanup. Native qualification did not run.",
+      "known_status": "partial and blocked",
+      "source_refs": [
+        {
+          "source_key": "temporal_status",
+          "locator": "Outcome"
+        },
+        {
+          "source_key": "schema_log",
+          "locator": "complete log"
+        },
+        {
+          "source_key": "blocked_control_log",
+          "locator": "complete log"
+        }
+      ],
+      "uncertainty_and_limits": "Two escalated attempts were denied before execution per status report; proposed corrections were not applied. No native result or measured Temporal case exists in these reviewed records.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "six_cell_design",
+      "claim": "M1-M4 and K1-K2 are a proposed six-cell Temporal native-interface comparison.",
+      "known_status": "proposed; not executed",
+      "source_refs": [
+        {
+          "source_key": "temporal_contract",
+          "locator": "Expected measured matrix"
+        }
+      ],
+      "uncertainty_and_limits": "Native mappings require qualification/freeze. C1 and C4 remain qualification checks; Q2 gateway controls cannot simply be relabeled measured K1/K2.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "different_cuts",
+      "claim": "Failure native history and supervisor precleanup sink capture can refer to different cuts around Worker shutdown.",
+      "known_status": "static source-review finding",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed item 7"
+        },
+        {
+          "source_key": "methods_review",
+          "locator": "complete review"
+        }
+      ],
+      "uncertainty_and_limits": "Prospective source reasoning, not observed native failure. Different-cut records are diagnostic only for primary no-effect/cessation claims.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "unchecked_success",
+      "claim": "The candidate success flags do not independently grade schedule-specific sink effect, denial, attempt and order expectations.",
+      "known_status": "static source-review finding; unresolved methods gap",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed item 9 and remaining methods work"
+        }
+      ],
+      "uncertainty_and_limits": "A proposed independent native-case checker remains outstanding. Transport success, Workflow completion and ok=true cannot substitute for effect accounting.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "packaging_scope",
+      "claim": "Evidence-view removal targets the derived application envelope while preserving underlying records.",
+      "known_status": "proposed intervention",
+      "source_refs": [
+        {
+          "source_key": "temporal_contract",
+          "locator": "Evidence views and baseline"
+        },
+        {
+          "source_key": "reconciliation",
+          "locator": "Current interpretation"
+        }
+      ],
+      "uncertainty_and_limits": "No human review-time, decision-quality, missing-completion-evidence or usefulness result. Exact file allowlists and leakage tests remain to be qualified.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    },
+    {
+      "record_key": "current_gate",
+      "claim": "Native qualification acceptance still requires permission, remaining transport mocks, exact mappings, coordinated cuts, independent sink grading and reviewed allowlists.",
+      "known_status": "unsatisfied/unobserved gates",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Acceptance checklist and remaining methods work"
+        }
+      ],
+      "uncertainty_and_limits": "Documentation work does not resolve execution denial or authorize rerun. A competent ordinary baseline matching the envelope is a valid result.",
+      "ai_use": "AI-assisted extraction and synthesis in this registry. No new experiment or independent human validation. Source review/audit wording is not a human-review claim.",
+      "validation_in_this_pass": "Source text read and snapshot hash checked; historical raw experiments not rerun."
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.1",
+  "status": "local draft; stage one only",
+  "terms": [
+    {
+      "term_key": "request_accepted",
+      "label": "Request accepted",
+      "definition": "The relay reports volatile receipt of the sole pending withdrawal request. The caller remains PENDING.",
+      "required_evidence": "Caller-visible acceptance response carrying matching request ID and accepted_volatile.",
+      "does_not_imply": "Fence installation, durable receipt, restart recovery, caller installation confirmation, or prevention of an effect.",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_protocol",
+          "locator": "sections 2 and 3"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "fence_installed",
+      "label": "Fence installed",
+      "definition": "The trusted local sink has committed the fixture authority change from active epoch 7 to epoch 8/inactive.",
+      "required_evidence": "Matched committed gateway receipt/revocation outcome and trusted sink transaction evidence for the fixture scope.",
+      "does_not_imply": "Caller has learned of installation; rollback of past effects; cessation of all computation; distributed closure.",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_protocol",
+          "locator": "sections 1 and 4"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "caller_confirmation",
+      "label": "Caller confirmation",
+      "definition": "The caller validates a matching completion envelope and records INSTALLED_CONFIRMED within its finite observation window.",
+      "required_evidence": "Caller-visible request ID, rootR, withdrawn epoch 7, new epoch 8, installed and single_local_sink, with actual gateway response retained and validated by the relay.",
+      "does_not_imply": "Authenticated generic receipt; arbitrary target enforcement by the unchanged gateway; effect rollback.",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_protocol",
+          "locator": "sections 1 to 3"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "effect",
+      "label": "Protected effect",
+      "definition": "An inert protected operation is committed to the trusted synthetic sink under the exact operation/effect identity.",
+      "required_evidence": "Actual matching effect rows and transaction sequence within a declared complete observation window.",
+      "does_not_imply": "Activity or Workflow completion; caller knowledge; physical or production action.",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_protocol",
+          "locator": "sections 4 and 5"
+        },
+        {
+          "source_key": "temporal_contract",
+          "locator": "Proposed application envelope"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "unconfirmed",
+      "label": "Unconfirmed at observation end",
+      "definition": "At the declared observation-end signal, a caller still in PENDING transitions to UNCONFIRMED_AT_OBSERVATION_END because no valid matching completion has been received within that window. This does not describe IDLE or INVALID_RESPONSE.",
+      "required_evidence": "Caller-visible request/input and state-transition records establish PENDING immediately before the observation-end signal and the resulting UNCONFIRMED_AT_OBSERVATION_END transition.",
+      "does_not_imply": "Fence absent or present. S4 has a fence and S5 lacks one within the window.",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_protocol",
+          "locator": "sections 3 and 5"
+        },
+        {
+          "source_key": "withdrawal_review",
+          "locator": "Outcomes"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "cancellation_response",
+      "label": "Cancellation request response",
+      "definition": "The external client received a response to a native cancellation call.",
+      "required_evidence": "Actual external-client call record linked to the run.",
+      "does_not_imply": "Activity cancellation delivery; Activity settlement; fence installation; no effect.",
+      "source_refs": [
+        {
+          "source_key": "temporal_contract",
+          "locator": "Proposed application envelope"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "activity_promise_settlement",
+      "label": "Workflow observed Activity promise settlement",
+      "definition": "The Workflow observes the Activity call return a recorded result or failure.",
+      "required_evidence": "Workflow-side outcome linked to the specific Activity attempt.",
+      "does_not_imply": "Worker invocation settled, native terminal event, Workflow terminal status, or no sink effect.",
+      "source_refs": [
+        {
+          "source_key": "temporal_contract",
+          "locator": "Proposed application envelope"
+        },
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed items 1 to 3"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "worker_settlement",
+      "label": "Worker invocation settlement",
+      "definition": "The worker interceptor observes invocation settlement; finally instrumentation is a separate observation.",
+      "required_evidence": "Explicit linked interceptor record, not only a finally flag.",
+      "does_not_imply": "Native Activity terminal event or cessation of every computation.",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed item 3"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "native_terminal",
+      "label": "Native terminal record",
+      "definition": "A native history event records the exact Activity or Workflow terminal disposition for linked identities.",
+      "required_evidence": "Correct run, scheduled/start/terminal linkage and attempt, with exact event type.",
+      "does_not_imply": "Expected treatment succeeded, protected operation succeeded, or authority was fenced.",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed items 1 and 2"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "observation_cut",
+      "label": "Observation cut",
+      "definition": "A declared causal boundary fixes which records may support an assertion.",
+      "required_evidence": "Linked history and sink captures at a coordinated barrier, completeness scope and permitted file list.",
+      "does_not_imply": "Timestamp proximity establishes a shared cut. Native failure history before Worker shutdown and a later supervisor sink snapshot may have different cuts.",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed item 7"
+        },
+        {
+          "source_key": "temporal_contract",
+          "locator": "Checker obligations items 9 and 10"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "no_effect",
+      "label": "Bounded absence of effect",
+      "definition": "No matching effect exists in complete trusted sink evidence for the exact operation and declared observation window.",
+      "required_evidence": "Complete bounded sink evidence; exact attempt/denial cause, valid authorization setup and identities independently checked.",
+      "does_not_imply": "No future effect, global cessation, or successful prevention when the path was invalid/unavailable.",
+      "source_refs": [
+        {
+          "source_key": "temporal_contract",
+          "locator": "Proposed application envelope"
+        },
+        {
+          "source_key": "reconciliation",
+          "locator": "Exact mapping decisions still needed item 9 and acceptance checklist"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "envelope",
+      "label": "Application evidence envelope",
+      "definition": "A derived packaging of source-linked assertions over underlying records.",
+      "required_evidence": "Each assertion has evidence references, observer, scope, exact identities and observation cut.",
+      "does_not_imply": "New native guarantee; unavailable completion evidence; measured human audit benefit.",
+      "source_refs": [
+        {
+          "source_key": "temporal_contract",
+          "locator": "Evidence views and baseline"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "qualification",
+      "label": "Qualification",
+      "definition": "Development checks establish instrument readiness only within tested and reviewed coverage.",
+      "required_evidence": "Actual qualified controls and failure tests, frozen expected mappings and independent artifact checks.",
+      "does_not_imply": "Measured collection; reliability estimate; approval to bypass an execution denial.",
+      "source_refs": [
+        {
+          "source_key": "reconciliation",
+          "locator": "Acceptance checklist"
+        }
+      ],
+      "status": "draft definition v0.1"
+    },
+    {
+      "term_key": "measured_case",
+      "label": "Measured case",
+      "definition": "A fixed protocol case executed after its distinct collection gate, with preserved raw evidence and identity.",
+      "required_evidence": "Frozen source/protocol, valid treatment, complete case evidence and independent grading.",
+      "does_not_imply": "Statistical independence, probability estimate or production reliability.",
+      "source_refs": [
+        {
+          "source_key": "withdrawal_review",
+          "locator": "Interpretation limits"
+        },
+        {
+          "source_key": "temporal_contract",
+          "locator": "Expected measured matrix"
+        }
+      ],
+      "status": "draft definition v0.1"
+    }
+  ]
+}
