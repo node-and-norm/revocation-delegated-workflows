@@ -1,0 +1,1464 @@
+{
+  "attempt_retained": true,
+  "case": {
+    "attempt_id": "attempt-26f1b1e659f24d86ae5f3bf3d67d1bda",
+    "case_id": "case-2d6686e740d04933a841c59dd9d61e66",
+    "case_kind": "sink_only",
+    "cell": "K2",
+    "operation_id": "operation-1",
+    "phases": [
+      "P1"
+    ],
+    "study_phase": "synthetic"
+  },
+  "checker_version": "0.1.0",
+  "cleanup": {
+    "record": {
+      "budget_expired": false,
+      "capture_errors": [],
+      "case_id": "case-2d6686e740d04933a841c59dd9d61e66",
+      "child_exits": [
+        {
+          "child_id": "synthetic-child",
+          "exit_code": 0
+        }
+      ],
+      "forced_actions": [],
+      "initial_error_ref": null,
+      "operation_id": "operation-1",
+      "outstanding": [],
+      "schema_version": "synthetic-artifact-0.1",
+      "secondary_errors": [],
+      "shutdown_acknowledged": true,
+      "shutdown_requested": true
+    },
+    "requirement": {
+      "evidence_refs": [],
+      "reason": "Finite normal synthetic shutdown recorded.",
+      "status": "satisfied"
+    }
+  },
+  "cross_phase": {
+    "evidence_refs": [],
+    "reason": "Sink-only controls have no P2.",
+    "status": "not_applicable"
+  },
+  "events_observed": 9,
+  "evidence_class": "synthetic_only",
+  "execution_readiness": {
+    "evidence_refs": [],
+    "reason": "No runtime execution is supported by this artifact-only checker.",
+    "status": "unobserved"
+  },
+  "freeze_requirements": {
+    "deadline_calibration": {
+      "evidence_refs": [],
+      "reason": "No numerical runtime deadline is calibrated.",
+      "status": "unobserved"
+    },
+    "native_mappings": {
+      "evidence_refs": [],
+      "reason": "No observed native tuples have been qualified.",
+      "status": "unobserved"
+    },
+    "phase_manifest_sealing": {
+      "evidence_refs": [],
+      "reason": "The synthetic bundle registry seals the complete saved fixture; independently persisted runtime phase registries remain unimplemented.",
+      "status": "unobserved"
+    },
+    "production_exporter": {
+      "evidence_refs": [],
+      "reason": "Only the explicit synthetic adapter exists.",
+      "status": "unobserved"
+    }
+  },
+  "limitations": [
+    "Only synthetic-artifact-0.1 is supported; the saved native exporter is not adapted or qualified.",
+    "Saved certificates are checked under trusted-fixture assumptions, not authenticated attestations.",
+    "Native outcome mappings and calibrated numerical deadlines remain open."
+  ],
+  "native_qualification": false,
+  "phases": {
+    "P1": {
+      "analysis_eligibility": {
+        "joint_causal": {
+          "evidence_refs": [],
+          "reason": "Requires interpretable causal evidence; all attempted cases remain registered.",
+          "status": "satisfied"
+        },
+        "native_description": {
+          "evidence_refs": [],
+          "reason": "Observed tuples remain describable when unexpected; no native field invented for K controls.",
+          "status": "not_applicable"
+        },
+        "sink_accounting": {
+          "evidence_refs": [],
+          "reason": "Depends on accounting evidence, not favorable sink outcome.",
+          "status": "satisfied"
+        }
+      },
+      "capture_sufficient": true,
+      "graph_valid": true,
+      "observed": {
+        "dispatch_attempts": 1,
+        "native_tuple": null,
+        "sink": {
+          "denials": [
+            {
+              "data": {
+                "request_id": "execute",
+                "result": {
+                  "outcome": "denied",
+                  "reason": "revoked"
+                }
+              },
+              "kind": "denied",
+              "seq": 9
+            }
+          ],
+          "effect_events": 0,
+          "effect_rows": 0,
+          "effects": [],
+          "events": [
+            {
+              "data": {
+                "child": "childC",
+                "epoch": 7,
+                "parent": "parentP",
+                "parent_grant": "parent-0",
+                "root": "rootR",
+                "scope": "summary:task1"
+              },
+              "kind": "bootstrap",
+              "seq": 1
+            },
+            {
+              "data": {
+                "actor": "parentP",
+                "request": {
+                  "child": "childC",
+                  "claim": "parentP",
+                  "grant": "parent-0",
+                  "id": "delegate",
+                  "op": "delegate",
+                  "scope": "summary:task1"
+                }
+              },
+              "kind": "receipt",
+              "seq": 2
+            },
+            {
+              "data": {
+                "request_id": "delegate",
+                "result": {
+                  "epoch": 7,
+                  "grant": "child-1",
+                  "outcome": "grant",
+                  "owner": "childC",
+                  "parent_grant": "parent-0",
+                  "root": "rootR",
+                  "scope": "summary:task1"
+                }
+              },
+              "kind": "grant",
+              "seq": 3
+            },
+            {
+              "data": {
+                "actor": "childC",
+                "request": {
+                  "claim": "childC",
+                  "grant": "child-1",
+                  "id": "prepare",
+                  "op": "prepare",
+                  "scope": "summary:task1"
+                }
+              },
+              "kind": "receipt",
+              "seq": 4
+            },
+            {
+              "data": {
+                "request_id": "prepare",
+                "result": {
+                  "epoch": 7,
+                  "grant": "child-1",
+                  "outcome": "admission",
+                  "root": "rootR",
+                  "scope": "summary:task1",
+                  "ticket": "ticket-1"
+                }
+              },
+              "kind": "admission",
+              "seq": 5
+            },
+            {
+              "data": {
+                "actor": "controller",
+                "request": {
+                  "claim": "controller",
+                  "id": "revoke",
+                  "op": "revoke"
+                }
+              },
+              "kind": "receipt",
+              "seq": 6
+            },
+            {
+              "data": {
+                "request_id": "revoke",
+                "result": {
+                  "new_epoch": 8,
+                  "outcome": "revocation",
+                  "root": "rootR",
+                  "withdrawn_epoch": 7
+                }
+              },
+              "kind": "revocation",
+              "seq": 7
+            },
+            {
+              "data": {
+                "actor": "childC",
+                "request": {
+                  "claim": "childC",
+                  "grant": "child-1",
+                  "id": "execute",
+                  "op": "execute",
+                  "payload": "inert summary",
+                  "scope": "summary:task1",
+                  "ticket": "ticket-1"
+                }
+              },
+              "kind": "receipt",
+              "seq": 8
+            },
+            {
+              "data": {
+                "request_id": "execute",
+                "result": {
+                  "outcome": "denied",
+                  "reason": "revoked"
+                }
+              },
+              "kind": "denied",
+              "seq": 9
+            }
+          ],
+          "execute_receipts": 1,
+          "execute_request_ids": [
+            "execute"
+          ],
+          "revocations": [
+            {
+              "data": {
+                "request_id": "revoke",
+                "result": {
+                  "new_epoch": 8,
+                  "outcome": "revocation",
+                  "root": "rootR",
+                  "withdrawn_epoch": 7
+                }
+              },
+              "kind": "revocation",
+              "seq": 7
+            }
+          ]
+        },
+        "sink_usable": true,
+        "transport_uncertain": false
+      },
+      "reference": {
+        "cancellation_request": {
+          "evidence_refs": [
+            {
+              "artifact_id": "case",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/case_kind",
+              "phase": "P0",
+              "record_id": "case_kind"
+            }
+          ],
+          "value": "not_requested"
+        },
+        "effect_existence": {
+          "evidence_refs": [
+            {
+              "artifact_id": "capture-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "cut-P1"
+            },
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/effects",
+              "phase": "P1",
+              "record_id": "effects"
+            }
+          ],
+          "value": "absent_with_complete_bounded_evidence"
+        },
+        "effect_order_vs_fence": {
+          "evidence_refs": [
+            {
+              "artifact_id": "capture-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "cut-P1"
+            },
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/effects",
+              "phase": "P1",
+              "record_id": "effects"
+            }
+          ],
+          "value": "not_applicable_no_effect"
+        },
+        "effect_order_vs_observed_cancellation": {
+          "evidence_refs": [
+            {
+              "artifact_id": "capture-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "cut-P1"
+            },
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/effects",
+              "phase": "P1",
+              "record_id": "effects"
+            }
+          ],
+          "value": "not_applicable_no_effect"
+        },
+        "effect_order_vs_request": {
+          "evidence_refs": [
+            {
+              "artifact_id": "capture-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "cut-P1"
+            },
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/effects",
+              "phase": "P1",
+              "record_id": "effects"
+            }
+          ],
+          "value": "not_applicable_no_effect"
+        },
+        "fence": {
+          "evidence_refs": [
+            {
+              "artifact_id": "events",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/records/controller-2",
+              "phase": "P1",
+              "record_id": "controller-2"
+            },
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/events/7",
+              "phase": "P1",
+              "record_id": "7"
+            }
+          ],
+          "value": "confirmed_for_fixture_scope"
+        },
+        "fence_existence": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/events/7",
+              "phase": "P1",
+              "record_id": "7"
+            }
+          ],
+          "value": "present"
+        }
+      },
+      "requirements": {
+        "capture.boundaries": {
+          "evidence_refs": [],
+          "reason": "Phase, transaction, source positions and flush records agree.",
+          "status": "satisfied"
+        },
+        "capture.late_contradiction": {
+          "evidence_refs": [],
+          "reason": "No linked later commit contradicting this interval is present in supplied artifacts; this is not a universal guarantee.",
+          "status": "satisfied"
+        },
+        "capture.stability": {
+          "evidence_refs": [],
+          "reason": "Passive stable-operation certificate; not producer attestation.",
+          "status": "satisfied"
+        },
+        "native.applicability": {
+          "evidence_refs": [],
+          "reason": "Sink-only control has no native lifecycle.",
+          "status": "not_applicable"
+        },
+        "outcome.cardinality": {
+          "evidence_refs": [],
+          "reason": "Observed dispatch/execute/effect counts (1, 1, 0); expected (1, 1, 0). Adverse outcomes remain included.",
+          "status": "satisfied"
+        },
+        "outcome.sink_expected": {
+          "evidence_refs": [],
+          "reason": "Exact fence, cardinality and revoked-denial expectations checked; other denial causes get no protection credit.",
+          "status": "satisfied"
+        },
+        "phase.events": {
+          "evidence_refs": [],
+          "reason": "This phase producer schema is valid independently of later phases.",
+          "status": "satisfied"
+        },
+        "phase.graph": {
+          "evidence_refs": [],
+          "reason": "Phase causal graph verified.",
+          "status": "satisfied"
+        },
+        "schedule.causal": {
+          "evidence_refs": [],
+          "reason": "Required observation and linked-command sequence is present.",
+          "status": "satisfied"
+        },
+        "schedule.commands": {
+          "evidence_refs": [],
+          "reason": "Required controller commands issued exactly once and forbidden commands absent.",
+          "status": "satisfied"
+        },
+        "sink.authorization": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Authorization setup, request identities, and tables agree.",
+          "status": "satisfied"
+        },
+        "sink.effect_bijection": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Effects rows and effect events match bijectively.",
+          "status": "satisfied"
+        },
+        "sink.event_accounting": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Every receipt has one adjacent terminal and every terminal has one receipt.",
+          "status": "satisfied"
+        },
+        "sink.primitives": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "SQL and JSON primitive types verified.",
+          "status": "satisfied"
+        },
+        "sink.readable": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Opened the saved database read-only and immutable.",
+          "status": "satisfied"
+        },
+        "sink.revocation": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Revocation transition and final authority state agree.",
+          "status": "satisfied"
+        },
+        "sink.schema": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Pinned table structure and passive schema verified.",
+          "status": "satisfied"
+        },
+        "sink.scope": {
+          "evidence_refs": [
+            {
+              "artifact_id": "sink-p1",
+              "boundary_id": "boundary-P1",
+              "cut_id": "cut-P1",
+              "locator": "/",
+              "phase": "P1",
+              "record_id": "sink-p1"
+            }
+          ],
+          "reason": "Effect scope and payload match the pinned fixture.",
+          "status": "satisfied"
+        }
+      }
+    }
+  },
+  "qualification_acceptance": {
+    "evidence_refs": [],
+    "reason": "Native acceptance is unavailable for synthetic evidence.",
+    "status": "unobserved"
+  },
+  "requirements": {
+    "artifact.integrity": {
+      "evidence_refs": [],
+      "reason": "All registered bytes and paths verified.",
+      "status": "satisfied"
+    },
+    "causal.graph": {
+      "evidence_refs": [],
+      "reason": "Each phase causal graph is valid.",
+      "status": "satisfied"
+    },
+    "freeze.deadlines": {
+      "evidence_refs": [],
+      "reason": "Required finite budgets are unset; calibration is not invented.",
+      "status": "unobserved"
+    },
+    "schema.binding": {
+      "evidence_refs": [],
+      "reason": "Observed binding agrees with predeclared identities.",
+      "status": "satisfied"
+    },
+    "schema.case": {
+      "evidence_refs": [],
+      "reason": "Explicit synthetic case schema verified.",
+      "status": "satisfied"
+    },
+    "schema.events": {
+      "evidence_refs": [],
+      "reason": "Closed event schemas, identities and positions verified.",
+      "status": "satisfied"
+    },
+    "setup.configuration": {
+      "evidence_refs": [],
+      "reason": "Explicit policy and observation scope match.",
+      "status": "satisfied"
+    },
+    "setup.registration": {
+      "evidence_refs": [],
+      "reason": "Synthetic registration declaration; historical registration authenticity is not inferred.",
+      "status": "satisfied"
+    }
+  },
+  "views": {
+    "P1": {
+      "A": {
+        "envelope_scores": {
+          "counts": {
+            "avoidable_unresolved": 0,
+            "contradicted": 0,
+            "correct_determinate": 7,
+            "justified_unresolved": 0,
+            "malformed_or_omitted": 0,
+            "unsupported_determinate": 0
+          },
+          "determinate_claims": 7,
+          "diagnostics": [],
+          "evaluated_opportunities": 7,
+          "evidence_supplied_opportunities": 7,
+          "metrics": {
+            "conclusive_coverage": 1.0,
+            "determinate_claim_support_rate": 1.0,
+            "planned_completion": 1.0,
+            "required_output_completion": 1.0
+          },
+          "opportunities": [
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "case",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/case_kind",
+                  "phase": "P0",
+                  "record_id": "case_kind"
+                }
+              ],
+              "field": "cancellation_request",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "events",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/records/controller-2",
+                  "phase": "P1",
+                  "record_id": "controller-2"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/events/7",
+                  "phase": "P1",
+                  "record_id": "7"
+                }
+              ],
+              "field": "fence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_existence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/events/7",
+                  "phase": "P1",
+                  "record_id": "7"
+                }
+              ],
+              "field": "fence_existence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_fence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_request",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_observed_cancellation",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            }
+          ],
+          "phase": "P1",
+          "planned_opportunities": 7,
+          "reference_decidable_opportunities": 7,
+          "scope": "operation-1",
+          "valid_output_opportunities": 7
+        },
+        "reference": {
+          "cancellation_request": {
+            "evidence_refs": [
+              {
+                "artifact_id": "case",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/case_kind",
+                "phase": "P0",
+                "record_id": "case_kind"
+              }
+            ],
+            "value": "not_requested"
+          },
+          "effect_existence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "absent_with_complete_bounded_evidence"
+          },
+          "effect_order_vs_fence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "not_applicable_no_effect"
+          },
+          "effect_order_vs_observed_cancellation": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "not_applicable_no_effect"
+          },
+          "effect_order_vs_request": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "not_applicable_no_effect"
+          },
+          "fence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "events",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/records/controller-2",
+                "phase": "P1",
+                "record_id": "controller-2"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/events/7",
+                "phase": "P1",
+                "record_id": "7"
+              }
+            ],
+            "value": "confirmed_for_fixture_scope"
+          },
+          "fence_existence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/events/7",
+                "phase": "P1",
+                "record_id": "7"
+              }
+            ],
+            "value": "present"
+          }
+        },
+        "scores": {
+          "counts": {
+            "avoidable_unresolved": 0,
+            "contradicted": 0,
+            "correct_determinate": 7,
+            "justified_unresolved": 0,
+            "malformed_or_omitted": 0,
+            "unsupported_determinate": 0
+          },
+          "determinate_claims": 7,
+          "diagnostics": [],
+          "evaluated_opportunities": 7,
+          "evidence_supplied_opportunities": 7,
+          "metrics": {
+            "conclusive_coverage": 1.0,
+            "determinate_claim_support_rate": 1.0,
+            "planned_completion": 1.0,
+            "required_output_completion": 1.0
+          },
+          "opportunities": [
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "case",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/case_kind",
+                  "phase": "P0",
+                  "record_id": "case_kind"
+                }
+              ],
+              "field": "cancellation_request",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "events",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/records/controller-2",
+                  "phase": "P1",
+                  "record_id": "controller-2"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/events/7",
+                  "phase": "P1",
+                  "record_id": "7"
+                }
+              ],
+              "field": "fence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_existence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/events/7",
+                  "phase": "P1",
+                  "record_id": "7"
+                }
+              ],
+              "field": "fence_existence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_fence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_request",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_observed_cancellation",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            }
+          ],
+          "phase": "P1",
+          "planned_opportunities": 7,
+          "reference_decidable_opportunities": 7,
+          "scope": "operation-1",
+          "valid_output_opportunities": 7
+        },
+        "view_integrity": {
+          "evidence_refs": [],
+          "reason": "Exact file/field projection verified.",
+          "status": "satisfied"
+        }
+      },
+      "B": {
+        "reference": {
+          "cancellation_request": {
+            "evidence_refs": [
+              {
+                "artifact_id": "case",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/case_kind",
+                "phase": "P0",
+                "record_id": "case_kind"
+              }
+            ],
+            "value": "not_requested"
+          },
+          "effect_existence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "absent_with_complete_bounded_evidence"
+          },
+          "effect_order_vs_fence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "not_applicable_no_effect"
+          },
+          "effect_order_vs_observed_cancellation": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "not_applicable_no_effect"
+          },
+          "effect_order_vs_request": {
+            "evidence_refs": [
+              {
+                "artifact_id": "capture-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/",
+                "phase": "P1",
+                "record_id": "cut-P1"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/effects",
+                "phase": "P1",
+                "record_id": "effects"
+              }
+            ],
+            "value": "not_applicable_no_effect"
+          },
+          "fence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "events",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/records/controller-2",
+                "phase": "P1",
+                "record_id": "controller-2"
+              },
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/events/7",
+                "phase": "P1",
+                "record_id": "7"
+              }
+            ],
+            "value": "confirmed_for_fixture_scope"
+          },
+          "fence_existence": {
+            "evidence_refs": [
+              {
+                "artifact_id": "sink-p1",
+                "boundary_id": "boundary-P1",
+                "cut_id": "cut-P1",
+                "locator": "/events/7",
+                "phase": "P1",
+                "record_id": "7"
+              }
+            ],
+            "value": "present"
+          }
+        },
+        "scores": {
+          "counts": {
+            "avoidable_unresolved": 0,
+            "contradicted": 0,
+            "correct_determinate": 7,
+            "justified_unresolved": 0,
+            "malformed_or_omitted": 0,
+            "unsupported_determinate": 0
+          },
+          "determinate_claims": 7,
+          "diagnostics": [],
+          "evaluated_opportunities": 7,
+          "evidence_supplied_opportunities": 7,
+          "metrics": {
+            "conclusive_coverage": 1.0,
+            "determinate_claim_support_rate": 1.0,
+            "planned_completion": 1.0,
+            "required_output_completion": 1.0
+          },
+          "opportunities": [
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "case",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/case_kind",
+                  "phase": "P0",
+                  "record_id": "case_kind"
+                }
+              ],
+              "field": "cancellation_request",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "events",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/records/controller-2",
+                  "phase": "P1",
+                  "record_id": "controller-2"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/events/7",
+                  "phase": "P1",
+                  "record_id": "7"
+                }
+              ],
+              "field": "fence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_existence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/events/7",
+                  "phase": "P1",
+                  "record_id": "7"
+                }
+              ],
+              "field": "fence_existence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_fence",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_request",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            },
+            {
+              "category": "correct_determinate",
+              "evidence_refs": [
+                {
+                  "artifact_id": "capture-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/",
+                  "phase": "P1",
+                  "record_id": "cut-P1"
+                },
+                {
+                  "artifact_id": "sink-p1",
+                  "boundary_id": "boundary-P1",
+                  "cut_id": "cut-P1",
+                  "locator": "/effects",
+                  "phase": "P1",
+                  "record_id": "effects"
+                }
+              ],
+              "field": "effect_order_vs_observed_cancellation",
+              "reasons": [],
+              "reference_decidable": true,
+              "status": "evaluated"
+            }
+          ],
+          "phase": "P1",
+          "planned_opportunities": 7,
+          "reference_decidable_opportunities": 7,
+          "scope": "operation-1",
+          "valid_output_opportunities": 7
+        },
+        "view_integrity": {
+          "evidence_refs": [],
+          "reason": "Exact file/field projection verified.",
+          "status": "satisfied"
+        }
+      },
+      "paired_underlying_bytes": {
+        "evidence_refs": [],
+        "reason": "A/B canonical records must match exactly; only A envelope differs.",
+        "status": "satisfied"
+      }
+    }
+  }
+}

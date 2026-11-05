@@ -1,0 +1,5 @@
+{"attributes":{},"event_id":"1","phase":"P1","type":"workflow_started"}
+{"attributes":{"activity_id":"activity-1"},"event_id":"2","phase":"P1","type":"activity_scheduled"}
+{"attributes":{"attempt":1,"scheduled_event_id":"2"},"event_id":"3","phase":"P1","type":"activity_started"}
+{"attributes":{"result":{"synthetic":true},"scheduled_event_id":"2","started_event_id":"3"},"event_id":"4","phase":"P1","type":"activity_completed"}
+{"coverage":{"closing_boundary_event_id":"4","complete_prefix":true,"final_event_id":"4","namespace":"synthetic","pages":[{"first_event_id":"1","input_token":null,"last_event_id":"4","output_token":null}],"run_id":"run-1","schema_pin":"synthetic-normalized-v1"},"schema_version":"synthetic-artifact-0.1"}

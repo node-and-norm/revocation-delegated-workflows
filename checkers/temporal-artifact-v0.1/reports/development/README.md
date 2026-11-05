@@ -1,0 +1,1 @@
+These are preserved intermediate software-validation outputs produced before the final reviewed source snapshot. They are not final regression results or native evidence. Use the final test logs, final source manifest, saved fixture catalog and independent review for the delivered candidate.

@@ -1,0 +1,278 @@
+{
+  "records": [
+    {
+      "canonical_file": "identity.json",
+      "canonical_locator": "/case_kind",
+      "raw_ref": {
+        "artifact_id": "case",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/case_kind",
+        "phase": "P0",
+        "record_id": "case_kind"
+      },
+      "record_sha256": "096b89cdcbab794c203c9344c7d5501240547b8f534c99afcd0015493755c3ed"
+    },
+    {
+      "canonical_file": "bridge_events.jsonl",
+      "canonical_locator": "/records/bridge-1",
+      "raw_ref": {
+        "artifact_id": "events",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/records/bridge-1",
+        "phase": "P1",
+        "record_id": "bridge-1"
+      },
+      "record_sha256": "83ba294123cd65ed3394fc53f8e447583c6bd93fc00e84e71d339ab5fa3a366f"
+    },
+    {
+      "canonical_file": "bridge_events.jsonl",
+      "canonical_locator": "/records/bridge-2",
+      "raw_ref": {
+        "artifact_id": "events",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/records/bridge-2",
+        "phase": "P1",
+        "record_id": "bridge-2"
+      },
+      "record_sha256": "41c7400e7f388cbae1388e120c14b202305e5de914bf1e4c6a62a904607d43ed"
+    },
+    {
+      "canonical_file": "bridge_events.jsonl",
+      "canonical_locator": "/records/bridge-3",
+      "raw_ref": {
+        "artifact_id": "events",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/records/bridge-3",
+        "phase": "P1",
+        "record_id": "bridge-3"
+      },
+      "record_sha256": "d275bba47673a58880322523cd39ca94aee769a827016f1e018c8abbe6a296e5"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/tables/authority",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/authority",
+        "phase": "P1",
+        "record_id": "authority"
+      },
+      "record_sha256": "50941e25bfc38661d01b26e3e3de675b81e88ab32b607a478473019e2595967d"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/tables/grants",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/grants",
+        "phase": "P1",
+        "record_id": "grants"
+      },
+      "record_sha256": "cd86f0413b0b0d53b682f77133640c2748ede6683d176a551f8405099163d257"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/tables/tickets",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/tickets",
+        "phase": "P1",
+        "record_id": "tickets"
+      },
+      "record_sha256": "e66e238fb882f257652b3af9b51f4ca09c2db54d4cb344fda04d07c9011e9332"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/tables/events",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events",
+        "phase": "P1",
+        "record_id": "events"
+      },
+      "record_sha256": "d233d8f187eba29b8bd47609fa6e9140460daad5bedd203d1f0b4f1773c721c2"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/tables/effects",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/effects",
+        "phase": "P1",
+        "record_id": "effects"
+      },
+      "record_sha256": "237664aa396d746a8d0c9bdb27a556ed4769a672f11bd1ee462c8bf4e147ad43"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/1",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/1",
+        "phase": "P1",
+        "record_id": "1"
+      },
+      "record_sha256": "2b97691ae21f696b7dff42dd714973c02e924c5a17f9041d2d76cd5953de70d3"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/2",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/2",
+        "phase": "P1",
+        "record_id": "2"
+      },
+      "record_sha256": "06769a48530f9291c0b771320aa728bdedfe5656b374c4083546b1c35611945d"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/3",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/3",
+        "phase": "P1",
+        "record_id": "3"
+      },
+      "record_sha256": "050c591687b65181336d4c13ab17f2a35d6f8f0761ca95e78b3f871fd9e1cc34"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/4",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/4",
+        "phase": "P1",
+        "record_id": "4"
+      },
+      "record_sha256": "8a443b1ee06c39f97bc92b652d5519ddebdad53496027c775503519d9576289d"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/5",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/5",
+        "phase": "P1",
+        "record_id": "5"
+      },
+      "record_sha256": "d4ca8b06795ffe67a41211a192a772bd69b5cd56d0fd137e6c280c133858f28c"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/6",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/6",
+        "phase": "P1",
+        "record_id": "6"
+      },
+      "record_sha256": "d4e63db38ef3b2400b6517f30ed6f72c15b26251e55b9b7eb68928a945054c8b"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/events/7",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/events/7",
+        "phase": "P1",
+        "record_id": "7"
+      },
+      "record_sha256": "e203dbb93bf9ef787a2d6f008ccbe1d10489515d278455abe8fcdf26f8ed4aac"
+    },
+    {
+      "canonical_file": "sink_lookup.json",
+      "canonical_locator": "/effects/7",
+      "raw_ref": {
+        "artifact_id": "sink-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/effects/7",
+        "phase": "P1",
+        "record_id": "effect-7"
+      },
+      "record_sha256": "0549a3876c9391a110aebb0f0f3e7fa7096f5acac36bd01de67c448ea976cae0"
+    },
+    {
+      "canonical_file": "capture.json",
+      "canonical_locator": "/",
+      "raw_ref": {
+        "artifact_id": "capture-p1",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/",
+        "phase": "P1",
+        "record_id": "cut-P1"
+      },
+      "record_sha256": "90f5116172ca49dafadbc90fe82e2ee4e3695d4d3ed656094016b3224b2f2567"
+    },
+    {
+      "canonical_file": "capture.json",
+      "canonical_locator": "/boundary_records/capture-1",
+      "raw_ref": {
+        "artifact_id": "events",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/records/capture-1",
+        "phase": "P1",
+        "record_id": "capture-1"
+      },
+      "record_sha256": "f3f5626aa14f248b567aae0fb5103d08e8606553c0677426db797e147d511a62"
+    },
+    {
+      "canonical_file": "capture.json",
+      "canonical_locator": "/boundary_records/bridge-4",
+      "raw_ref": {
+        "artifact_id": "events",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/records/bridge-4",
+        "phase": "P1",
+        "record_id": "bridge-4"
+      },
+      "record_sha256": "e84910a195ea917bf2042871f9c64f092470d861fb7fb5d4ba050edcc517b181"
+    },
+    {
+      "canonical_file": "capture.json",
+      "canonical_locator": "/boundary_records/capture-2",
+      "raw_ref": {
+        "artifact_id": "events",
+        "boundary_id": "boundary-P1",
+        "cut_id": "cut-P1",
+        "locator": "/records/capture-2",
+        "phase": "P1",
+        "record_id": "capture-2"
+      },
+      "record_sha256": "4f4b81f0fe59fc8d6a84e7f302e519b682a2e0f5c4926a6fb1913fa73c2d8d60"
+    }
+  ],
+  "schema_version": "synthetic-artifact-0.1"
+}

@@ -1,0 +1,19 @@
+{
+  "activity_scope": "cancellable_root",
+  "behavior": "continue",
+  "deadlines": {
+    "activity_start": null,
+    "cancellation_observation": null,
+    "cleanup": null,
+    "execute_response": null,
+    "overall": null,
+    "p1_capture": null,
+    "p2_capture": null,
+    "settlement": null,
+    "workflow_hold": null,
+    "workflow_release": null
+  },
+  "hold_scope": "non_cancellable_observation_only",
+  "maximum_attempts": 1,
+  "mode": "WAIT_CANCELLATION_COMPLETED"
+}

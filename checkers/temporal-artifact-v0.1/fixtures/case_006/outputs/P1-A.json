@@ -1,0 +1,168 @@
+{
+  "assertions": [
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "case",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/case_kind",
+          "phase": "P0",
+          "record_id": "case_kind"
+        }
+      ],
+      "field": "cancellation_request",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "not_requested"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/effects",
+          "phase": "P1",
+          "record_id": "effects"
+        }
+      ],
+      "field": "effect_existence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "absent_with_complete_bounded_evidence"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        }
+      ],
+      "field": "fence_existence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "present"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/controller-2",
+          "phase": "P1",
+          "record_id": "controller-2"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        }
+      ],
+      "field": "fence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "confirmed_for_fixture_scope"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/effects",
+          "phase": "P1",
+          "record_id": "effects"
+        }
+      ],
+      "field": "effect_order_vs_request",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "not_applicable_no_effect"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/effects",
+          "phase": "P1",
+          "record_id": "effects"
+        }
+      ],
+      "field": "effect_order_vs_observed_cancellation",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "not_applicable_no_effect"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/effects",
+          "phase": "P1",
+          "record_id": "effects"
+        }
+      ],
+      "field": "effect_order_vs_fence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "not_applicable_no_effect"
+    }
+  ],
+  "case_id": "case-2d6686e740d04933a841c59dd9d61e66",
+  "operation_id": "operation-1",
+  "phase": "P1",
+  "schema_version": "synthetic-artifact-0.1",
+  "view": "A"
+}

@@ -1,0 +1,47 @@
+{
+  "date_utc": "2026-11-05",
+  "scope": "Preserve reviewed artifact-only synthetic checker and test evidence in existing private draft PR #2",
+  "repository": "node-and-norm/revocation-delegated-workflows",
+  "pull_request": 2,
+  "inspected_parent_commit": "8c2c1615985fd90b08a9cca8aabaa7b7e5e052f7",
+  "source_archive": {
+    "name": "Node_and_Norm_Temporal_Artifact_Checker_Prototype_v01_20261105.zip",
+    "bytes": 656008,
+    "sha256": "323bfb878c30c7e1ebac27cec28dc9a58d6db8ee0163ca86d0b7075ab77f8b5b",
+    "files": 536,
+    "zip_crc_valid": true
+  },
+  "extracted_destination": "checkers/temporal-artifact-v0.1",
+  "extracted_files_preserved_byte_for_byte": 536,
+  "package_manifest_entries": 535,
+  "review_manifest_sha256": "3de1531396516e3664532aa1268bbc7a60acd6b4c67bb9ddc43b774194a9397c",
+  "reviewed_source_and_test_files": 14,
+  "fresh_replay": {
+    "python": "3.12.14",
+    "project_tests": 115,
+    "project_exit_code": 0,
+    "independent_regression_tests": 26,
+    "independent_exit_code": 0,
+    "logs": [
+      "project_test_replay.txt",
+      "independent_test_replay.txt"
+    ],
+    "runtime_scope": "Local synthetic artifacts only; no native runtime or socket execution"
+  },
+  "existing_files": {
+    "inspected": 135,
+    "preserved_exactly": 133,
+    "changed": [
+      "README.md",
+      "SHA256SUMS"
+    ],
+    "deleted": []
+  },
+  "native_qualification": false,
+  "production_adapter": "not implemented or qualified",
+  "phase_sealing": "not implemented for runtime production",
+  "native_outcome_mappings": "unqualified",
+  "numerical_deadlines": "unset and uncalibrated",
+  "independence": "Separate AI-assisted review; not independent human validation; suite counts overlap in behavior",
+  "historical_package_statements": "Statements of no remote repository changes in the delivered package refer to the implementation and review stage before this separate preservation update."
+}

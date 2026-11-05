@@ -1,0 +1,47 @@
+{
+  "ack_refs": [
+    "worker-6",
+    "client-4",
+    "controller-2",
+    "bridge-4",
+    "workflow-3"
+  ],
+  "boundary_id": "boundary-P1",
+  "case_id": "case-402b780e559e42deaaf5cfb2ac762493",
+  "complete_producer_accounting": true,
+  "completeness_limits": [],
+  "cut_id": "cut-P1",
+  "in_flight": [],
+  "interval": {
+    "end_ref": "capture-2",
+    "start_ref": "capture-1"
+  },
+  "interventions": [],
+  "logs_flushed": true,
+  "native_final_event_id": "4",
+  "no_detached_work": true,
+  "operation_id": "operation-1",
+  "phase": "P1",
+  "producer_watermarks": {
+    "bridge": 4,
+    "client": 4,
+    "controller": 2,
+    "worker": 6,
+    "workflow": 3
+  },
+  "queued": [],
+  "schema_version": "synthetic-artifact-0.1",
+  "sink_transaction": {
+    "event_boundary": 7,
+    "single_read_transaction": true,
+    "table_boundaries": {
+      "authority": "txn-P1",
+      "effects": "txn-P1",
+      "events": "txn-P1",
+      "grants": "txn-P1",
+      "tickets": "txn-P1"
+    },
+    "transaction_id": "txn-P1"
+  },
+  "uncertain": []
+}

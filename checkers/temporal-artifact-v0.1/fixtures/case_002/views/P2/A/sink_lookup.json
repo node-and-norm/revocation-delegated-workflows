@@ -1,0 +1,89 @@
+{
+  "available": true,
+  "case_id": "case-402b780e559e42deaaf5cfb2ac762493",
+  "cut_id": "cut-P2",
+  "operation_id": "operation-1",
+  "phase": "P2",
+  "schema_version": "synthetic-artifact-0.1",
+  "tables": {
+    "authority": [
+      {
+        "active": 1,
+        "epoch": 7,
+        "root": "rootR"
+      }
+    ],
+    "effects": [
+      {
+        "effect_key": "summary:task1",
+        "epoch": 7,
+        "event_seq": 7,
+        "payload": "inert summary",
+        "root": "rootR"
+      }
+    ],
+    "events": [
+      {
+        "data": "{\"child\":\"childC\",\"epoch\":7,\"parent\":\"parentP\",\"parent_grant\":\"parent-0\",\"root\":\"rootR\",\"scope\":\"summary:task1\"}",
+        "kind": "bootstrap",
+        "seq": 1
+      },
+      {
+        "data": "{\"actor\":\"parentP\",\"request\":{\"child\":\"childC\",\"claim\":\"parentP\",\"grant\":\"parent-0\",\"id\":\"delegate\",\"op\":\"delegate\",\"scope\":\"summary:task1\"}}",
+        "kind": "receipt",
+        "seq": 2
+      },
+      {
+        "data": "{\"request_id\":\"delegate\",\"result\":{\"epoch\":7,\"grant\":\"child-1\",\"outcome\":\"grant\",\"owner\":\"childC\",\"parent_grant\":\"parent-0\",\"root\":\"rootR\",\"scope\":\"summary:task1\"}}",
+        "kind": "grant",
+        "seq": 3
+      },
+      {
+        "data": "{\"actor\":\"childC\",\"request\":{\"claim\":\"childC\",\"grant\":\"child-1\",\"id\":\"prepare\",\"op\":\"prepare\",\"scope\":\"summary:task1\"}}",
+        "kind": "receipt",
+        "seq": 4
+      },
+      {
+        "data": "{\"request_id\":\"prepare\",\"result\":{\"epoch\":7,\"grant\":\"child-1\",\"outcome\":\"admission\",\"root\":\"rootR\",\"scope\":\"summary:task1\",\"ticket\":\"ticket-1\"}}",
+        "kind": "admission",
+        "seq": 5
+      },
+      {
+        "data": "{\"actor\":\"childC\",\"request\":{\"claim\":\"childC\",\"grant\":\"child-1\",\"id\":\"execute\",\"op\":\"execute\",\"payload\":\"inert summary\",\"scope\":\"summary:task1\",\"ticket\":\"ticket-1\"}}",
+        "kind": "receipt",
+        "seq": 6
+      },
+      {
+        "data": "{\"request_id\":\"execute\",\"result\":{\"effect_key\":\"summary:task1\",\"epoch\":7,\"outcome\":\"effect\",\"payload\":\"inert summary\",\"root\":\"rootR\"}}",
+        "kind": "effect",
+        "seq": 7
+      }
+    ],
+    "grants": [
+      {
+        "can_delegate": 1,
+        "epoch": 7,
+        "owner": "parentP",
+        "root": "rootR",
+        "scope": "summary:task1",
+        "token": "parent-0"
+      },
+      {
+        "can_delegate": 0,
+        "epoch": 7,
+        "owner": "childC",
+        "root": "rootR",
+        "scope": "summary:task1",
+        "token": "child-1"
+      }
+    ],
+    "tickets": [
+      {
+        "grant_token": "child-1",
+        "owner": "childC",
+        "scope": "summary:task1",
+        "token": "ticket-1"
+      }
+    ]
+  }
+}

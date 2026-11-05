@@ -1,0 +1,19 @@
+{
+  "budget_expired": false,
+  "capture_errors": [],
+  "case_id": "case-3f96b15a6b804b7eb4ecd592b86f920d",
+  "child_exits": [
+    {
+      "child_id": "synthetic-child",
+      "exit_code": 0
+    }
+  ],
+  "forced_actions": [],
+  "initial_error_ref": null,
+  "operation_id": "operation-1",
+  "outstanding": [],
+  "schema_version": "synthetic-artifact-0.1",
+  "secondary_errors": [],
+  "shutdown_acknowledged": true,
+  "shutdown_requested": true
+}

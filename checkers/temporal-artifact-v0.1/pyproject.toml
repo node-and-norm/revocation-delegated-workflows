@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "temporal-artifact-checker"
+version = "0.1.0"
+description = "Artifact-only synthetic evidence checker; not native Temporal qualification"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+temporal-artifact-checker = "temporal_checker.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

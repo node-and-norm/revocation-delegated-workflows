@@ -1,0 +1,234 @@
+{
+  "ack_refs": [
+    "worker-7",
+    "bridge-4",
+    "controller-2",
+    "client-4",
+    "workflow-3"
+  ],
+  "boundary_id": "boundary-P1",
+  "boundary_records": [
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "capture_start",
+      "operation_id": "operation-1",
+      "parents": [
+        "workflow-2",
+        "native:4"
+      ],
+      "payload": {
+        "cut_id": "cut-P1"
+      },
+      "phase": "P1",
+      "producer_id": "capture",
+      "record_id": "capture-1",
+      "sequence": 1,
+      "wall_clock": 985
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 7
+      },
+      "phase": "P1",
+      "producer_id": "worker",
+      "record_id": "worker-7",
+      "sequence": 7,
+      "wall_clock": 984
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 4
+      },
+      "phase": "P1",
+      "producer_id": "bridge",
+      "record_id": "bridge-4",
+      "sequence": 4,
+      "wall_clock": 983
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 2
+      },
+      "phase": "P1",
+      "producer_id": "controller",
+      "record_id": "controller-2",
+      "sequence": 2,
+      "wall_clock": 982
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 4
+      },
+      "phase": "P1",
+      "producer_id": "client",
+      "record_id": "client-4",
+      "sequence": 4,
+      "wall_clock": 981
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 3
+      },
+      "phase": "P1",
+      "producer_id": "workflow",
+      "record_id": "workflow-3",
+      "sequence": 3,
+      "wall_clock": 980
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "WAIT_CANCELLATION_COMPLETED",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "kind": "capture_end",
+      "operation_id": "operation-1",
+      "parents": [
+        "worker-7",
+        "bridge-4",
+        "controller-2",
+        "client-4",
+        "workflow-3"
+      ],
+      "payload": {
+        "cut_id": "cut-P1"
+      },
+      "phase": "P1",
+      "producer_id": "capture",
+      "record_id": "capture-2",
+      "sequence": 2,
+      "wall_clock": 979
+    }
+  ],
+  "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+  "complete_producer_accounting": true,
+  "completeness_limits": [],
+  "cut_id": "cut-P1",
+  "in_flight": [],
+  "interval": {
+    "end_ref": "capture-2",
+    "start_ref": "capture-1"
+  },
+  "interventions": [],
+  "logs_flushed": true,
+  "native_final_event_id": "4",
+  "no_detached_work": true,
+  "operation_id": "operation-1",
+  "phase": "P1",
+  "producer_watermarks": {
+    "bridge": 4,
+    "client": 4,
+    "controller": 2,
+    "worker": 7,
+    "workflow": 3
+  },
+  "queued": [],
+  "schema_version": "synthetic-artifact-0.1",
+  "sink_transaction": {
+    "event_boundary": 7,
+    "single_read_transaction": true,
+    "table_boundaries": {
+      "authority": "txn-P1",
+      "effects": "txn-P1",
+      "events": "txn-P1",
+      "grants": "txn-P1",
+      "tickets": "txn-P1"
+    },
+    "transaction_id": "txn-P1"
+  },
+  "uncertain": []
+}

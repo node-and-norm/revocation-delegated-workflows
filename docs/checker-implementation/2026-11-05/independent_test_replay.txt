@@ -1,0 +1,31 @@
+test_a_b_different_bytes_not_equal (__main__.IndependentReview.test_a_b_different_bytes_not_equal) ... ok
+test_c1_extra_dispatch_is_adverse_without_effect (__main__.IndependentReview.test_c1_extra_dispatch_is_adverse_without_effect) ... ok
+test_c4_ack_request_must_match (__main__.IndependentReview.test_c4_ack_request_must_match) ... ok
+test_c4_extra_dispatch_is_adverse_with_one_effect (__main__.IndependentReview.test_c4_extra_dispatch_is_adverse_with_one_effect) ... ok
+test_cancellation_observation_call_id_must_match (__main__.IndependentReview.test_cancellation_observation_call_id_must_match) ... ok
+test_huge_native_boundary_is_bounded (__main__.IndependentReview.test_huge_native_boundary_is_bounded) ... ok
+test_k1_submission_not_no_request (__main__.IndependentReview.test_k1_submission_not_no_request) ... ok
+test_malformed_sink_denial_does_not_crash (__main__.IndependentReview.test_malformed_sink_denial_does_not_crash) ... ok
+test_mapping_tuple_shape_fails_closed (__main__.IndependentReview.test_mapping_tuple_shape_fails_closed) ... ok
+test_native_payload_duplicate_envelope_rejected (__main__.IndependentReview.test_native_payload_duplicate_envelope_rejected) ... ok
+test_nonobject_registry_fails_closed (__main__.IndependentReview.test_nonobject_registry_fails_closed) ... ok
+test_numeric_overflow_rejected (__main__.IndependentReview.test_numeric_overflow_rejected) ... ok
+test_p2_unknown_payload_does_not_erase_p1 (__main__.IndependentReview.test_p2_unknown_payload_does_not_erase_p1) ... ok
+test_p2_unrelated_invalid_reference_does_not_erase_p1 (__main__.IndependentReview.test_p2_unrelated_invalid_reference_does_not_erase_p1) ... ok
+test_p3_new_operation_does_not_falsify_earlier_cut (__main__.IndependentReview.test_p3_new_operation_does_not_falsify_earlier_cut) ... ok
+test_p3_same_dispatch_contradicts_certificate (__main__.IndependentReview.test_p3_same_dispatch_contradicts_certificate) ... ok
+test_purely_synthetic_never_qualifies_native (__main__.IndependentReview.test_purely_synthetic_never_qualifies_native) ... ok
+test_reserved_graph_id_namespace_rejected (__main__.IndependentReview.test_reserved_graph_id_namespace_rejected) ... ok
+test_resolution_must_follow_dispatch (__main__.IndependentReview.test_resolution_must_follow_dispatch) ... ok
+test_uncertain_uncommitted_transport_prevents_absence (__main__.IndependentReview.test_uncertain_uncommitted_transport_prevents_absence) ... ok
+test_undefined_launch_reference_rejected (__main__.IndependentReview.test_undefined_launch_reference_rejected) ... ok
+test_undefined_start_reference_rejected (__main__.IndependentReview.test_undefined_start_reference_rejected) ... ok
+test_visible_worker_proof_survives_hidden_native (__main__.IndependentReview.test_visible_worker_proof_survives_hidden_native) ... ok
+test_worker_payload_duplicate_envelope_rejected (__main__.IndependentReview.test_worker_payload_duplicate_envelope_rejected) ... ok
+test_wrong_denial_preserves_complete_zero_effect_fact (__main__.IndependentReview.test_wrong_denial_preserves_complete_zero_effect_fact) ... ok
+test_wrong_gateway_pin_rejected (__main__.IndependentReview.test_wrong_gateway_pin_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.350s
+
+OK

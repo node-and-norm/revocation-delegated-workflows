@@ -1,0 +1,28 @@
+{
+  "approved_proposal": {
+    "filename": "Node_and_Norm_Temporal_Checker_Proposal_v03.docx",
+    "sha256": "4461fd4694521b291092edd2737e8a50f41de6ee342d037511dba7dff4659246",
+    "text_copy": "proposal.txt",
+    "text_copy_method": "Extracted paragraph text from word/document.xml; not a byte-identical DOCX substitute."
+  },
+  "repository_context": {
+    "pull_request": "https://github.com/node-and-norm/revocation-delegated-workflows/pull/2",
+    "head": "8c2c1615985fd90b08a9cca8aabaa7b7e5e052f7",
+    "base": "5ceceb4b0f30e8c0608b641d71785a6ce2317c8a",
+    "observed_state": "open draft",
+    "read_date": "2026-11-05",
+    "remote_writes": false
+  },
+  "historical_gateway": {
+    "sha256": "98445edd61af21bc5c740053f8a93f6c179e4c5efa7b28dd7363e779b8f059a9",
+    "used_as": "Read-only table-format and semantics reference; not imported or executed."
+  },
+  "runtime": {
+    "native_execution": false,
+    "socket_creation": false,
+    "native_qualification": false,
+    "real_exporter_adapter": "not implemented",
+    "native_mappings": "unqualified",
+    "numerical_deadlines": "unset and uncalibrated"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "assertions": [
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "case",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/case_kind",
+          "phase": "P0",
+          "record_id": "case_kind"
+        }
+      ],
+      "field": "cancellation_request",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "not_requested"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        }
+      ],
+      "field": "effect_existence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "present"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events",
+          "phase": "P1",
+          "record_id": "events"
+        }
+      ],
+      "field": "fence_existence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "absent_with_complete_bounded_evidence"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [],
+      "field": "fence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "unresolved"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "case",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/case_kind",
+          "phase": "P0",
+          "record_id": "case_kind"
+        }
+      ],
+      "field": "effect_order_vs_request",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "no_request"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "case",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/case_kind",
+          "phase": "P0",
+          "record_id": "case_kind"
+        }
+      ],
+      "field": "effect_order_vs_observed_cancellation",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "no_observation"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events",
+          "phase": "P1",
+          "record_id": "events"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        }
+      ],
+      "field": "effect_order_vs_fence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "no_fence_in_complete_window"
+    }
+  ],
+  "case_id": "case-77ec3314b0484467bc6501516d9abda2",
+  "operation_id": "operation-1",
+  "phase": "P1",
+  "schema_version": "synthetic-artifact-0.1",
+  "view": "A"
+}

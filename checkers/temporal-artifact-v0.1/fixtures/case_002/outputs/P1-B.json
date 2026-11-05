@@ -1,0 +1,330 @@
+{
+  "assertions": [
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/workflow-1",
+          "phase": "P1",
+          "record_id": "workflow-1"
+        }
+      ],
+      "field": "activity_call",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "settled_with_recorded_result"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "native-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/4",
+          "phase": "P1",
+          "record_id": "4"
+        }
+      ],
+      "field": "activity_execution",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "native_terminal_record"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "native-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/coverage",
+          "phase": "P1",
+          "record_id": "coverage"
+        }
+      ],
+      "field": "workflow_execution",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "running"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/client-3",
+          "phase": "P1",
+          "record_id": "client-3"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/client-2",
+          "phase": "P1",
+          "record_id": "client-2"
+        }
+      ],
+      "field": "cancellation_request",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "response_received"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        }
+      ],
+      "field": "effect_existence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "present"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events",
+          "phase": "P1",
+          "record_id": "events"
+        }
+      ],
+      "field": "fence_existence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "absent_with_complete_bounded_evidence"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [],
+      "field": "fence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "unresolved"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/client-1",
+          "phase": "P1",
+          "record_id": "client-1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/bridge-1",
+          "phase": "P1",
+          "record_id": "bridge-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/bridge-2",
+          "phase": "P1",
+          "record_id": "bridge-2"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/client-2",
+          "phase": "P1",
+          "record_id": "client-2"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/controller-1",
+          "phase": "P1",
+          "record_id": "controller-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/worker-1",
+          "phase": "P1",
+          "record_id": "worker-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/worker-2",
+          "phase": "P1",
+          "record_id": "worker-2"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/worker-3",
+          "phase": "P1",
+          "record_id": "worker-3"
+        }
+      ],
+      "field": "effect_order_vs_request",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "after"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/worker-2",
+          "phase": "P1",
+          "record_id": "worker-2"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/bridge-1",
+          "phase": "P1",
+          "record_id": "bridge-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/bridge-2",
+          "phase": "P1",
+          "record_id": "bridge-2"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/client-1",
+          "phase": "P1",
+          "record_id": "client-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/client-2",
+          "phase": "P1",
+          "record_id": "client-2"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/controller-1",
+          "phase": "P1",
+          "record_id": "controller-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/worker-1",
+          "phase": "P1",
+          "record_id": "worker-1"
+        },
+        {
+          "artifact_id": "events",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/records/worker-3",
+          "phase": "P1",
+          "record_id": "worker-3"
+        }
+      ],
+      "field": "effect_order_vs_observed_cancellation",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "after"
+    },
+    {
+      "assertion_phase": "P1",
+      "evidence_refs": [
+        {
+          "artifact_id": "capture-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/",
+          "phase": "P1",
+          "record_id": "cut-P1"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events",
+          "phase": "P1",
+          "record_id": "events"
+        },
+        {
+          "artifact_id": "sink-p1",
+          "boundary_id": "boundary-P1",
+          "cut_id": "cut-P1",
+          "locator": "/events/7",
+          "phase": "P1",
+          "record_id": "7"
+        }
+      ],
+      "field": "effect_order_vs_fence",
+      "observer": "synthetic_projection",
+      "scope": "operation-1",
+      "value": "no_fence_in_complete_window"
+    }
+  ],
+  "case_id": "case-402b780e559e42deaaf5cfb2ac762493",
+  "operation_id": "operation-1",
+  "phase": "P1",
+  "schema_version": "synthetic-artifact-0.1",
+  "view": "B"
+}

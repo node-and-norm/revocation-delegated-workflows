@@ -1,0 +1,525 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "case",
+      "byte_length": 1599,
+      "path": "case.json",
+      "phase": "P0",
+      "producer": "synthetic_fixture",
+      "role": "case",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "d8cbfb82ce46e980d07f1bf49db02a2707b17fe18a8db931f9bb0b6ded66984b"
+    },
+    {
+      "artifact_id": "binding",
+      "byte_length": 402,
+      "path": "observed_binding.json",
+      "phase": "P0",
+      "producer": "synthetic_fixture",
+      "role": "binding",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "94f4c2378ff9ab24e253216802b0accbe741cdd9c4c9228df071a504dfb3741c"
+    },
+    {
+      "artifact_id": "events",
+      "byte_length": 12862,
+      "path": "producer_events.jsonl",
+      "phase": "P0",
+      "producer": "synthetic_fixture",
+      "role": "events",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "ec22005db6036d05e9127fe472d5d3f0c095ff44b03ad63575834c5311e79d1f"
+    },
+    {
+      "artifact_id": "sink-p1",
+      "byte_length": 49152,
+      "path": "P1/sink.sqlite",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "sink",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "14cc39b453e01bb1bfa8db16e8eece00d6e7fe9d942d4ccfceb710e575754297"
+    },
+    {
+      "artifact_id": "native-p1",
+      "byte_length": 1491,
+      "path": "P1/native_history.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "native",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "e7b47e67a91641fcdbc5556e8a87196fc62b5f851f474961da3d922a2e6939f6"
+    },
+    {
+      "artifact_id": "capture-p1",
+      "byte_length": 1032,
+      "path": "P1/capture.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "capture",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "bc1578c7c77bd3d90934a3b911ef3a7a8979a709b63df61b4a8fa123b9e99db8"
+    },
+    {
+      "artifact_id": "sink-p2",
+      "byte_length": 49152,
+      "path": "P2/sink.sqlite",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "sink",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "14cc39b453e01bb1bfa8db16e8eece00d6e7fe9d942d4ccfceb710e575754297"
+    },
+    {
+      "artifact_id": "native-p2",
+      "byte_length": 1672,
+      "path": "P2/native_history.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "native",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "71f7bffccddab9d57b46f2debbdbea105577013dfc6782ebf257b567c17a9a51"
+    },
+    {
+      "artifact_id": "capture-p2",
+      "byte_length": 1032,
+      "path": "P2/capture.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "capture",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "b7d642077915134f9d2db7067faa97ecf5987bf7fc90f1eb63acb35f854cf7d6"
+    },
+    {
+      "artifact_id": "cleanup",
+      "byte_length": 444,
+      "path": "cleanup.json",
+      "phase": "P3",
+      "producer": "synthetic_fixture",
+      "role": "cleanup",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "b28ea02013b4e4c6b23c85256c12f29d2113e20c9ab5d706557c988699634839"
+    },
+    {
+      "artifact_id": "v-p1-a-identity-json",
+      "byte_length": 765,
+      "path": "views/P1/A/identity.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_identity.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "2008d1da4c9fca9f16955a670614403591239149dbf2384869c29850756b21bd"
+    },
+    {
+      "artifact_id": "v-p1-a-configuration-json",
+      "byte_length": 458,
+      "path": "views/P1/A/configuration.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_configuration.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "artifact_id": "v-p1-a-client_events-jsonl",
+      "byte_length": 1285,
+      "path": "views/P1/A/client_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_client_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "artifact_id": "v-p1-a-worker_events-jsonl",
+      "byte_length": 3360,
+      "path": "views/P1/A/worker_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_worker_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "f12a46c1191bf6fa236222f2c254ac20d51e26127e2dcce128497b14da477fbb"
+    },
+    {
+      "artifact_id": "v-p1-a-bridge_events-jsonl",
+      "byte_length": 1279,
+      "path": "views/P1/A/bridge_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_bridge_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "artifact_id": "v-p1-a-native_events-jsonl",
+      "byte_length": 734,
+      "path": "views/P1/A/native_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_native_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "f0f0fd0bae0d23a0277ea186bbc9676d9f7971513e0c94a0149dffee2252a3f7"
+    },
+    {
+      "artifact_id": "v-p1-a-sink_lookup-json",
+      "byte_length": 2810,
+      "path": "views/P1/A/sink_lookup.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_sink_lookup.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "5309403c931171ee34cfc0a25327db3285563421e440c711b0e4eb41e19db104"
+    },
+    {
+      "artifact_id": "v-p1-a-capture-json",
+      "byte_length": 5641,
+      "path": "views/P1/A/capture.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_capture.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "578f6b855bdf8adee4cfc5156287fe189699b0c69c1cadaa024678ef2c95856c"
+    },
+    {
+      "artifact_id": "v-p1-a-source_map-json",
+      "byte_length": 16938,
+      "path": "views/P1/A/source_map.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_A_source_map.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "f3d32690a6309a673e1288ffca96506e76833f0f4b3fd6e9abeccbd9a0a8f881"
+    },
+    {
+      "artifact_id": "envelope-p1",
+      "byte_length": 8860,
+      "path": "views/P1/A/envelope.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "envelope_A",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "e998a50c4b2b2732d0f16be52e2a758cda4ec0a7cf68d656130fbfad3031caf2"
+    },
+    {
+      "artifact_id": "output-p1-a",
+      "byte_length": 8875,
+      "path": "outputs/P1-A.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "projection_A",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "cffc9972efc3082aed5c51845a0c50057ddcaf116545671df21eb9ec022faac7"
+    },
+    {
+      "artifact_id": "v-p1-b-identity-json",
+      "byte_length": 765,
+      "path": "views/P1/B/identity.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_identity.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "2008d1da4c9fca9f16955a670614403591239149dbf2384869c29850756b21bd"
+    },
+    {
+      "artifact_id": "v-p1-b-configuration-json",
+      "byte_length": 458,
+      "path": "views/P1/B/configuration.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_configuration.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "artifact_id": "v-p1-b-client_events-jsonl",
+      "byte_length": 1285,
+      "path": "views/P1/B/client_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_client_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "artifact_id": "v-p1-b-worker_events-jsonl",
+      "byte_length": 3360,
+      "path": "views/P1/B/worker_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_worker_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "f12a46c1191bf6fa236222f2c254ac20d51e26127e2dcce128497b14da477fbb"
+    },
+    {
+      "artifact_id": "v-p1-b-bridge_events-jsonl",
+      "byte_length": 1279,
+      "path": "views/P1/B/bridge_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_bridge_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "artifact_id": "v-p1-b-native_events-jsonl",
+      "byte_length": 734,
+      "path": "views/P1/B/native_events.jsonl",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_native_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "f0f0fd0bae0d23a0277ea186bbc9676d9f7971513e0c94a0149dffee2252a3f7"
+    },
+    {
+      "artifact_id": "v-p1-b-sink_lookup-json",
+      "byte_length": 2810,
+      "path": "views/P1/B/sink_lookup.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_sink_lookup.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "5309403c931171ee34cfc0a25327db3285563421e440c711b0e4eb41e19db104"
+    },
+    {
+      "artifact_id": "v-p1-b-capture-json",
+      "byte_length": 5641,
+      "path": "views/P1/B/capture.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_capture.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "578f6b855bdf8adee4cfc5156287fe189699b0c69c1cadaa024678ef2c95856c"
+    },
+    {
+      "artifact_id": "v-p1-b-source_map-json",
+      "byte_length": 16938,
+      "path": "views/P1/B/source_map.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "view_B_source_map.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "f3d32690a6309a673e1288ffca96506e76833f0f4b3fd6e9abeccbd9a0a8f881"
+    },
+    {
+      "artifact_id": "output-p1-b",
+      "byte_length": 8875,
+      "path": "outputs/P1-B.json",
+      "phase": "P1",
+      "producer": "synthetic_fixture",
+      "role": "projection_B",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "02ca17e2fb6d1693b35a21d69fb5b203ad985b27c9a71d77717c8add732266fe"
+    },
+    {
+      "artifact_id": "v-p2-a-identity-json",
+      "byte_length": 765,
+      "path": "views/P2/A/identity.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_identity.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "ee6ee8f20eb257998d58e20fad739c5409a190c6e31d93b6d3cfc17834e9de41"
+    },
+    {
+      "artifact_id": "v-p2-a-configuration-json",
+      "byte_length": 458,
+      "path": "views/P2/A/configuration.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_configuration.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "artifact_id": "v-p2-a-client_events-jsonl",
+      "byte_length": 1285,
+      "path": "views/P2/A/client_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_client_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "artifact_id": "v-p2-a-worker_events-jsonl",
+      "byte_length": 4238,
+      "path": "views/P2/A/worker_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_worker_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "4c4cf526eca99f99bbd58be99edfc05873c9e1c4278d0e9ffc75408868024be5"
+    },
+    {
+      "artifact_id": "v-p2-a-bridge_events-jsonl",
+      "byte_length": 1279,
+      "path": "views/P2/A/bridge_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_bridge_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "artifact_id": "v-p2-a-native_events-jsonl",
+      "byte_length": 835,
+      "path": "views/P2/A/native_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_native_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "90fab3eee1362d45e1a39c1deff19527b056cbb6e91ba47b90f08048972953da"
+    },
+    {
+      "artifact_id": "v-p2-a-sink_lookup-json",
+      "byte_length": 2810,
+      "path": "views/P2/A/sink_lookup.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_sink_lookup.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "0c820bc94c0a2ec47ac4704f5450be5e697c40660dddd29a7f296033cccef092"
+    },
+    {
+      "artifact_id": "v-p2-a-capture-json",
+      "byte_length": 10222,
+      "path": "views/P2/A/capture.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_capture.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "cc47a935f9add39660019fbe47024fc688b9d8e129d773b1587e850183dae151"
+    },
+    {
+      "artifact_id": "v-p2-a-source_map-json",
+      "byte_length": 21174,
+      "path": "views/P2/A/source_map.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_A_source_map.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "9ed3099d12bed67c936ff5adeac2bdf737dee1b97dbda248c992adf840ce67ba"
+    },
+    {
+      "artifact_id": "envelope-p2",
+      "byte_length": 8867,
+      "path": "views/P2/A/envelope.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "envelope_A",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "b8ec815048ab582d8a37da48fbe8cd46c6d4d220bb336ced484450b7087db0c4"
+    },
+    {
+      "artifact_id": "output-p2-a",
+      "byte_length": 8882,
+      "path": "outputs/P2-A.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "projection_A",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "00d5290698bddb710c34a3133d26f9965846cf78a6804ffc9905d159ebf48a3a"
+    },
+    {
+      "artifact_id": "v-p2-b-identity-json",
+      "byte_length": 765,
+      "path": "views/P2/B/identity.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_identity.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "ee6ee8f20eb257998d58e20fad739c5409a190c6e31d93b6d3cfc17834e9de41"
+    },
+    {
+      "artifact_id": "v-p2-b-configuration-json",
+      "byte_length": 458,
+      "path": "views/P2/B/configuration.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_configuration.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "artifact_id": "v-p2-b-client_events-jsonl",
+      "byte_length": 1285,
+      "path": "views/P2/B/client_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_client_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "artifact_id": "v-p2-b-worker_events-jsonl",
+      "byte_length": 4238,
+      "path": "views/P2/B/worker_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_worker_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "4c4cf526eca99f99bbd58be99edfc05873c9e1c4278d0e9ffc75408868024be5"
+    },
+    {
+      "artifact_id": "v-p2-b-bridge_events-jsonl",
+      "byte_length": 1279,
+      "path": "views/P2/B/bridge_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_bridge_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "artifact_id": "v-p2-b-native_events-jsonl",
+      "byte_length": 835,
+      "path": "views/P2/B/native_events.jsonl",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_native_events.jsonl",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "90fab3eee1362d45e1a39c1deff19527b056cbb6e91ba47b90f08048972953da"
+    },
+    {
+      "artifact_id": "v-p2-b-sink_lookup-json",
+      "byte_length": 2810,
+      "path": "views/P2/B/sink_lookup.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_sink_lookup.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "0c820bc94c0a2ec47ac4704f5450be5e697c40660dddd29a7f296033cccef092"
+    },
+    {
+      "artifact_id": "v-p2-b-capture-json",
+      "byte_length": 10222,
+      "path": "views/P2/B/capture.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_capture.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "cc47a935f9add39660019fbe47024fc688b9d8e129d773b1587e850183dae151"
+    },
+    {
+      "artifact_id": "v-p2-b-source_map-json",
+      "byte_length": 21174,
+      "path": "views/P2/B/source_map.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "view_B_source_map.json",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "9ed3099d12bed67c936ff5adeac2bdf737dee1b97dbda248c992adf840ce67ba"
+    },
+    {
+      "artifact_id": "output-p2-b",
+      "byte_length": 8882,
+      "path": "outputs/P2-B.json",
+      "phase": "P2",
+      "producer": "synthetic_fixture",
+      "role": "projection_B",
+      "schema_version": "synthetic-artifact-0.1",
+      "sha256": "69631f18f07a561b505b0ae1841b03d2f28cb01d3da3ce3785a50b97ea99837f"
+    }
+  ],
+  "schema_version": "synthetic-artifact-0.1"
+}
