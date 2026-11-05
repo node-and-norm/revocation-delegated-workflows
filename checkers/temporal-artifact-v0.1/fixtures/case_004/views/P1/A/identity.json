@@ -1,0 +1,31 @@
+{
+  "assertion_phase": "P1",
+  "authority_scope": {
+    "actor": "childC",
+    "epoch": 7,
+    "grant": "child-1",
+    "payload": "inert summary",
+    "root": "rootR",
+    "scope": "summary:task1",
+    "ticket": "ticket-1"
+  },
+  "case_id": "case-3f96b15a6b804b7eb4ecd592b86f920d",
+  "case_kind": "native_activity",
+  "cut_id": "cut-P1",
+  "observed_binding": {
+    "activity_id": "activity-1",
+    "attempt": 1,
+    "mode": "WAIT_CANCELLATION_COMPLETED",
+    "run_id": "run-1",
+    "scheduled_event_id": "2",
+    "started_event_id": "3",
+    "workflow_id": "workflow-1"
+  },
+  "operation_id": "operation-1",
+  "predeclared_binding": {
+    "activity_id": "activity-1",
+    "workflow_id": "workflow-1"
+  },
+  "protocol_version": "0.3",
+  "schema_version": "synthetic-artifact-0.1"
+}

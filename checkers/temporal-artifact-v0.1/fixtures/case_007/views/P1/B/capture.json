@@ -1,0 +1,176 @@
+{
+  "ack_refs": [
+    "worker-5",
+    "client-4",
+    "workflow-3"
+  ],
+  "boundary_id": "boundary-P1",
+  "boundary_records": [
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "TRY_CANCEL",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+      "kind": "capture_start",
+      "operation_id": "operation-1",
+      "parents": [
+        "workflow-2",
+        "native:4"
+      ],
+      "payload": {
+        "cut_id": "cut-P1"
+      },
+      "phase": "P1",
+      "producer_id": "capture",
+      "record_id": "capture-1",
+      "sequence": 1,
+      "wall_clock": 991
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "TRY_CANCEL",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 5
+      },
+      "phase": "P1",
+      "producer_id": "worker",
+      "record_id": "worker-5",
+      "sequence": 5,
+      "wall_clock": 990
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "TRY_CANCEL",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 4
+      },
+      "phase": "P1",
+      "producer_id": "client",
+      "record_id": "client-4",
+      "sequence": 4,
+      "wall_clock": 989
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "TRY_CANCEL",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+      "kind": "flush_ack",
+      "operation_id": "operation-1",
+      "parents": [
+        "capture-1"
+      ],
+      "payload": {
+        "cut_id": "cut-P1",
+        "through_sequence": 3
+      },
+      "phase": "P1",
+      "producer_id": "workflow",
+      "record_id": "workflow-3",
+      "sequence": 3,
+      "wall_clock": 988
+    },
+    {
+      "binding": {
+        "activity_id": "activity-1",
+        "attempt": 1,
+        "mode": "TRY_CANCEL",
+        "run_id": "run-1",
+        "scheduled_event_id": "2",
+        "started_event_id": "3",
+        "workflow_id": "workflow-1"
+      },
+      "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+      "kind": "capture_end",
+      "operation_id": "operation-1",
+      "parents": [
+        "worker-5",
+        "client-4",
+        "workflow-3"
+      ],
+      "payload": {
+        "cut_id": "cut-P1"
+      },
+      "phase": "P1",
+      "producer_id": "capture",
+      "record_id": "capture-2",
+      "sequence": 2,
+      "wall_clock": 987
+    }
+  ],
+  "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+  "complete_producer_accounting": true,
+  "completeness_limits": [],
+  "cut_id": "cut-P1",
+  "in_flight": [],
+  "interval": {
+    "end_ref": "capture-2",
+    "start_ref": "capture-1"
+  },
+  "interventions": [],
+  "logs_flushed": true,
+  "native_final_event_id": "4",
+  "no_detached_work": true,
+  "operation_id": "operation-1",
+  "phase": "P1",
+  "producer_watermarks": {
+    "client": 4,
+    "worker": 5,
+    "workflow": 3
+  },
+  "queued": [],
+  "schema_version": "synthetic-artifact-0.1",
+  "sink_transaction": {
+    "event_boundary": 5,
+    "single_read_transaction": true,
+    "table_boundaries": {
+      "authority": "txn-P1",
+      "effects": "txn-P1",
+      "events": "txn-P1",
+      "grants": "txn-P1",
+      "tickets": "txn-P1"
+    },
+    "transaction_id": "txn-P1"
+  },
+  "uncertain": []
+}

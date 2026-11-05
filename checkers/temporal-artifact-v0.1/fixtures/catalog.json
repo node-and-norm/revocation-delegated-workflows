@@ -1,0 +1,275 @@
+{
+  "description": "Ten saved synthetic fixtures. Six measured-plan-shaped cells plus four qualification-shaped controls. None is an empirical run. Explicit expected outputs independently specified; mutation expectations live in unittest methods.",
+  "fixtures": [
+    {
+      "case_id": "case-7dc40e4a07454e8bb6d6ccc2eb408e02",
+      "cell": "M1",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 9,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_001",
+      "mode": "TRY_CANCEL",
+      "registry_sha256": "d9e2e941ec83720e49f003183f65a038ae51f24f1145a9d31d83c58f502fa7da"
+    },
+    {
+      "case_id": "case-402b780e559e42deaaf5cfb2ac762493",
+      "cell": "M2",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 9,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_002",
+      "mode": "WAIT_CANCELLATION_COMPLETED",
+      "registry_sha256": "150bb4f0ee1c1506325fe176a381c3f1e2557c0553264906bac6fe677edaf8c0"
+    },
+    {
+      "case_id": "case-0f2ea58083804b8a9045c00cc0cc4208",
+      "cell": "M3",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 10,
+          "justified_unresolved_per_view": 0,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_003",
+      "mode": "TRY_CANCEL",
+      "registry_sha256": "16e71b70a6b812404c1fae4f40fd7fa226421cc223d613677262aba61a0c0b33"
+    },
+    {
+      "case_id": "case-3f96b15a6b804b7eb4ecd592b86f920d",
+      "cell": "M4",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 10,
+          "justified_unresolved_per_view": 0,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_004",
+      "mode": "WAIT_CANCELLATION_COMPLETED",
+      "registry_sha256": "ee3e092eff88f64eb6998bcfd55436b36738ad1c37e87a156564f46b314d43d9"
+    },
+    {
+      "case_id": "case-77ec3314b0484467bc6501516d9abda2",
+      "cell": "K1",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 6,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "not_applicable",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_005",
+      "mode": null,
+      "registry_sha256": "be02bcd7e675156545582bca6439b27e0858eeb0f3e4313a1d512bca29ab9cae"
+    },
+    {
+      "case_id": "case-2d6686e740d04933a841c59dd9d61e66",
+      "cell": "K2",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 7,
+          "justified_unresolved_per_view": 0,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "not_applicable",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_006",
+      "mode": null,
+      "registry_sha256": "e3ac8e8f186095e538b092adf8ebfeb389ded0d332e52ef2e3f8e9dc4542c487"
+    },
+    {
+      "case_id": "case-1e7eb48453cc4e0e8fb01096b53d90b0",
+      "cell": "C1",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 9,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_007",
+      "mode": "TRY_CANCEL",
+      "registry_sha256": "df210224aef4bdeb6f7af4d75a011ea5eb189704754279924f461002f766c282"
+    },
+    {
+      "case_id": "case-c35a1eb2161d4bb0a5799da1d646a686",
+      "cell": "C1",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 9,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_008",
+      "mode": "WAIT_CANCELLATION_COMPLETED",
+      "registry_sha256": "03032be887c883f5ed9a0d402cd6ed10a58fa5e2e436596fd1c8a4b03743b2cf"
+    },
+    {
+      "case_id": "case-40e374de4f634bc0b419c6e0ca127c77",
+      "cell": "C4",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 9,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_009",
+      "mode": "TRY_CANCEL",
+      "registry_sha256": "778f3ecbb500b7ef464c415a1341a2221f8c24e99f39f40ce671303584d0512f"
+    },
+    {
+      "case_id": "case-3dbce87fd2a3460a98a1188e8dd3d795",
+      "cell": "C4",
+      "evidence_class": "synthetic_only",
+      "expected": {
+        "artifact.integrity": "satisfied",
+        "each_phase": {
+          "capture.boundaries": "satisfied",
+          "capture.stability": "satisfied",
+          "correct_determinate_per_view": 9,
+          "justified_unresolved_per_view": 1,
+          "outcome.cardinality": "satisfied",
+          "outcome.sink_expected": "satisfied",
+          "paired_underlying_bytes": "satisfied",
+          "schedule.causal": "satisfied",
+          "view_integrity_A": "satisfied",
+          "view_integrity_B": "satisfied"
+        },
+        "freeze.deadlines": "unobserved",
+        "native.mapping": "unobserved",
+        "native_qualification": false,
+        "setup.configuration": "satisfied"
+      },
+      "fixture": "case_010",
+      "mode": "WAIT_CANCELLATION_COMPLETED",
+      "registry_sha256": "28ed3e5030385b8c1b25ced3b4ae5372bdde37e355b8492e7416626b92b12412"
+    }
+  ]
+}

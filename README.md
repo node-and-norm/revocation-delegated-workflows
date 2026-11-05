@@ -52,6 +52,7 @@ The text sequence is: select a fixed schedule and execution path; control reques
 | Local reproduction | Fresh virtual environment; the same frozen instrument reproduced the fixed matrix on the same host/runtime. [Report](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md). | An independent reimplementation or a larger original campaign. The external wheelhouse is not included in the study ZIP. |
 | Artifact review | Post-run checking and separately authored AI-assisted artifact audit. [Post-run](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md), [protocol-first](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_FIRST_AUDIT_v0.1.md). | Independent human validation or measured benefit to human reviewers. |
 | Temporal development | Bounded runtime setup checks and four schema-only tests; the bridge attempt failed before dispatch with a socket-permission error, followed by a cleanup error. [Partial qualification](docs/decisions/2026-11-04-temporal-partial-qualification.md). | A bridge-control pass, native Workflow/Activity qualification or a measured Temporal result. Proposed six-cell expectations remain prospective. |
+| Artifact-only checker prototype | Saved-file Python checker; 115 project tests and 26 separately authored regressions pass. [Package and replay](docs/checker-implementation/2026-11-05/README.md). | Native qualification, a production exporter, independent runtime phase sealing, calibrated deadlines or measured comparative benefit. Synthetic checks are not experimental observations. |
 | Temporal methods review | Source review identifies unresolved qualification, lifecycle-mapping and observation-cut issues. [Review](docs/review/TEMPORAL_METHODS_REVIEW_20261104.md). | Executed controls, repaired runtime behavior or evidence that cancellation means no effect. |
 
 ## AI assistance and human review
@@ -61,6 +62,8 @@ AI assisted research framing, source analysis, code, tests, artifact review and 
 ## Shared research records
 
 The [stage-one glossary and evidence registry](docs/research-records/v0.1/README.md) separate definitions, claims, evidence status and limits. The [Temporal reconciliation](docs/research-records/v0.1/sources/reconciliation.md) records remaining acceptance gaps. Stable study identifiers and a graph evaluation remain proposed later stages.
+
+The [proposed independent checker design](docs/decisions/2026-11-04-proposed-independent-checker.md) preserves the original specifications, erratum, consolidated account and AI-assisted reviews. That preserved design step was documentation-only. The subsequent [artifact-only checker prototype](docs/checker-implementation/2026-11-05/README.md) now adds the reviewed offline implementation and synthetic test evidence. Native qualification remains blocked, and no measured Temporal experiment is reported.
 
 ## Earlier stages and detailed research record
 

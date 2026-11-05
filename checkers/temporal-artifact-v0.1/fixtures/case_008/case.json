@@ -1,0 +1,63 @@
+{
+  "attempt_id": "attempt-62357a8565d64b0f961575943afbca41",
+  "authority_scope": {
+    "actor": "childC",
+    "epoch": 7,
+    "grant": "child-1",
+    "payload": "inert summary",
+    "root": "rootR",
+    "scope": "summary:task1",
+    "ticket": "ticket-1"
+  },
+  "case_id": "case-c35a1eb2161d4bb0a5799da1d646a686",
+  "case_kind": "native_activity",
+  "cell": "C1",
+  "configuration": {
+    "activity_scope": "cancellable_root",
+    "behavior": "cooperative",
+    "deadlines": {
+      "activity_start": null,
+      "cancellation_observation": null,
+      "cleanup": null,
+      "execute_response": null,
+      "overall": null,
+      "p1_capture": null,
+      "p2_capture": null,
+      "settlement": null,
+      "workflow_hold": null,
+      "workflow_release": null
+    },
+    "hold_scope": "non_cancellable_observation_only",
+    "maximum_attempts": 1,
+    "mode": "WAIT_CANCELLATION_COMPLETED"
+  },
+  "intended_binding": {
+    "activity_id": "activity-1",
+    "workflow_id": "workflow-1"
+  },
+  "mapping": null,
+  "operation_id": "operation-1",
+  "origin": "synthetic",
+  "phases": [
+    "P1",
+    "P2"
+  ],
+  "pins": {
+    "exporter_status": "unqualified",
+    "gateway_sha256": "98445edd61af21bc5c740053f8a93f6c179e4c5efa7b28dd7363e779b8f059a9",
+    "native_adapter": "synthetic-normalized-v1",
+    "sdk": "1.25.0"
+  },
+  "protocol_version": "0.3",
+  "registered_before_dispatch": true,
+  "schema_version": "synthetic-artifact-0.1",
+  "study_phase": "synthetic",
+  "view_permissions": {
+    "bridge": true,
+    "client": true,
+    "fence_receipt": true,
+    "native": true,
+    "sink": true,
+    "worker": true
+  }
+}

@@ -1,0 +1,92 @@
+test_a_b_different_bytes_not_equal (__main__.IndependentReview.test_a_b_different_bytes_not_equal) ... ok
+test_c1_extra_dispatch_is_adverse_without_effect (__main__.IndependentReview.test_c1_extra_dispatch_is_adverse_without_effect) ... ok
+test_c4_ack_request_must_match (__main__.IndependentReview.test_c4_ack_request_must_match) ... ok
+test_c4_extra_dispatch_is_adverse_with_one_effect (__main__.IndependentReview.test_c4_extra_dispatch_is_adverse_with_one_effect) ... ok
+test_cancellation_observation_call_id_must_match (__main__.IndependentReview.test_cancellation_observation_call_id_must_match) ... ok
+test_k1_submission_not_no_request (__main__.IndependentReview.test_k1_submission_not_no_request) ... FAIL
+test_malformed_sink_denial_does_not_crash (__main__.IndependentReview.test_malformed_sink_denial_does_not_crash) ... ok
+test_mapping_tuple_shape_fails_closed (__main__.IndependentReview.test_mapping_tuple_shape_fails_closed) ... ERROR
+test_nonobject_registry_fails_closed (__main__.IndependentReview.test_nonobject_registry_fails_closed) ... ok
+test_numeric_overflow_rejected (__main__.IndependentReview.test_numeric_overflow_rejected) ... ok
+test_p2_unknown_payload_does_not_erase_p1 (__main__.IndependentReview.test_p2_unknown_payload_does_not_erase_p1) ... FAIL
+test_p2_unrelated_invalid_reference_does_not_erase_p1 (__main__.IndependentReview.test_p2_unrelated_invalid_reference_does_not_erase_p1) ... FAIL
+test_purely_synthetic_never_qualifies_native (__main__.IndependentReview.test_purely_synthetic_never_qualifies_native) ... ok
+test_undefined_launch_reference_rejected (__main__.IndependentReview.test_undefined_launch_reference_rejected) ... FAIL
+test_undefined_start_reference_rejected (__main__.IndependentReview.test_undefined_start_reference_rejected) ... FAIL
+test_wrong_gateway_pin_rejected (__main__.IndependentReview.test_wrong_gateway_pin_rejected) ... FAIL
+
+======================================================================
+ERROR: test_mapping_tuple_shape_fails_closed (__main__.IndependentReview.test_mapping_tuple_shape_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 34, in test_mapping_tuple_shape_fails_closed
+    r=self.report();self.assertEqual(r['requirements']['schema.case']['status'],'unsatisfied')
+      ^^^^^^^^^^^^^
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 24, in report
+    r=check_bundle(self.root,include_views=False)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/c5555b5962f8/temporal_artifact_checker_20261105/src/temporal_checker/engine.py", line 65, in check_bundle
+    report['phases'][phase]=analyze_phase(bundle,c,b,events_id,events,raw,phase,graph,not graph_errors)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/c5555b5962f8/temporal_artifact_checker_20261105/src/temporal_checker/engine.py", line 180, in analyze_phase
+    expected=c['mapping']['tuples'].get(phase)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+======================================================================
+FAIL: test_k1_submission_not_no_request (__main__.IndependentReview.test_k1_submission_not_no_request)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 73, in test_k1_submission_not_no_request
+    self.assertNotEqual(r['phases']['P1']['reference']['cancellation_request']['value'],'not_requested')
+AssertionError: 'not_requested' == 'not_requested'
+
+======================================================================
+FAIL: test_p2_unknown_payload_does_not_erase_p1 (__main__.IndependentReview.test_p2_unknown_payload_does_not_erase_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 92, in test_p2_unknown_payload_does_not_erase_p1
+    self.assertEqual(after['phases']['P1']['reference'],before['phases']['P1']['reference'])
+AssertionError: {'act[19 chars]e': 'unresolved', 'evidence_refs': []}, 'activ[1027 chars] []}} != {'act[19 chars]e': 'settled_with_recorded_result', 'evidence_[4876 chars]'}]}}
+Diff is 15403 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_p2_unrelated_invalid_reference_does_not_erase_p1 (__main__.IndependentReview.test_p2_unrelated_invalid_reference_does_not_erase_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 85, in test_p2_unrelated_invalid_reference_does_not_erase_p1
+    self.assertEqual(after['phases']['P1']['reference'],before['phases']['P1']['reference'])
+AssertionError: {'act[1244 chars]e': 'unresolved', 'evidence_refs': []}, 'fence[274 chars] []}} != {'act[1244 chars]e': 'absent_with_complete_bounded_evidence', '[3651 chars]'}]}}
+Diff is 14990 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_undefined_launch_reference_rejected (__main__.IndependentReview.test_undefined_launch_reference_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 37, in test_undefined_launch_reference_rejected
+    r=self.report();self.assertNotEqual(r['requirements']['schema.binding']['status'],'satisfied')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'satisfied' == 'satisfied'
+
+======================================================================
+FAIL: test_undefined_start_reference_rejected (__main__.IndependentReview.test_undefined_start_reference_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 40, in test_undefined_start_reference_rejected
+    r=self.report();self.assertNotEqual(r['requirements']['schema.binding']['status'],'satisfied')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'satisfied' == 'satisfied'
+
+======================================================================
+FAIL: test_wrong_gateway_pin_rejected (__main__.IndependentReview.test_wrong_gateway_pin_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c5555b5962f8/temporal_checker_review_20261105/test_independent_review.py", line 43, in test_wrong_gateway_pin_rejected
+    r=self.report();self.assertNotEqual(r['requirements']['schema.case']['status'],'satisfied')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'satisfied' == 'satisfied'
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.670s
+
+FAILED (failures=6, errors=1)

@@ -1,0 +1,186 @@
+{
+  "review_date": "2026-11-05",
+  "scope": "Independent AI-assisted synthetic artifact-only review; no native qualification or human validation",
+  "project_tests": 115,
+  "independent_regression_tests": 26,
+  "source_and_test_files_compiled": 14,
+  "source_manifest_sha256": "3de1531396516e3664532aa1268bbc7a60acd6b4c67bb9ddc43b774194a9397c",
+  "production_imports": {
+    "src/temporal_checker/__init__.py": [],
+    "src/temporal_checker/__main__.py": [
+      "__future__",
+      "argparse",
+      "engine",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "src/temporal_checker/artifacts.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "re"
+    ],
+    "src/temporal_checker/engine.py": [
+      "__future__",
+      "artifacts",
+      "collections",
+      "schema",
+      "sink",
+      "views"
+    ],
+    "src/temporal_checker/fixtures.py": [
+      "__future__",
+      "artifacts",
+      "collections",
+      "copy",
+      "engine",
+      "json",
+      "pathlib",
+      "schema",
+      "sink",
+      "sqlite3",
+      "uuid",
+      "views"
+    ],
+    "src/temporal_checker/schema.py": [
+      "__future__",
+      "artifacts"
+    ],
+    "src/temporal_checker/scoring.py": [
+      "json"
+    ],
+    "src/temporal_checker/sink.py": [
+      "contextlib",
+      "json",
+      "pathlib",
+      "sqlite3"
+    ],
+    "src/temporal_checker/views.py": [
+      "__future__",
+      "artifacts",
+      "copy",
+      "scoring"
+    ]
+  },
+  "ten_synthetic_configurations": [
+    {
+      "cell": "M1",
+      "mode": null,
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "M2",
+      "mode": null,
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "M3",
+      "mode": null,
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "M4",
+      "mode": null,
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "K1",
+      "mode": null,
+      "phases": [
+        "P1"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "K2",
+      "mode": null,
+      "phases": [
+        "P1"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "C1",
+      "mode": "TRY_CANCEL",
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "C1",
+      "mode": "WAIT_CANCELLATION_COMPLETED",
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "C4",
+      "mode": "TRY_CANCEL",
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    },
+    {
+      "cell": "C4",
+      "mode": "WAIT_CANCELLATION_COMPLETED",
+      "phases": [
+        "P1",
+        "P2"
+      ],
+      "input_immutable": true,
+      "repeat_deterministic": true,
+      "native_qualification": false
+    }
+  ],
+  "known_confirmed_code_blockers": [],
+  "open_limits": [
+    "Production native exporter and adapters not implemented or qualified",
+    "Independently persisted runtime phase registries not implemented",
+    "Empirical native mappings and numerical deadline calibration remain open",
+    "No native runtime, gateway, bridge, socket, transport or measured experiment executed",
+    "Offline saved-evidence trust is not authenticity or adversarial producer attestation"
+  ]
+}

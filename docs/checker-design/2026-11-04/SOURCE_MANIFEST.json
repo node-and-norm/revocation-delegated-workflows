@@ -1,0 +1,106 @@
+{
+  "base_commit": "5ceceb4b0f30e8c0608b641d71785a6ce2317c8a",
+  "scope": "Documentation preservation only. Hashes bind bytes, not authenticity, correctness, human review or execution.",
+  "files": [
+    {
+      "source_path_label": "temporal_checker_design_20261104/CROSS_REVIEW.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_design_20261104/CROSS_REVIEW.md",
+      "sha256": "d33a8628da5c5e253ce66cf154ef288f5f7ae144cdef29bb13a368a6e068f950",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_design_20261104/ERRATA_v01.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_design_20261104/ERRATA_v01.md",
+      "sha256": "3c9cc319f8a437557421c65e177b83f104abbd3acade9043bbe9521a1009a475",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_design_20261104/INDEPENDENT_CHECKER_DESIGN.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_design_20261104/INDEPENDENT_CHECKER_DESIGN.md",
+      "sha256": "bceec7f3f125b64412155958ff66a61097178f5edd0508b2b222f3a47a3fd7b7",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_spec_20261104/CHECKER_ACCEPTANCE_SPEC.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_spec_20261104/CHECKER_ACCEPTANCE_SPEC.md",
+      "sha256": "4ae65b6ee51ab20d60a53102e1d5b691e8b39a61a71a120eeb58a4b3f148cf6c",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_spec_20261104/SHA256SUMS",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_spec_20261104/SHA256SUMS",
+      "sha256": "7856ab953922db3404ddc8d7000b40dd6b33a1a8d581e110572a8916cad03f3f",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_spec_20261104/SOURCE_RECONCILIATION.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_spec_20261104/SOURCE_RECONCILIATION.md",
+      "sha256": "dd04356ef713005e992b15b740ff4f85ba1c87264c184cb6b0bd2c1fce03d81d",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/CONSOLIDATED_CHECKER_SPEC_v02.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/CONSOLIDATED_CHECKER_SPEC_v02.md",
+      "sha256": "5531671b0cea9423538a98ad0dcf0061476d85424e31bf1fbe1d37056770dcfc",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/DOCUMENT_VALIDATION.json",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/DOCUMENT_VALIDATION.json",
+      "sha256": "454d660c12329e2e50bd3f3fb7a8e69557b30b08268860856a480424f123f749",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/FINAL_REVIEW_CORRECTIONS.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/FINAL_REVIEW_CORRECTIONS.md",
+      "sha256": "a5c1d1d5b0e62b6064f98f52205a42d2841cec599e1e00c33faa06f3f0b28155",
+      "transformation": "Replaced internal reviewer identifier/coordination description with review scope.",
+      "original_sha256": "4822b29cd4b64ea7e3a8ec306e57b26e441ec8dac672637a3bbce83f74579211"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/FINAL_SOURCE_REVIEW_SIGNOFF.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/FINAL_SOURCE_REVIEW_SIGNOFF.md",
+      "sha256": "406e7a9258726b501577aca5f29934764194c185ae17eb474bba3d9990e94cf6",
+      "transformation": "Factual derivative; removed verbatim internal review reply and coordination identifiers. Original retained privately.",
+      "original_sha256": "9d4364254397b9d83016b9470358bcded998ab31949c69c7337971a96165d5f9"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/SHA256SUMS",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/SHA256SUMS",
+      "sha256": "4a9a830b62cc6406ba5e950d3fbd7ffe8c4472c19d697e1f96a0e73b63c98c03",
+      "transformation": "Refreshed hashes for explicitly documented repository-facing derivatives.",
+      "original_sha256": "6bfd502145644db70868ef79682af4ec3e3c84e054f28d4161014e07daf07a7c"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/SOURCE_PROVENANCE.json",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/SOURCE_PROVENANCE.json",
+      "sha256": "8814832893d1887ab74a7e5f5ab4db4061b95d6c6b745f40a0e59cc7d63a7019",
+      "transformation": "Replaced internal reviewer identifier with review scope.",
+      "original_sha256": "5dccde5f4ed5a7148ca135f2004b530d51c2573e04c6588b0b72a3d45191da4e"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/preserved_before_final_review/CONSOLIDATED_CHECKER_SPEC_v02.md",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/preserved_before_final_review/CONSOLIDATED_CHECKER_SPEC_v02.md",
+      "sha256": "017efc092c9eb790760618cc0820dd064d9a6e2733706c7b249b008a75edb855",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/preserved_before_final_review/DOCUMENT_VALIDATION.json",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/preserved_before_final_review/DOCUMENT_VALIDATION.json",
+      "sha256": "b9f772fb142d9dc00fdec077a9c0d9d116b3b68712204f28696d1adf50f38578",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/preserved_before_final_review/SHA256SUMS",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/preserved_before_final_review/SHA256SUMS",
+      "sha256": "d1fdd2e79f1d1a59c5e6871de8fdc1eca252106ee372a0ca7aa59ecdedb2450f",
+      "transformation": "none; byte-preserved"
+    },
+    {
+      "source_path_label": "temporal_checker_consolidated_20261104/preserved_before_final_review/SOURCE_PROVENANCE.json",
+      "repository_path": "docs/checker-design/2026-11-04/temporal_checker_consolidated_20261104/preserved_before_final_review/SOURCE_PROVENANCE.json",
+      "sha256": "9517cb3f25f4686e1e6fefedc42b4bda1b8e1e5fefd3b2f34733838bcd110875",
+      "transformation": "none; byte-preserved"
+    }
+  ]
+}

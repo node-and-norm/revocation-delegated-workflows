@@ -1,0 +1,20 @@
+{
+  "assertion_phase": "P1",
+  "authority_scope": {
+    "actor": "childC",
+    "epoch": 7,
+    "grant": "child-1",
+    "payload": "inert summary",
+    "root": "rootR",
+    "scope": "summary:task1",
+    "ticket": "ticket-1"
+  },
+  "case_id": "case-77ec3314b0484467bc6501516d9abda2",
+  "case_kind": "sink_only",
+  "cut_id": "cut-P1",
+  "observed_binding": {},
+  "operation_id": "operation-1",
+  "predeclared_binding": {},
+  "protocol_version": "0.3",
+  "schema_version": "synthetic-artifact-0.1"
+}

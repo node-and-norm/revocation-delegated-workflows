@@ -1,0 +1,19 @@
+{
+  "activity_scope": null,
+  "behavior": "sink_live",
+  "deadlines": {
+    "activity_start": null,
+    "cancellation_observation": null,
+    "cleanup": null,
+    "execute_response": null,
+    "overall": null,
+    "p1_capture": null,
+    "p2_capture": null,
+    "settlement": null,
+    "workflow_hold": null,
+    "workflow_release": null
+  },
+  "hold_scope": null,
+  "maximum_attempts": null,
+  "mode": null
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "Document hash/link consistency only; no checker fixtures or native tests executed",
+  "source_hash_checks": [
+    {
+      "path": "temporal_checker_spec_20261104/CHECKER_ACCEPTANCE_SPEC.md",
+      "hash_matches": true
+    },
+    {
+      "path": "temporal_checker_design_20261104/INDEPENDENT_CHECKER_DESIGN.md",
+      "hash_matches": true
+    },
+    {
+      "path": "temporal_checker_spec_20261104/SOURCE_RECONCILIATION.md",
+      "hash_matches": true
+    },
+    {
+      "path": "temporal_checker_design_20261104/CROSS_REVIEW.md",
+      "hash_matches": true
+    },
+    {
+      "path": "temporal_checker_design_20261104/ERRATA_v01.md",
+      "hash_matches": true
+    }
+  ],
+  "relative_link_checks": [
+    {
+      "target": "../temporal_checker_spec_20261104/SOURCE_RECONCILIATION.md",
+      "exists": true
+    },
+    {
+      "target": "../temporal_checker_spec_20261104/CHECKER_ACCEPTANCE_SPEC.md",
+      "exists": true
+    },
+    {
+      "target": "../temporal_checker_design_20261104/INDEPENDENT_CHECKER_DESIGN.md",
+      "exists": true
+    },
+    {
+      "target": "../temporal_checker_design_20261104/CROSS_REVIEW.md",
+      "exists": true
+    },
+    {
+      "target": "../temporal_checker_design_20261104/ERRATA_v01.md",
+      "exists": true
+    }
+  ],
+  "preserved_previous_spec_sha256": "017efc092c9eb790760618cc0820dd064d9a6e2733706c7b249b008a75edb855",
+  "all_document_checks_pass": true
+}

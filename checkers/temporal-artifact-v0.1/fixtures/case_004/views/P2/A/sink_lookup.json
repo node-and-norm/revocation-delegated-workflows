@@ -1,0 +1,91 @@
+{
+  "available": true,
+  "case_id": "case-3f96b15a6b804b7eb4ecd592b86f920d",
+  "cut_id": "cut-P2",
+  "operation_id": "operation-1",
+  "phase": "P2",
+  "schema_version": "synthetic-artifact-0.1",
+  "tables": {
+    "authority": [
+      {
+        "active": 0,
+        "epoch": 8,
+        "root": "rootR"
+      }
+    ],
+    "effects": [],
+    "events": [
+      {
+        "data": "{\"child\":\"childC\",\"epoch\":7,\"parent\":\"parentP\",\"parent_grant\":\"parent-0\",\"root\":\"rootR\",\"scope\":\"summary:task1\"}",
+        "kind": "bootstrap",
+        "seq": 1
+      },
+      {
+        "data": "{\"actor\":\"parentP\",\"request\":{\"child\":\"childC\",\"claim\":\"parentP\",\"grant\":\"parent-0\",\"id\":\"delegate\",\"op\":\"delegate\",\"scope\":\"summary:task1\"}}",
+        "kind": "receipt",
+        "seq": 2
+      },
+      {
+        "data": "{\"request_id\":\"delegate\",\"result\":{\"epoch\":7,\"grant\":\"child-1\",\"outcome\":\"grant\",\"owner\":\"childC\",\"parent_grant\":\"parent-0\",\"root\":\"rootR\",\"scope\":\"summary:task1\"}}",
+        "kind": "grant",
+        "seq": 3
+      },
+      {
+        "data": "{\"actor\":\"childC\",\"request\":{\"claim\":\"childC\",\"grant\":\"child-1\",\"id\":\"prepare\",\"op\":\"prepare\",\"scope\":\"summary:task1\"}}",
+        "kind": "receipt",
+        "seq": 4
+      },
+      {
+        "data": "{\"request_id\":\"prepare\",\"result\":{\"epoch\":7,\"grant\":\"child-1\",\"outcome\":\"admission\",\"root\":\"rootR\",\"scope\":\"summary:task1\",\"ticket\":\"ticket-1\"}}",
+        "kind": "admission",
+        "seq": 5
+      },
+      {
+        "data": "{\"actor\":\"controller\",\"request\":{\"claim\":\"controller\",\"id\":\"revoke\",\"op\":\"revoke\"}}",
+        "kind": "receipt",
+        "seq": 6
+      },
+      {
+        "data": "{\"request_id\":\"revoke\",\"result\":{\"new_epoch\":8,\"outcome\":\"revocation\",\"root\":\"rootR\",\"withdrawn_epoch\":7}}",
+        "kind": "revocation",
+        "seq": 7
+      },
+      {
+        "data": "{\"actor\":\"childC\",\"request\":{\"claim\":\"childC\",\"grant\":\"child-1\",\"id\":\"execute\",\"op\":\"execute\",\"payload\":\"inert summary\",\"scope\":\"summary:task1\",\"ticket\":\"ticket-1\"}}",
+        "kind": "receipt",
+        "seq": 8
+      },
+      {
+        "data": "{\"request_id\":\"execute\",\"result\":{\"outcome\":\"denied\",\"reason\":\"revoked\"}}",
+        "kind": "denied",
+        "seq": 9
+      }
+    ],
+    "grants": [
+      {
+        "can_delegate": 1,
+        "epoch": 7,
+        "owner": "parentP",
+        "root": "rootR",
+        "scope": "summary:task1",
+        "token": "parent-0"
+      },
+      {
+        "can_delegate": 0,
+        "epoch": 7,
+        "owner": "childC",
+        "root": "rootR",
+        "scope": "summary:task1",
+        "token": "child-1"
+      }
+    ],
+    "tickets": [
+      {
+        "grant_token": "child-1",
+        "owner": "childC",
+        "scope": "summary:task1",
+        "token": "ticket-1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "attempt_id": "attempt-26f1b1e659f24d86ae5f3bf3d67d1bda",
+  "authority_scope": {
+    "actor": "childC",
+    "epoch": 7,
+    "grant": "child-1",
+    "payload": "inert summary",
+    "root": "rootR",
+    "scope": "summary:task1",
+    "ticket": "ticket-1"
+  },
+  "case_id": "case-2d6686e740d04933a841c59dd9d61e66",
+  "case_kind": "sink_only",
+  "cell": "K2",
+  "configuration": {
+    "activity_scope": null,
+    "behavior": "sink_fenced",
+    "deadlines": {
+      "activity_start": null,
+      "cancellation_observation": null,
+      "cleanup": null,
+      "execute_response": null,
+      "overall": null,
+      "p1_capture": null,
+      "p2_capture": null,
+      "settlement": null,
+      "workflow_hold": null,
+      "workflow_release": null
+    },
+    "hold_scope": null,
+    "maximum_attempts": null,
+    "mode": null
+  },
+  "intended_binding": {},
+  "mapping": null,
+  "operation_id": "operation-1",
+  "origin": "synthetic",
+  "phases": [
+    "P1"
+  ],
+  "pins": {
+    "exporter_status": "unqualified",
+    "gateway_sha256": "98445edd61af21bc5c740053f8a93f6c179e4c5efa7b28dd7363e779b8f059a9",
+    "native_adapter": "synthetic-normalized-v1",
+    "sdk": "1.25.0"
+  },
+  "protocol_version": "0.3",
+  "registered_before_dispatch": true,
+  "schema_version": "synthetic-artifact-0.1",
+  "study_phase": "synthetic",
+  "view_permissions": {
+    "bridge": true,
+    "client": true,
+    "fence_receipt": true,
+    "native": true,
+    "sink": true,
+    "worker": true
+  }
+}

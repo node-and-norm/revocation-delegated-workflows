@@ -1,0 +1,215 @@
+{
+  "source": "Saved partial Q2 control snapshot, 4 November 2026. The native/transport attempt did not qualify.",
+  "source_path": "temporal_qualification_20261104/q2_controls/live/sink.sqlite",
+  "sha256_before": "88e02e7956250ee8c9833010570c198ed012fe7cf357b26f11204b4def65dccd",
+  "sha256_after": "88e02e7956250ee8c9833010570c198ed012fe7cf357b26f11204b4def65dccd",
+  "bytes_unchanged": true,
+  "report": {
+    "requirements": {
+      "sink.readable": {
+        "status": "satisfied",
+        "reason": "Opened the saved database read-only and immutable.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.schema": {
+        "status": "satisfied",
+        "reason": "Pinned table structure and passive schema verified.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.primitives": {
+        "status": "satisfied",
+        "reason": "SQL and JSON primitive types verified.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.event_accounting": {
+        "status": "satisfied",
+        "reason": "Every receipt has one adjacent terminal and every terminal has one receipt.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.effect_bijection": {
+        "status": "satisfied",
+        "reason": "Effects rows and effect events match bijectively.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.scope": {
+        "status": "satisfied",
+        "reason": "Effect scope and payload match the pinned fixture.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.authorization": {
+        "status": "satisfied",
+        "reason": "Authorization setup, request identities, and tables agree.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      },
+      "sink.revocation": {
+        "status": "satisfied",
+        "reason": "Revocation transition and final authority state agree.",
+        "evidence_refs": [
+          "sink.sqlite"
+        ]
+      }
+    },
+    "facts": {
+      "execute_receipts": 0,
+      "effect_rows": 0,
+      "effect_events": 0,
+      "denials": [],
+      "revocations": [],
+      "execute_request_ids": [],
+      "effects": [],
+      "events": [
+        {
+          "seq": 1,
+          "kind": "bootstrap",
+          "data": {
+            "child": "childC",
+            "epoch": 7,
+            "parent": "parentP",
+            "parent_grant": "parent-0",
+            "root": "rootR",
+            "scope": "summary:task1"
+          }
+        },
+        {
+          "seq": 2,
+          "kind": "receipt",
+          "data": {
+            "actor": "parentP",
+            "request": {
+              "child": "childC",
+              "claim": "parentP",
+              "grant": "parent-0",
+              "id": "delegate",
+              "op": "delegate",
+              "scope": "summary:task1"
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "kind": "grant",
+          "data": {
+            "request_id": "delegate",
+            "result": {
+              "epoch": 7,
+              "grant": "child-1",
+              "outcome": "grant",
+              "owner": "childC",
+              "parent_grant": "parent-0",
+              "root": "rootR",
+              "scope": "summary:task1"
+            }
+          }
+        },
+        {
+          "seq": 4,
+          "kind": "receipt",
+          "data": {
+            "actor": "childC",
+            "request": {
+              "claim": "childC",
+              "grant": "child-1",
+              "id": "prepare",
+              "op": "prepare",
+              "scope": "summary:task1"
+            }
+          }
+        },
+        {
+          "seq": 5,
+          "kind": "admission",
+          "data": {
+            "request_id": "prepare",
+            "result": {
+              "epoch": 7,
+              "grant": "child-1",
+              "outcome": "admission",
+              "root": "rootR",
+              "scope": "summary:task1",
+              "ticket": "ticket-1"
+            }
+          }
+        }
+      ],
+      "tables": {
+        "authority": [
+          {
+            "root": "rootR",
+            "epoch": 7,
+            "active": 1
+          }
+        ],
+        "grants": [
+          {
+            "token": "parent-0",
+            "owner": "parentP",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 1
+          },
+          {
+            "token": "child-1",
+            "owner": "childC",
+            "root": "rootR",
+            "epoch": 7,
+            "scope": "summary:task1",
+            "can_delegate": 0
+          }
+        ],
+        "tickets": [
+          {
+            "token": "ticket-1",
+            "grant_token": "child-1",
+            "owner": "childC",
+            "scope": "summary:task1"
+          }
+        ],
+        "events": [
+          {
+            "seq": 1,
+            "kind": "bootstrap",
+            "data": "{\"child\": \"childC\", \"epoch\": 7, \"parent\": \"parentP\", \"parent_grant\": \"parent-0\", \"root\": \"rootR\", \"scope\": \"summary:task1\"}"
+          },
+          {
+            "seq": 2,
+            "kind": "receipt",
+            "data": "{\"actor\": \"parentP\", \"request\": {\"child\": \"childC\", \"claim\": \"parentP\", \"grant\": \"parent-0\", \"id\": \"delegate\", \"op\": \"delegate\", \"scope\": \"summary:task1\"}}"
+          },
+          {
+            "seq": 3,
+            "kind": "grant",
+            "data": "{\"request_id\": \"delegate\", \"result\": {\"epoch\": 7, \"grant\": \"child-1\", \"outcome\": \"grant\", \"owner\": \"childC\", \"parent_grant\": \"parent-0\", \"root\": \"rootR\", \"scope\": \"summary:task1\"}}"
+          },
+          {
+            "seq": 4,
+            "kind": "receipt",
+            "data": "{\"actor\": \"childC\", \"request\": {\"claim\": \"childC\", \"grant\": \"child-1\", \"id\": \"prepare\", \"op\": \"prepare\", \"scope\": \"summary:task1\"}}"
+          },
+          {
+            "seq": 5,
+            "kind": "admission",
+            "data": "{\"request_id\": \"prepare\", \"result\": {\"epoch\": 7, \"grant\": \"child-1\", \"outcome\": \"admission\", \"root\": \"rootR\", \"scope\": \"summary:task1\", \"ticket\": \"ticket-1\"}}"
+          }
+        ],
+        "effects": []
+      }
+    },
+    "usable": true
+  },
+  "interpretation": "Only saved ledger contents inspected. No complete capture certificate, native history or caller views. No absence over time, control success or qualification follows."
+}
