@@ -1,6 +1,8 @@
 # Revocation evidence workbench
 
-Start with [01 · When is withdrawal actually established?](01_revocation_evidence_workbench.ipynb).
+Start with [00 · Start here](00_start_here.ipynb), a Markdown-only reading route into the [dated synthesis](../docs/reports/2026-11-06-current-study-synthesis.md) and executable workbench below. It has no code cells and requires no kernel.
+
+Then explore [01 · When is withdrawal actually established?](01_revocation_evidence_workbench.ipynb).
 
 This private, source-linked notebook is an executable review surface, not a live research agent. It loads the existing glossary, registry and source manifest; verifies pinned input bytes; reads twelve saved historical JSON records; reconciles selected fields; supports case and claim inspection; tests three explicit overclaims; and generates a bounded brief and audit. It also calls the existing artifact-only checker on one separate, clearly synthetic bundle.
 

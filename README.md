@@ -5,6 +5,10 @@ When a caller asks to withdraw authority, what distinguishes receipt of the requ
 
 [Research reader: understand in 90 seconds](#research-in-90-seconds) · [Reviewer: inspect evidence and limits](#evidence-and-known-limits) · [Engineer: reproduce the fixed study](#reproduce-the-request-to-fence-study)
 
+## Start here
+
+Read the [dated current-study synthesis](docs/reports/2026-11-06-current-study-synthesis.md) or open [00 · Start here](notebooks/00_start_here.ipynb) for the short route through current results, open gates and the next reading steps. These are presentation updates, not new experiments.
+
 ## Evidence workbench
 
 Open [01 · When is withdrawal actually established?](notebooks/01_revocation_evidence_workbench.ipynb) for a visual, executable review of the twelve saved cases. It verifies pinned inputs, separates caller knowledge from sink evidence, exposes exact source records and generates a bounded decision brief. The [run guide](notebooks/README.md) explains the offline controls and verification limits. This is a private review workbench, not a live agent runtime or a new experiment.
