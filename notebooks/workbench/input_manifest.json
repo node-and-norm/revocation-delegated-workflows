@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "base_commit": "6a2d6b19e18df28e2a8e69ee45830a5f9b94f26c",
+  "meaning": "Pinned bytes used by notebook 01. Hashes are not authenticity, truth, or execution attestation. Original source and registry files are unchanged.",
+  "inputs": [
+    {
+      "path": "archives/temporal_qualification_partial_20261104.zip",
+      "sha256": "98a32239d9e9715c48434e7a2560b1412742fae1ff4e45941cbce553b3f6d904"
+    },
+    {
+      "path": "archives/withdrawal_interface_study_v01_20261103.zip",
+      "sha256": "adf5e66cb0ad90038cde189330ee46877fabda26f1d829d3ae9b734c44af827c"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/P1/capture.json",
+      "sha256": "bc1578c7c77bd3d90934a3b911ef3a7a8979a709b63df61b4a8fa123b9e99db8"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/P1/native_history.json",
+      "sha256": "e7b47e67a91641fcdbc5556e8a87196fc62b5f851f474961da3d922a2e6939f6"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/P1/sink.sqlite",
+      "sha256": "14cc39b453e01bb1bfa8db16e8eece00d6e7fe9d942d4ccfceb710e575754297"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/P2/capture.json",
+      "sha256": "b7d642077915134f9d2db7067faa97ecf5987bf7fc90f1eb63acb35f854cf7d6"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/P2/native_history.json",
+      "sha256": "71f7bffccddab9d57b46f2debbdbea105577013dfc6782ebf257b567c17a9a51"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/P2/sink.sqlite",
+      "sha256": "14cc39b453e01bb1bfa8db16e8eece00d6e7fe9d942d4ccfceb710e575754297"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/case.json",
+      "sha256": "d8cbfb82ce46e980d07f1bf49db02a2707b17fe18a8db931f9bb0b6ded66984b"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/cleanup.json",
+      "sha256": "b28ea02013b4e4c6b23c85256c12f29d2113e20c9ab5d706557c988699634839"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/observed_binding.json",
+      "sha256": "94f4c2378ff9ab24e253216802b0accbe741cdd9c4c9228df071a504dfb3741c"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/outputs/P1-A.json",
+      "sha256": "cffc9972efc3082aed5c51845a0c50057ddcaf116545671df21eb9ec022faac7"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/outputs/P1-B.json",
+      "sha256": "02ca17e2fb6d1693b35a21d69fb5b203ad985b27c9a71d77717c8add732266fe"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/outputs/P2-A.json",
+      "sha256": "00d5290698bddb710c34a3133d26f9965846cf78a6804ffc9905d159ebf48a3a"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/outputs/P2-B.json",
+      "sha256": "69631f18f07a561b505b0ae1841b03d2f28cb01d3da3ce3785a50b97ea99837f"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/producer_events.jsonl",
+      "sha256": "ec22005db6036d05e9127fe472d5d3f0c095ff44b03ad63575834c5311e79d1f"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/registry.json",
+      "sha256": "d9e2e941ec83720e49f003183f65a038ae51f24f1145a9d31d83c58f502fa7da"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/bridge_events.jsonl",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/capture.json",
+      "sha256": "578f6b855bdf8adee4cfc5156287fe189699b0c69c1cadaa024678ef2c95856c"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/client_events.jsonl",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/configuration.json",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/envelope.json",
+      "sha256": "e998a50c4b2b2732d0f16be52e2a758cda4ec0a7cf68d656130fbfad3031caf2"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/identity.json",
+      "sha256": "2008d1da4c9fca9f16955a670614403591239149dbf2384869c29850756b21bd"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/native_events.jsonl",
+      "sha256": "f0f0fd0bae0d23a0277ea186bbc9676d9f7971513e0c94a0149dffee2252a3f7"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/sink_lookup.json",
+      "sha256": "5309403c931171ee34cfc0a25327db3285563421e440c711b0e4eb41e19db104"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/source_map.json",
+      "sha256": "f3d32690a6309a673e1288ffca96506e76833f0f4b3fd6e9abeccbd9a0a8f881"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/A/worker_events.jsonl",
+      "sha256": "f12a46c1191bf6fa236222f2c254ac20d51e26127e2dcce128497b14da477fbb"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/bridge_events.jsonl",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/capture.json",
+      "sha256": "578f6b855bdf8adee4cfc5156287fe189699b0c69c1cadaa024678ef2c95856c"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/client_events.jsonl",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/configuration.json",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/identity.json",
+      "sha256": "2008d1da4c9fca9f16955a670614403591239149dbf2384869c29850756b21bd"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/native_events.jsonl",
+      "sha256": "f0f0fd0bae0d23a0277ea186bbc9676d9f7971513e0c94a0149dffee2252a3f7"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/sink_lookup.json",
+      "sha256": "5309403c931171ee34cfc0a25327db3285563421e440c711b0e4eb41e19db104"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/source_map.json",
+      "sha256": "f3d32690a6309a673e1288ffca96506e76833f0f4b3fd6e9abeccbd9a0a8f881"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P1/B/worker_events.jsonl",
+      "sha256": "f12a46c1191bf6fa236222f2c254ac20d51e26127e2dcce128497b14da477fbb"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/bridge_events.jsonl",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/capture.json",
+      "sha256": "cc47a935f9add39660019fbe47024fc688b9d8e129d773b1587e850183dae151"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/client_events.jsonl",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/configuration.json",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/envelope.json",
+      "sha256": "b8ec815048ab582d8a37da48fbe8cd46c6d4d220bb336ced484450b7087db0c4"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/identity.json",
+      "sha256": "ee6ee8f20eb257998d58e20fad739c5409a190c6e31d93b6d3cfc17834e9de41"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/native_events.jsonl",
+      "sha256": "90fab3eee1362d45e1a39c1deff19527b056cbb6e91ba47b90f08048972953da"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/sink_lookup.json",
+      "sha256": "0c820bc94c0a2ec47ac4704f5450be5e697c40660dddd29a7f296033cccef092"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/source_map.json",
+      "sha256": "9ed3099d12bed67c936ff5adeac2bdf737dee1b97dbda248c992adf840ce67ba"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/A/worker_events.jsonl",
+      "sha256": "4c4cf526eca99f99bbd58be99edfc05873c9e1c4278d0e9ffc75408868024be5"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/bridge_events.jsonl",
+      "sha256": "21665eda316f763243a64c389dbefeea307109ac72969cad046c6cc0da858476"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/capture.json",
+      "sha256": "cc47a935f9add39660019fbe47024fc688b9d8e129d773b1587e850183dae151"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/client_events.jsonl",
+      "sha256": "9106a188528b2a14b5897d221204d03fdc4c22f7154e294fab690d32e9663873"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/configuration.json",
+      "sha256": "022da6879c7a715aecafa6e8583c5343893103a94727f68a5d241182241923ef"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/identity.json",
+      "sha256": "ee6ee8f20eb257998d58e20fad739c5409a190c6e31d93b6d3cfc17834e9de41"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/native_events.jsonl",
+      "sha256": "90fab3eee1362d45e1a39c1deff19527b056cbb6e91ba47b90f08048972953da"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/sink_lookup.json",
+      "sha256": "0c820bc94c0a2ec47ac4704f5450be5e697c40660dddd29a7f296033cccef092"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/source_map.json",
+      "sha256": "9ed3099d12bed67c936ff5adeac2bdf737dee1b97dbda248c992adf840ce67ba"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/fixtures/case_001/views/P2/B/worker_events.jsonl",
+      "sha256": "4c4cf526eca99f99bbd58be99edfc05873c9e1c4278d0e9ffc75408868024be5"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/__init__.py",
+      "sha256": "20fb9fb5fa7e16dab73307ccfa7a710e8d2497c60f208a2c8496f716cda5841b"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/__main__.py",
+      "sha256": "42c51da2e1af6884aae9924e5af74aa5d3b22cb99000171cbd3b21bf9d7ca808"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/artifacts.py",
+      "sha256": "7451a24a4bc95bc706b4e7602e88c5a73eabafa281ff9d12e8a71e47076842fd"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/engine.py",
+      "sha256": "603468ef347b8991a1990273bb4a61552d9ae975dfec6105811a5f0a0919e558"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/fixtures.py",
+      "sha256": "9750c1e3aca54badf57c9565921a244a84c611dcacb051cc71bc2d8423fb5ad4"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/schema.py",
+      "sha256": "6f9bf76575fd0dbfb5f64efd07a3679deb44e7b950bfd055aa7a46046af0613b"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/scoring.py",
+      "sha256": "cb775c8e984533aa15f2f949afcee64b0a7df20679209172e07d40a906a8e794"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/sink.py",
+      "sha256": "1cc7eece508bfd7a523c954513b0bfb375461cfd91c1bea395e8d97d50601499"
+    },
+    {
+      "path": "checkers/temporal-artifact-v0.1/src/temporal_checker/views.py",
+      "sha256": "8adf0807c3d69c5201834e347e130e9aae79790819c810603839c6646278cb33"
+    },
+    {
+      "path": "docs/checker-implementation/2026-11-05/README.md",
+      "sha256": "6650d863e1073ef45c633633adbfb1dbc32b463c60e59fab03f90aadc2125161"
+    },
+    {
+      "path": "docs/research-records/v0.1/evidence_registry.json",
+      "sha256": "37a976b8f6ad16d805c92023bc0a9a1217d29de1a08e82da8ed3f8281ca1a10a"
+    },
+    {
+      "path": "docs/research-records/v0.1/glossary.json",
+      "sha256": "a58b0ed95c86ed76952023658df107391b624253544678fb5a26d3c94b037c76"
+    },
+    {
+      "path": "docs/research-records/v0.1/source_manifest.json",
+      "sha256": "5a09d14ecd150b2ddd3cb5828d600c50bef2911ce0c76d1c8802976b304dbfef"
+    },
+    {
+      "path": "docs/research-records/v0.1/sources/reconciliation.md",
+      "sha256": "ce9ff80337554432817aaec2c57a48d7147b7ab09d5fd41e06dfb67a011dcd7f"
+    },
+    {
+      "path": "docs/research-records/v0.1/sources/temporal_status.md",
+      "sha256": "de63522cf6db0d165cbf3d51b841f10fd8e31f8ffeb9f0bb85f6f6a053ee7c25"
+    },
+    {
+      "path": "docs/review/TEMPORAL_METHODS_REVIEW_20261104.md",
+      "sha256": "ab6001b2d6c56b04373066c0b3be09820b7be1ac808c2d6bfbd390453eb95999"
+    },
+    {
+      "path": "docs/review/TEMPORAL_STATUS_EVIDENCE_CONTRACT_v01.md",
+      "sha256": "b65e6422f80c4e44f9422feb479842dcdea68b5a3b9168726f0f36c19011ac3b"
+    },
+    {
+      "path": "docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md",
+      "sha256": "98dc38ffa7fada19a6adb867c8b7b544fec0a78860c87e6119fd815831abd71e"
+    },
+    {
+      "path": "docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_v0.1.md",
+      "sha256": "fdf9c7e0190ff39b2c1c9768be84cc2dfc13e6f688968098531d4c6a708806f7"
+    },
+    {
+      "path": "docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json",
+      "sha256": "273d485b72bc23327e5931019127f74f8b18764d582ba15bd5d1eda78fd6a751"
+    },
+    {
+      "path": "notebooks/workbench/status_overlay.json",
+      "sha256": "5e4966742e859774c1ecd6cb415f879cd8116bcfb922e5393da51036155b25bd"
+    }
+  ]
+}
