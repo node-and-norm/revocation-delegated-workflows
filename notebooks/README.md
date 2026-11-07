@@ -74,3 +74,13 @@ PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py RESEARCH_STUDY.
 ```
 
 This fresh-process verification is not a Jupyter-kernel run. See [report verification](STUDY_REPORT_VERIFICATION.md).
+
+## 02 · Traceability and AI disclosure
+
+[Open the workbook explorer](02_traceability_and_disclosure.ipynb). It reads all six sheets and seven named tables directly from the pinned v0.11 XLSX using Python standard-library XML/ZIP support. It does not edit the workbook or verify current publisher policies. GitHub shows saved output; selectors work when rerun in Jupyter.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/02_traceability_and_disclosure.ipynb
+```
+
+[Verification and limits](TRACEABILITY_VERIFICATION.md).
