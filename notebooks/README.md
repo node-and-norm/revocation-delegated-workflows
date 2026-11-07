@@ -94,3 +94,13 @@ PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/03_me
 ```
 
 [Verification and limits](METHODS_VERIFICATION.md).
+
+## 04 · Exact experimental inputs, outputs and code
+
+[Open the source trace reader](04_exact_scripted_inputs_outputs.ipynb). Select any available v0.3 framework case/phase and inspect exact role/input/output JSON spans with byte provenance. An appendix inventories early-stage archives and displays source code without executing it. It does not reconstruct missing research conversations.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/04_exact_scripted_inputs_outputs.ipynb
+```
+
+[Verification and limits](PROMPT_TRACES_VERIFICATION.md).
