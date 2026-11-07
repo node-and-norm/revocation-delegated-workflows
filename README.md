@@ -7,6 +7,8 @@ When a caller asks to withdraw authority, what distinguishes receipt of the requ
 
 ## Start here
 
+**[Research-book contents and reading routes](notebooks/00_start_here.ipynb)** connect the report and four focused chapters with previous/contents/next navigation. Notebook 04 includes every preserved scripted invocation in saved static output.
+
 **[Open the guided study report → RESEARCH_STUDY.ipynb](RESEARCH_STUDY.ipynb)**. Read the question, method, saved-case findings, limitations, roadmap and completion gates in one notebook. The report reads existing evidence; it does not rerun experiments.
 
 Read the [dated current-study synthesis](docs/reports/2026-11-06-current-study-synthesis.md) or open [00 · Start here](notebooks/00_start_here.ipynb) for the short route through current results, open gates and the next reading steps. These are presentation updates, not new experiments.
@@ -14,6 +16,14 @@ Read the [dated current-study synthesis](docs/reports/2026-11-06-current-study-s
 ## Traceability and AI disclosure
 
 Open [02 · Who decided what, and what was actually checked?](notebooks/02_traceability_and_disclosure.ipynb) to explore all six sheets of the preserved v0.11 workbook, with exact cell locators and a clear historical-version boundary. GitHub shows saved static output; change selectors and rerun cells in Jupyter for exploration.
+
+## Methods and reproduction
+
+Open [03 · How was the study run?](notebooks/03_methods_and_reproduction.ipynb) for the protocol/version boundary, verified source freeze, actual recorded invocation, case-artifact inventory, preserved corrections and reproduction prerequisites. It reads saved evidence without running the study.
+
+## Exact experimental inputs, outputs and code
+
+Open [04 · Exact recorded inputs and outputs](notebooks/04_exact_scripted_inputs_outputs.ipynb) for the v0.3 pilot’s preserved scripted-model messages and an archive/source-code evidence trail across early stages. These are synthetic scripted responses, not live LLM generations or every research conversation.
 
 ## Evidence workbench
 
