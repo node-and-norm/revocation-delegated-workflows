@@ -15,7 +15,8 @@ class StudyReportTests(unittest.TestCase):
 
     def test_reading_sequence(self):
         for section in ('1 · What', '2 · How', '3 · Open', '4 · The', '5 · Challenge',
-                        '6 · Where', '7 · The', '8 · When', '9 · Provenance'):
+                        '6 · Where', '7 · The', '8 · When', '9 · Who', '10 · What',
+                        '11 · How', '12 · Provenance'):
             self.assertIn(section, self.text)
 
     def test_limits_remain_explicit(self):
