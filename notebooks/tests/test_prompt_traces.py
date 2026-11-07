@@ -68,10 +68,37 @@ class PromptTraceTests(unittest.TestCase):
         n=json.loads((ROOT/'notebooks/04_exact_scripted_inputs_outputs.ipynb').read_text());text='\n'.join(''.join(c['source']) for c in n['cells'])
         for link in re.findall(r'\]\(([^)]+)\)',text):
             if not link.startswith(('https:','#')):self.assertTrue((ROOT/'notebooks'/link.split('#')[0]).exists(),link)
-        code=[c for c in n['cells'] if c['cell_type']=='code'];self.assertEqual(len(code),8)
-        self.assertEqual([c['execution_count'] for c in code],list(range(1,9)))
+        code=[c for c in n['cells'] if c['cell_type']=='code'];self.assertEqual(len(code),9)
+        self.assertEqual([c['execution_count'] for c in code],list(range(1,10)))
         self.assertTrue(all(c['outputs'] for c in code))
         for phrase in ('not live LLM generations','not a claim that every action from day one','not proof of success','not reconstructed'):
             self.assertIn(phrase,text)
+
+    def test_all_invocations_in_saved_static_output(self):
+        n=json.loads((ROOT/'notebooks/04_exact_scripted_inputs_outputs.ipynb').read_text())
+        cell=next(c for c in n['cells'] if c['id']=='all-static-traces')
+        self.assertEqual(len(cell['outputs']),64)  # sixteen headings and 48 exact field fragments
+        for i,row in enumerate(self.archive.calls()):
+            snap=self.archive.snapshot(row['case'],row['phase'])
+            heading=cell['outputs'][4*i]['data']['text/plain']
+            self.assertIn(row['case'],heading);self.assertIn(row['phase'],heading)
+            for j,field in enumerate(('role','input','output'),1):
+                pointer=row['pointer']+'/'+field
+                raw,lo,hi=snap.fragment(pointer)
+                shown=cell['outputs'][4*i+j]['data']['text/plain']
+                self.assertIn(snap.member,shown);self.assertIn(pointer,shown)
+                self.assertIn(f'UTF-8 bytes [{lo}, {hi})',shown)
+                self.assertTrue(shown.endswith(raw))
+
+    def test_book_navigation(self):
+        paths=[ROOT/'RESEARCH_STUDY.ipynb',*sorted((ROOT/'notebooks').glob('[0-9][0-9]_*.ipynb'))]
+        self.assertEqual(len(paths),6)
+        for path in paths:
+            n=json.loads(path.read_text())
+            text='\n'.join(''.join(c['source']) for c in n['cells'] if c['cell_type']=='markdown')
+            for link in re.findall(r'\]\(([^)]+)\)',text):
+                if not link.startswith(('https:','#')):
+                    self.assertTrue((path.parent/link.split('#')[0]).exists(),str(path)+': '+link)
+            if path.name!='00_start_here.ipynb':self.assertIn('[Contents]',text)
 
 if __name__=='__main__':unittest.main()

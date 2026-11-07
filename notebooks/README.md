@@ -1,3 +1,5 @@
+[Book contents and audience routes](00_start_here.ipynb) · [Study report](../RESEARCH_STUDY.ipynb)
+
 # Guided notebooks
 
 **Begin with [the complete study report](../RESEARCH_STUDY.ipynb)**: question, method, findings, limitations, roadmap and completion gates in one readable notebook. Use 01 below for deeper interactive evidence exploration; 00 is an optional short navigation route.
@@ -104,3 +106,7 @@ PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/04_ex
 ```
 
 [Verification and limits](PROMPT_TRACES_VERIFICATION.md).
+
+## Static reading coverage
+
+Notebook 04 now saves every one of the sixteen invocations in the eight v0.3 framework worker snapshots, with exact role/input/output spans. It is not necessary to rerun selectors to read them. The other chapters retain saved guided views and optional deeper selectors; not every underlying record is displayed inline. Chapter navigation is a reading aid, not evidence of full conversation capture or a completed research program.

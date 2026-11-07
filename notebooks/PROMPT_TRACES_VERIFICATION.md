@@ -12,9 +12,9 @@ The source-code appendix verifies four preserved stage archives, inventories act
 
 ## Checks
 
-- Eighteen notebook cells, eight executable, completed with the restricted sequential runner. Saved examples include exact role, complete input array, output, pause/resume outputs, stage inventory and source excerpt.
-- Nine new tests cover phase/case coverage, all 48 role/input/output fragments, empty output content plus tool calls, Unicode/escaped pointers, malformed/duplicate-key rejection, absent-record handling, changed-archive rejection, preserved source bytes and notebook links/limits.
-- All 68 notebook tests pass locally. All five notebook restricted replays pass (7, 18, 10, 5 and 8 code cells). Independent review is recorded separately in the PR.
+- Twenty-one notebook cells, nine executable, completed with the restricted sequential runner. Saved examples include exact role, complete input array, output, pause/resume outputs, stage inventory and source excerpt.
+- Eleven trace-reader tests cover phase/case coverage, all 48 role/input/output fragments, empty output content plus tool calls, Unicode/escaped pointers, malformed/duplicate-key rejection, absent-record handling, changed-archive rejection, preserved source bytes and notebook links/limits.
+- All 70 notebook tests pass locally. All five notebook restricted replays pass (7, 18, 10, 5 and 9 code cells). Independent review is recorded separately in the PR.
 - Canonical archives and study records remain unchanged. This reader performs no extraction, database mutation, model call, workflow, email or denied Temporal operation.
 
 ## Limits
@@ -28,3 +28,7 @@ PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/04_ex
 PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s notebooks/tests -v
 sha256sum -c SHA256SUMS
 ```
+
+## Research-book reading update
+
+All sixteen preserved invocations now appear in saved static outputs: sixteen case/phase headings and 48 exact role/input/output fragments. No selector execution is needed to read them. Tests compare each displayed fragment to the original source bytes and check chapter link destinations. Six notebook reading surfaces (contents, report and four chapters) have audience routes and previous/contents/next navigation. This follows the referenced Catholic pilot’s reading pattern without importing its evidence or live-service claims. Other chapters retain selected saved views; whole-repository conversion and full historical conversation coverage are not claimed. Actual renderer behavior is still unverified.
