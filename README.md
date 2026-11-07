@@ -7,6 +7,8 @@ When a caller asks to withdraw authority, what distinguishes receipt of the requ
 
 ## Start here
 
+**[Open the guided study report → RESEARCH_STUDY.ipynb](RESEARCH_STUDY.ipynb)**. Read the question, method, saved-case findings, limitations, roadmap and completion gates in one notebook. The report reads existing evidence; it does not rerun experiments.
+
 Read the [dated current-study synthesis](docs/reports/2026-11-06-current-study-synthesis.md) or open [00 · Start here](notebooks/00_start_here.ipynb) for the short route through current results, open gates and the next reading steps. These are presentation updates, not new experiments.
 
 ## Evidence workbench
@@ -193,3 +195,4 @@ To check file integrity from the repository root on systems with `sha256sum`, ru
 - Prior approval-evidence work is separate **private prior work**. Its repository, artifacts and public website are unchanged; this record does not invent a public link or transfer its results into Q1.
 
 The v0.2 qualification and corrections remain complete for their original stage.  The separately versioned pilot has its own protocol and evidence.  Later experiments, public publication and claims beyond the declared scope require a new decision.
+

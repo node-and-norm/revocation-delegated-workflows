@@ -9,10 +9,10 @@ from urllib.parse import quote
 
 from .core import BASE_COMMIT, ARCHIVE, RECORDS, SUMMARY, barrier_rows
 
-INK = "#183044"
-TEAL = "#076b70"
+INK = "#191820"
+TEAL = "#5145CD"
 AMBER = "#8a4b08"
-LIGHT = "#f2f6f8"
+LIGHT = "#F7F7F4"
 _display_sink = None
 
 
@@ -57,7 +57,7 @@ def table(headers, rows, title="", note=""):
     plain = (title + "\n" if title else "") + " | ".join(headers) + "\n"
     plain += "\n".join(" | ".join(r) for r in rows) + ("\n" + note if note else "")
     html = f'<h3>{escape(title)}</h3>' if title else ""
-    html += '<table style="border-collapse:collapse;width:100%;font-size:14px"><thead><tr>'
+    html += f'<table style="color:{INK};background:#ffffff;border-collapse:collapse;width:100%;font-size:14px"><thead><tr>'
     html += "".join(f'<th style="text-align:left;padding:9px;border-bottom:2px solid {TEAL}">{escape(h)}</th>' for h in headers)
     html += "</tr></thead><tbody>"
     for i, row in enumerate(rows):

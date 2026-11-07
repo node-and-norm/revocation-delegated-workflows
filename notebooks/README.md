@@ -1,6 +1,10 @@
+# Guided notebooks
+
+**Begin with [the complete study report](../RESEARCH_STUDY.ipynb)**: question, method, findings, limitations, roadmap and completion gates in one readable notebook. Use 01 below for deeper interactive evidence exploration; 00 is an optional short navigation route.
+
 # Revocation evidence workbench
 
-Start with [00 · Start here](00_start_here.ipynb), a Markdown-only reading route into the [dated synthesis](../docs/reports/2026-11-06-current-study-synthesis.md) and executable workbench below. It has no code cells and requires no kernel.
+Optional short route: [00 · Start here](00_start_here.ipynb), a Markdown-only reading route into the [dated synthesis](../docs/reports/2026-11-06-current-study-synthesis.md) and executable workbench below. It has no code cells and requires no kernel.
 
 Then explore [01 · When is withdrawal actually established?](01_revocation_evidence_workbench.ipynb).
 
@@ -57,3 +61,16 @@ The [LangChain full-agent notebook](https://github.com/langchain-ai/deep_researc
 Mark leads; alfred coordinates. SORA, MIRA and TRACE are AI-assisted review responsibilities assigned as needed, not connected or persistently running notebook agents. Future roles remain unassigned. Future model/provider or Jev routing would require separate approved implementation and evaluation, including abstention and policy enforcement outside model confidence. No provider, model, Jev or MCP call is made here.
 
 This is a private draft for review. It does not authorize a native experiment, retry a denied operation, publish the study, merge a PR or deploy a system.
+
+
+## Guided study report · 7 November edition
+
+Start with [RESEARCH_STUDY.ipynb](../RESEARCH_STUDY.ipynb) at the repository root for the complete reader-facing narrative and saved evidence views. Then use 01 for deeper exploration. Raw records and implementation remain in their native formats.
+
+Verify without a Jupyter server or experiment:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py RESEARCH_STUDY.ipynb
+```
+
+This fresh-process verification is not a Jupyter-kernel run. See [report verification](STUDY_REPORT_VERIFICATION.md).
