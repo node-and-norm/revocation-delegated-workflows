@@ -84,3 +84,13 @@ PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/02_tr
 ```
 
 [Verification and limits](TRACEABILITY_VERIFICATION.md).
+
+## 03 · Methods and reproduction
+
+[Read the methods chapter](03_methods_and_reproduction.ipynb). Five read-only code cells inspect the preserved archive, source freeze, historical run manifest and selected case. Study-running commands remain external reference instructions, not executable notebook cells.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python notebooks/tools/run_notebook.py notebooks/03_methods_and_reproduction.ipynb
+```
+
+[Verification and limits](METHODS_VERIFICATION.md).

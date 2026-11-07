@@ -15,6 +15,10 @@ Read the [dated current-study synthesis](docs/reports/2026-11-06-current-study-s
 
 Open [02 · Who decided what, and what was actually checked?](notebooks/02_traceability_and_disclosure.ipynb) to explore all six sheets of the preserved v0.11 workbook, with exact cell locators and a clear historical-version boundary. GitHub shows saved static output; change selectors and rerun cells in Jupyter for exploration.
 
+## Methods and reproduction
+
+Open [03 · How was the study run?](notebooks/03_methods_and_reproduction.ipynb) for the protocol/version boundary, verified source freeze, actual recorded invocation, case-artifact inventory, preserved corrections and reproduction prerequisites. It reads saved evidence without running the study.
+
 ## Evidence workbench
 
 Open [01 · When is withdrawal actually established?](notebooks/01_revocation_evidence_workbench.ipynb) for a visual, executable review of the twelve saved cases. It verifies pinned inputs, separates caller knowledge from sink evidence, exposes exact source records and generates a bounded decision brief. The [run guide](notebooks/README.md) explains the offline controls and verification limits. This is a private review workbench, not a live agent runtime or a new experiment.
