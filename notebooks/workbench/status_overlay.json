@@ -1,0 +1,14 @@
+{
+  "as_of_utc_date": "2026-11-06",
+  "kind": "new notebook interpretation overlay; does not edit historical records",
+  "entries": [
+    {
+      "affected_record_keys": ["unchecked_success", "current_gate"],
+      "historical_as_of": "2026-11-04",
+      "current_account": "An artifact-only synthetic checker prototype was added on 2026-11-05. Its reported 115 project tests and 26 separately authored regression tests are engineering checks, not measured Temporal observations. Native qualification remains blocked.",
+      "source_path": "docs/checker-implementation/2026-11-05/README.md",
+      "locator": "What passed and what remains open; Preservation and chronology",
+      "remaining_gap": "Production export/adapters, independently persisted runtime phase registries, observed native mappings, calibrated deadlines and native measurement readiness remain open."
+    }
+  ]
+}

@@ -5,6 +5,16 @@ When a caller asks to withdraw authority, what distinguishes receipt of the requ
 
 [Research reader: understand in 90 seconds](#research-in-90-seconds) · [Reviewer: inspect evidence and limits](#evidence-and-known-limits) · [Engineer: reproduce the fixed study](#reproduce-the-request-to-fence-study)
 
+## Start here
+
+**[Open the guided study report → RESEARCH_STUDY.ipynb](RESEARCH_STUDY.ipynb)**. Read the question, method, saved-case findings, limitations, roadmap and completion gates in one notebook. The report reads existing evidence; it does not rerun experiments.
+
+Read the [dated current-study synthesis](docs/reports/2026-11-06-current-study-synthesis.md) or open [00 · Start here](notebooks/00_start_here.ipynb) for the short route through current results, open gates and the next reading steps. These are presentation updates, not new experiments.
+
+## Evidence workbench
+
+Open [01 · When is withdrawal actually established?](notebooks/01_revocation_evidence_workbench.ipynb) for a visual, executable review of the twelve saved cases. It verifies pinned inputs, separates caller knowledge from sink evidence, exposes exact source records and generates a bounded decision brief. The [run guide](notebooks/README.md) explains the offline controls and verification limits. This is a private review workbench, not a live agent runtime or a new experiment.
+
 ## At a glance
 
 | Record | Current account |
@@ -185,3 +195,4 @@ To check file integrity from the repository root on systems with `sha256sum`, ru
 - Prior approval-evidence work is separate **private prior work**. Its repository, artifacts and public website are unchanged; this record does not invent a public link or transfer its results into Q1.
 
 The v0.2 qualification and corrections remain complete for their original stage.  The separately versioned pilot has its own protocol and evidence.  Later experiments, public publication and claims beyond the declared scope require a new decision.
+
