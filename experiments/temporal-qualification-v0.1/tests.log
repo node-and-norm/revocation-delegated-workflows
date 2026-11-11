@@ -1,0 +1,42 @@
+test_all_record_failure_keeps_primary_in_return (test_bounded_exchange.ExchangeTests.test_all_record_failure_keeps_primary_in_return) ... ok
+test_budget_expires_before_launch (test_bounded_exchange.ExchangeTests.test_budget_expires_before_launch) ... ok
+test_cleanup_join_bound (test_bounded_exchange.ExchangeTests.test_cleanup_join_bound) ... ok
+test_concurrent_use_rejected_without_launch (test_bounded_exchange.ExchangeTests.test_concurrent_use_rejected_without_launch) ... ok
+test_constructor_failure_not_dispatched (test_bounded_exchange.ExchangeTests.test_constructor_failure_not_dispatched) ... ok
+test_disk_failure_prevents_send (test_bounded_exchange.ExchangeTests.test_disk_failure_prevents_send) ... ok
+test_intent_present_before_dispatch (test_bounded_exchange.ExchangeTests.test_intent_present_before_dispatch) ... ok
+test_invalid_timeout_no_process (test_bounded_exchange.ExchangeTests.test_invalid_timeout_no_process) ... ok
+test_late_reply_preserved_not_counted_timely (test_bounded_exchange.ExchangeTests.test_late_reply_preserved_not_counted_timely) ... ok
+test_missing_reply_not_no_effect (test_bounded_exchange.ExchangeTests.test_missing_reply_not_no_effect) ... ok
+test_nonzero_exit_with_reply_remains_uncertain (test_bounded_exchange.ExchangeTests.test_nonzero_exit_with_reply_remains_uncertain) ... ok
+test_output_write_failure_retains_send_uncertainty (test_bounded_exchange.ExchangeTests.test_output_write_failure_retains_send_uncertainty) ... ok
+test_oversize_reply_rejected (test_bounded_exchange.ExchangeTests.test_oversize_reply_rejected) ... ok
+test_partial_send_failure_uncertain_no_retry (test_bounded_exchange.ExchangeTests.test_partial_send_failure_uncertain_no_retry) ... ok
+test_primary_and_cleanup_errors_preserved (test_bounded_exchange.ExchangeTests.test_primary_and_cleanup_errors_preserved) ... ok
+test_readable_but_incomplete_reply_timeout (test_bounded_exchange.ExchangeTests.test_readable_but_incomplete_reply_timeout) ... ok
+test_start_failure_uncertain (test_bounded_exchange.ExchangeTests.test_start_failure_uncertain) ... ok
+test_supervisor_record_failure_is_not_qualification (test_bounded_exchange.ExchangeTests.test_supervisor_record_failure_is_not_qualification) ... ok
+test_termination_does_not_settle (test_bounded_exchange.ExchangeTests.test_termination_does_not_settle) ... ok
+test_timely_reply_and_no_retry (test_bounded_exchange.ExchangeTests.test_timely_reply_and_no_retry) ... ok
+test_validation_crosses_cutoff (test_bounded_exchange.ExchangeTests.test_validation_crosses_cutoff) ... ok
+test_wrong_binding_not_accepted (test_bounded_exchange.ExchangeTests.test_wrong_binding_not_accepted) ... ok
+test_ack_and_sequence_required (test_ownership_cut.CutTests.test_ack_and_sequence_required) ... ok
+test_cleanup_before_cut_invalid (test_ownership_cut.CutTests.test_cleanup_before_cut_invalid) ... ok
+test_cleanup_during_capture_blocks_acceptance (test_ownership_cut.CutTests.test_cleanup_during_capture_blocks_acceptance) ... ok
+test_cleanup_during_hash_blocks_complete_handoff (test_ownership_cut.CutTests.test_cleanup_during_hash_blocks_complete_handoff) ... ok
+test_closed_after_seal (test_ownership_cut.CutTests.test_closed_after_seal) ... ok
+test_complete_handoff_not_atomic_or_qualified (test_ownership_cut.CutTests.test_complete_handoff_not_atomic_or_qualified) ... ok
+test_duplicate_capture_rejected (test_ownership_cut.CutTests.test_duplicate_capture_rejected) ... ok
+test_explicit_unknown_and_incomplete (test_ownership_cut.CutTests.test_explicit_unknown_and_incomplete) ... ok
+test_mismatched_ack_id_rejected (test_ownership_cut.CutTests.test_mismatched_ack_id_rejected) ... ok
+test_missing_not_absence (test_ownership_cut.CutTests.test_missing_not_absence) ... ok
+test_mutated_record_invalid (test_ownership_cut.CutTests.test_mutated_record_invalid) ... ok
+test_no_captures_after_cleanup (test_ownership_cut.CutTests.test_no_captures_after_cleanup) ... ok
+test_unreadable_record_invalid (test_ownership_cut.CutTests.test_unreadable_record_invalid) ... ok
+test_distinct_endpoint_allowed (test_ownership_cut.OwnershipTests.test_distinct_endpoint_allowed) ... ok
+test_fresh_session_cannot_reuse_same_endpoint (test_ownership_cut.OwnershipTests.test_fresh_session_cannot_reuse_same_endpoint) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.119s
+
+OK
