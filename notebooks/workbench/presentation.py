@@ -27,7 +27,9 @@ class View:
         if self.html:
             data["text/html"] = self.html
         if self.svg:
-            data["image/svg+xml"] = self.svg
+            # ASCII XML character references preserve Unicode glyphs while avoiding
+            # byte-escape artifacts in GitHub's SVG notebook renderer.
+            data["image/svg+xml"] = self.svg.encode("ascii", "xmlcharrefreplace").decode("ascii")
         return data
 
 
