@@ -16,3 +16,9 @@ AI assistance produced the chapter, source review, structural checks and review 
 ## Mac-status documentation addendum
 
 Updated notebook and inspection record from a separate coordinator-reported read-only review: Colima and Lima both report stopped, but are related rather than independent evidence; saved configuration has persistent disks and network/forwarding features; workload/restart behavior is uninspected; denied Rosetta-related sysctl read was not retried. Startup risks are prospective, not observed behavior. No Mac tools, VM startup or configuration changes were used to make this documentation update. JSON, Markdown-only cell count and changed-file checks were repeated; official nbformat/viewer limitations remain.
+
+## Historical checkpoint and dedicated-profile design addendum
+
+Read pinned control-evidence-corpus commit f3e8066e2f1db268255914ed0bde08bcd415002b: experiments/us-control-sandbox/ENVIRONMENT.md, RUN-INDEX.md and run_container.py. Added attributed historical evidence and the launcher's unbounded subprocess calls, not current qualification claims. Added proposed dedicated VM profile with explicit mount/network/resource/management choices and unresolved security approvals. Notebook now has 15 Markdown-only cells. No VM creation, configuration change, startup, historical test or native qualification occurred.
+
+Separate AI-assisted review checked the two added sections against all three pinned sources and found no blocking claim. Clarified that host guardian is not independent of host failure and writable output remains untrusted data, not executable content or authoritative guardian status.
