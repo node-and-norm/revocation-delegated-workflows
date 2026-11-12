@@ -71,6 +71,12 @@ pids 0 4 1
 
 No usable delegated cgroup, systemd-scope or local container-control route was evidenced through the paths inspected. Provider-level facilities remain unknown. No actual termination, descendant containment, watchdog behavior or denied operation was tested. A later environment must be assessed independently.
 
-## Other candidate environment, not selected
+## Mac candidate: later status update, not selected for execution
 
-A separate coordinator-reported read-only review identified an existing Colima/Lima `node-norm-research` VM on the owner's Mac as a possible future environment. Its stop capabilities, current workloads and runtime remain unverified in this chapter. This is a candidate lead only, not evidence of qualification, permission to interrupt it, or a change to the cloud-only execution gate. The inspection transcript above concerns the cloud runtime only.
+A separate coordinator-reported read-only review on 12 November 2026 found both Colima and Lima reporting `node-norm-research` as **stopped**. These related management views are not independent proof of guest process absence, lifecycle enforcement or descendant containment. The cloud inspection transcript above is not evidence about the Mac.
+
+The saved VM profile includes persistent disks, user-mode networking, host-name resolution, proxy propagation and broad automatic forwarding. Existing workloads and restart policies remain uninspected. Startup could resume retained services/workloads and expose network paths before a qualification fixture is ready. These are prospective risks arising from the saved configuration, not observed startup behavior.
+
+A Rosetta-related `sysctl` read was denied. It was not retried or bypassed; runtime suitability remains unresolved. This document does not claim the exact denied invocation or preserve a raw Mac transcript; the facts in this section are attributed to the separate coordinator-reported review.
+
+No VM startup, test workload, configuration/security change or denial retry is authorized by this documentation update. Before a separate startup decision, inspect retained workload/restart behavior and concrete network exposure, and establish independent watchdog/containment support. Stopped status alone does not qualify the VM or make startup inert.

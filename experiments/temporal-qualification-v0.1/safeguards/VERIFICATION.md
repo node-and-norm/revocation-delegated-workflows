@@ -12,3 +12,7 @@ Scope: documentation additions to experimental PR #7, baseline f1e50910d4cdd4101
 - Package SHA256SUMS updated for these documentation files; existing code/test/log checksum entries retained. Root historical manifest is unchanged; it did not include this experimental package before the update.
 
 AI assistance produced the chapter, source review, structural checks and review corrections. This is not independent human validation or experimental evidence for the proposed safeguards.
+
+## Mac-status documentation addendum
+
+Updated notebook and inspection record from a separate coordinator-reported read-only review: Colima and Lima both report stopped, but are related rather than independent evidence; saved configuration has persistent disks and network/forwarding features; workload/restart behavior is uninspected; denied Rosetta-related sysctl read was not retried. Startup risks are prospective, not observed behavior. No Mac tools, VM startup or configuration changes were used to make this documentation update. JSON, Markdown-only cell count and changed-file checks were repeated; official nbformat/viewer limitations remain.
