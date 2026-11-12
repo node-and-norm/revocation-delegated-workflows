@@ -52,3 +52,7 @@ Added proposed contract v0.1 and notebook summary (21 Markdown-only cells). Sepa
 ## Lifecycle source-map addendum
 
 Directly read Lima v2.0.3 usernet, network config, directory resolution and launchd sources plus Colima v0.9.1 stop wrapper. Separate AI-assisted source review found no blocking documentation issue; clarified that usernet startup socket inspection ending does not prove readiness. Added prominent correction: no requested forced VM shutdown does not rule out helper SIGKILL. Preserved unresolved active autostart/configuration/ownership and cleanup. Notebook has 22 Markdown-only cells. No VM operation, test, source-code upload or merge.
+
+## Active-state / dual-observation documentation addendum
+
+Recorded separately reported read-only empty-autostart and detached-helper identity observations. Proposed separate VM/helper/CLI outcomes; no new kill authority, no armed observer and no execution. Notebook has 23 Markdown-only cells. This increment serializes documentation only; no candidate code, tests, VM actions or merge. Separate AI-assisted review found the refinement appropriately narrow and requested two wording corrections: observer spans the command/window, and no-force shorthand explicitly excludes requested VM force/additional helper kills without denying Lima’s built-in escalation. Both corrected. Runtime facts are attributed, not independently revalidated by this document review.

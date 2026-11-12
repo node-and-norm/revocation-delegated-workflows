@@ -74,3 +74,7 @@ This updates the earlier unknown permission/registration prerequisite, not the f
 ## Later harmless-child event check · 21:14:16 UTC
 
 One expressly approved supervisor-owned cooperative child produced a matching native exit event in 1.480987333 seconds within a 3-second event wait, then exited 0 and was reaped; observer closed. See [CHILD_OBSERVER_CHECK.md](CHILD_OBSERVER_CHECK.md). This establishes one normal child-event delivery, not VM exit delivery, forced cleanup or full guardian reliability. No VM stop or study case occurred.
+
+## Later active-state refinement
+
+An expressly permitted read-only preflight reported empty autostart identifier and the existing detached user-v2 helper identity. The simpler proposal observes original VM-host and shared-helper exits separately from the CLI, rather than treating shared helper cleanup as owned-child containment. No new helper kill or broad process-tree killer is proposed. Lima may itself escalate helper shutdown to SIGKILL. See [source map and remaining gates](LIFECYCLE_SOURCE_MAP.md#later-permitted-active-state-observation-narrower-design). No observer was armed or VM action performed by this increment.

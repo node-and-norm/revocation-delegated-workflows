@@ -42,7 +42,7 @@ The separately authorized read-only preflight reported only user-v2 (gateway 192
 
 Inference from those observations plus the source: if the dedicated VM remains the sole running consumer, successful shutdown may cause the now-unused shared user-v2 service to stop, including possible SIGKILL escalation. Recheck inventory before any future approved action; do not treat that inference as an executed result.
 
-Unresolved: exact active autostart branch; complete helper/service identity and ownership; independent service-exit evidence; supported recovery after an interrupted CLI; effective configuration/binary binding under races; bounded durable evidence. Observing the VM-host process does not establish all of these.
+At this earlier stage unresolved: exact active autostart branch; complete helper/service identity and ownership; independent service-exit evidence; supported recovery after an interrupted CLI; effective configuration/binary binding under races; bounded durable evidence. Observing the VM-host process does not establish all of these.
 
 ## Contract corrections and next design decision
 
@@ -53,3 +53,23 @@ Unresolved: exact active autostart branch; complete helper/service identity and 
 5. Resolve whether the intended minimal operation is direct Lima graceful stop with these disclosed limits or a separately reviewed Colima wrapper operation. Neither is executed or newly approved here.
 
 This is genuine progress in identifying effects that change the approval question, not closure of the guardian-readiness gates. All tests and merge still require checking with Mark.
+
+## Later permitted active-state observation: narrower design
+
+On 12 November 2026, the separately authorized environment review reported `status=Running`, `AutoStartedIdentifier=""`, and `errors=[]` for the dedicated instance. Under the reviewed v2.0.3 source, that inspected state selects direct host-agent SIGINT rather than `launchctl bootout`. This resolves the previously unknown branch **at that observation only**; recheck before any future action.
+
+The existing user-v2 PID file identified PID 6394. A targeted permitted identity check found current-user ownership, the resolved installed limactl executable, parent PID 1 and start time 1794515880.707602; the PID file remained stable. The VM-host PID was still 6396. These are historical identity observations, never constants to reuse as current targets. Executable/path/owner evidence is not argument attestation, complete actor coverage or lifecycle success. No signals, observer registration, tests or settings changes were performed in this preflight. This document is a sanitized account of the environment review's tool observations, not a preserved raw transcript.
+
+### Simplified proposal: observe three distinct outcomes
+
+| Actor | Proposed evidence | Authority and limit |
+|---|---|---|
+| Original VM-host process | Fresh lifetime identity; independently pre-armed native exit notification; identity recheck | Arm before and observe throughout the separately approved command/window; no direct signal authority |
+| Existing detached shared user-v2 helper | Fresh PID-file/lifetime identity; separately pre-armed native exit notification; identity recheck | Not the stop-worker's child. No additional helper signal or process-tree killer; disclose Lima's own possible SIGKILL fallback |
+| Owned lifecycle CLI worker | Separate exit code, bounded stdout/stderr, direct-child reaping and cleanup record | Any worker cleanup needs explicit policy; worker exit does not prove VM/helper exit or complete Colima cleanup |
+
+Proposed sequence: fresh inventory and empty-workload checks → bind effective configuration and all target identities → arm/recheck both permitted native observers → preserve readiness/intent under the evidence contract → only after specific approval, release the graceful CLI → independently classify each observed outcome. This is design, not execution or an armed observer.
+
+Use one original 30-second observation budget; no reset, requested forced VM shutdown, additional helper kill, restart or retry. No event means unobserved, not absent. Both exit events would establish only the two bound original process exits, not cessation of every service, replacement process or resource cleanup. Changed inventory, missing/replaced identities, registration denial or incomplete evidence blocks admission; a post-dispatch change remains unresolved rather than licensing additional intervention. Detached/shared service ownership is no longer inferred from the CLI parentage. Remaining configuration/concurrency, durable evidence, implementation and recovery gates are not closed.
+
+**Next smallest design step:** revise the local, disabled supervisor specification to track the VM, preexisting helper and CLI independently; independently review both observer registration/failure paths and bounded evidence capture. No test, VM action, code upload or merge is authorized by this documentation update.

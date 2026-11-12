@@ -1,6 +1,6 @@
 # One graceful-stop observation: operation and evidence contract v0.1
 
-> **Source-review correction (12 November):** “no force” in the proposed VM operation means no requested forced VM shutdown. Ordinary Lima graceful-stop reconciliation may SIGKILL the user-v2 network helper after its polling threshold. This possible effect is not authorized merely by earlier graceful-stop wording. See [lifecycle source map](LIFECYCLE_SOURCE_MAP.md); exact active autostart/configuration and helper ownership remain unresolved.
+> **Source-review correction (12 November):** “no force” in the proposed VM operation means no requested forced VM shutdown. Ordinary Lima graceful-stop reconciliation may SIGKILL the user-v2 network helper after its polling threshold. This possible effect is not authorized merely by earlier graceful-stop wording. See [lifecycle source map](LIFECYCLE_SOURCE_MAP.md); the later active-state observation below narrows autostart and one helper identity, without closing effective configuration or lifecycle gates.
 
 
 12 November 2026. **Proposed specification, independently AI-reviewed as noted in verification; not implemented, tested or permission to operate.** Read alongside [supervisor source review](SUPERVISOR_SOURCE_REVIEW.md). Current decision: **NOT READY**.
@@ -20,7 +20,7 @@ The command can reconcile shared networks. The last separately reported configur
 | G1 authority | Owner's concrete operation approval and separately explicit owned-worker cleanup policy; scope, time and target | Future execution approval required |
 | G2 active configuration | Exact installed version/source correspondence; config-resolution chain; effective instance/network values; immutable review identity | Unresolved binding, not solved by supplied hashes |
 | G3 identity and concurrency | Fresh process lifetime identity, observer registration/recheck; exclusive lifecycle ownership or an explicitly accepted residual race model | Targeted registration previously succeeded; exclusivity and races unresolved |
-| G4 helper ownership | Complete source-derived actor graph, permitted cleanup target and observed completion condition for each actor | CLI-created/shared helpers unresolved |
+| G4 helper ownership | Complete source-derived actor graph, permitted cleanup target and observed completion condition for each actor | Existing detached user-v2 identity reported; fresh dual observation, shared effects and cleanup still unresolved |
 | G5 evidence custody | Reviewed bounded writer protocol with receipts, quotas, incomplete states and preservation path | Contract below only; writer unimplemented |
 | G6 implementation | Corrected source, independent review and separately authorized qualification of relevant mechanisms | Local source held closed; unexecuted |
 
@@ -85,7 +85,7 @@ Proposed initial limits: 1 MiB per CLI stream, 10 MiB total persisted attempt da
 
 Pre-arm observer and separately supervised lifecycle worker before admission. Record T0 when the guardian creates/submits the release-attempt intent, before any release-byte write; cutoff T0+30 seconds. Await its durable receipt asynchronously while observation/deadline handling remains responsive. Dispatch is forbidden unless the receipt arrives before both the declared admission cutoff and T0+30 seconds. Do not reset T0 after receipt: persistence latency consumes the original window. A missed receipt/cutoff means no release, retained failure evidence and cleanup of the unreleased owned worker under its approved policy. Record actual write-attempt time separately; a saved intent does not prove a write or execution. This is an observation window, not a hard OS guarantee. Classify by event **retrieval** time after the OS call; at/after cutoff is late.
 
-No force-stop or restart. Direct-worker termination, if separately approved, targets only the owned child; it may interrupt graceful shutdown and leave helper/shared-service state unresolved. A successful kill/reap of that child is not proof the VM or helpers stopped. Unknown ownership or unresolved cleanup prevents subsequent attempts. The final report must survive individual close/cleanup failures and retain the primary failure.
+No requested forced VM shutdown, additional helper kill or restart. Lima’s disclosed built-in helper escalation remains possible. Direct-worker termination, if separately approved, targets only the owned child; it may interrupt graceful shutdown and leave helper/shared-service state unresolved. A successful kill/reap of that child is not proof the VM or helpers stopped. Unknown ownership or unresolved cleanup prevents subsequent attempts. The final report must survive individual close/cleanup failures and retain the primary failure.
 
 A no-event-observed label means only that no matching event was received; it never means the process is absent.
 
@@ -98,3 +98,12 @@ Before any implementation/test proposal, the reviewer must identify a concrete s
 **Next smallest design-only step:** finish the source-derived helper/side-effect map and configuration-resolution chain for the installed versions. This can establish which actors need ownership and which files really govern operation without stopping the VM or running tests. In parallel, specify the evidence-writer receipt protocol; do not claim it implemented.
 
 Genuine progress here is an explicit reviewable contract replacing vague readiness claims. None of the four blockers is marked closed by writing this document. Publication of this documentation in the private draft does not approve execution, code upload, merge or security changes.
+
+## 9. Active-state refinement (12 November)
+
+On 12 November 2026, the separately authorized environment review reported `status=Running`, `AutoStartedIdentifier=""`, and `errors=[]` for the dedicated instance. Under the reviewed v2.0.3 source, that inspected state selects direct host-agent SIGINT rather than `launchctl bootout`. This resolves the previously unknown branch **at that observation only**; recheck before any future action.
+
+The existing user-v2 PID file identified PID 6394. A targeted permitted identity check found current-user ownership, the resolved installed limactl executable, parent PID 1 and start time 1794515880.707602; the PID file remained stable. The VM-host PID was still 6396. These are historical identity observations, never constants to reuse as current targets. Executable/path/owner evidence is not argument attestation, complete actor coverage or lifecycle success. No signals, observer registration, tests or settings changes were performed in this preflight. This document is a sanitized account of the environment review's tool observations, not a preserved raw transcript.
+
+
+Use the [three-outcome proposal](LIFECYCLE_SOURCE_MAP.md#simplified-proposal-observe-three-distinct-outcomes): separately observe the original VM-host, preexisting shared helper and CLI. No broad process-tree termination is proposed. The earlier next-step map is now available; next review dual-observer admission/failure behavior and evidence persistence, while keeping execution disabled. The four gate categories remain unresolved, though autostart and one helper identity are better evidenced.
