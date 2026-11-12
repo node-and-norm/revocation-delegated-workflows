@@ -2,6 +2,10 @@
 
 **Mock-tested development code only. Not integrated into native collection, not production-ready, not a measured study.**
 
+## Guided safeguard review
+
+[Open the visual safeguard review and qualification plan](05_safeguard_review_and_qualification_plan.ipynb). This static Jupyter chapter distinguishes proposed controls, observed cloud metadata, the ten-scenario plan and the still-closed execution gate. No real-process or Temporal run is claimed. [Inspection record](safeguards/RUNTIME_INSPECTION.md).
+
 ## What this adds
 
 - Process-supervised single-use child exchange with preserved uncertain outcomes and no retry after timeout/partial send.
@@ -33,3 +37,4 @@ Do not integrate this code into native collection until channel/descriptor owner
 ## Provenance and preservation
 
 Built through staged 11 November 2026 AI-assisted engineering/review increments following the [partial qualification decision](../../docs/decisions/2026-11-04-temporal-partial-qualification.md). Original frozen archives and historical study data remain unchanged. No denied EPERM operation was retried. See STATUS.md, REVIEW.md, tests.log and SHA256SUMS. AI assistance produced implementation/tests/review; this is not independent human validation.
+
