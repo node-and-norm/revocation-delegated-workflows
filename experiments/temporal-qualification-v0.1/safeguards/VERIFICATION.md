@@ -48,3 +48,7 @@ Recorded local-only source review/corrections and final AI-assisted re-review, w
 ## Operation-and-evidence contract addendum
 
 Added proposed contract v0.1 and notebook summary (21 Markdown-only cells). Separate AI-assisted review found no unsafe scope expansion, but requested an explicit persistence-versus-observation timing rule and clearer no-event terminology. Corrected: T0 precedes intent submission; asynchronous receipt wait consumes the original window; no release after either cutoff, no clock reset; actual write timestamp separate. No event observed never means process absent. Four blockers remain open. Documentation serialization only; no code test, VM action or merge.
+
+## Lifecycle source-map addendum
+
+Directly read Lima v2.0.3 usernet, network config, directory resolution and launchd sources plus Colima v0.9.1 stop wrapper. Separate AI-assisted source review found no blocking documentation issue; clarified that usernet startup socket inspection ending does not prove readiness. Added prominent correction: no requested forced VM shutdown does not rule out helper SIGKILL. Preserved unresolved active autostart/configuration/ownership and cleanup. Notebook has 22 Markdown-only cells. No VM operation, test, source-code upload or merge.

@@ -1,5 +1,8 @@
 # Host guardian and independent exit observer
 
+> **Source-review correction (12 November):** “no force” in the proposed VM operation means no requested forced VM shutdown. Ordinary Lima graceful-stop reconciliation may SIGKILL the user-v2 network helper after its polling threshold. This possible effect is not authorized merely by earlier graceful-stop wording. See [lifecycle source map](LIFECYCLE_SOURCE_MAP.md); exact active autostart/configuration and helper ownership remain unresolved.
+
+
 12 November 2026. **Concrete proposed design; not implemented or qualified.** This document adds no lifecycle, process-inspection, security-change or study-execution permission.
 
 ## Source-reviewed force-stop limitation

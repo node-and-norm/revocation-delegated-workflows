@@ -1,5 +1,8 @@
 # One graceful-stop observation: operation and evidence contract v0.1
 
+> **Source-review correction (12 November):** “no force” in the proposed VM operation means no requested forced VM shutdown. Ordinary Lima graceful-stop reconciliation may SIGKILL the user-v2 network helper after its polling threshold. This possible effect is not authorized merely by earlier graceful-stop wording. See [lifecycle source map](LIFECYCLE_SOURCE_MAP.md); exact active autostart/configuration and helper ownership remain unresolved.
+
+
 12 November 2026. **Proposed specification, independently AI-reviewed as noted in verification; not implemented, tested or permission to operate.** Read alongside [supervisor source review](SUPERVISOR_SOURCE_REVIEW.md). Current decision: **NOT READY**.
 
 ## 1. Exact bounded question
