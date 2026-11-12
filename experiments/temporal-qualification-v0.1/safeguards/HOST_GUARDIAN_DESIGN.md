@@ -56,8 +56,14 @@ At the fixed cleanup cutoff, stop admitting further cases. Retain unresolved pro
 
 Attempt and profile identity; installed tool versions/digests when available; approved target; identity-binding and observer-registration results; monotonic admission/escalation/cutoff times; one lifecycle request and its bounded output/exit status; OS exit observations tied to original identities; independent cleanup verdict; missing/late evidence and persistence failures. Redact private host paths from the repository; keep a locally controlled source record where needed.
 
-## Why implementation remains blocked
+## Original implementation blockers — before the narrow readiness check
 
 The earlier process-inspection denial has not been retried or bypassed. Exact process identity access, supported exit-observer registration, complete VM process coverage and operational force-stop semantics are not verified. Source code for a guardian could be written without these facts, but would not make the environment ready and risks suggesting a safety guarantee it cannot establish. This increment therefore deliberately implements **no guardian executable or readiness gate**.
 
 Next decision: obtain an explicitly permitted observation route with documented identity/exit semantics, review the exact bounded guardian implementation, and separately authorize its qualification. No lifecycle-stop tests or study tests occurred in this increment. Design acceptance, implementation, safeguard qualification and study execution remain separate decisions.
+
+## Later narrow readiness result · 21:02:28 UTC
+
+The explicitly authorized targeted identity/registration check succeeded at a specific time, with identity rechecked unchanged. See [OBSERVER_READINESS.md](OBSERVER_READINESS.md) for both the initial missing-Python-constant attempt and the corrected successful registration. No process-inspection denial was bypassed. The descriptor was closed; no observer remains armed.
+
+This updates the earlier unknown permission/registration prerequisite, not the full gate. Event delivery, complete VM process coverage, force-stop/lifecycle side effects and independent deadline reliability remain unqualified. No lifecycle stop or study test occurred. No guardian executable was added. Further tests and merge require checking with the owner first.

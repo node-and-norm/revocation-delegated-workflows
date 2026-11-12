@@ -32,3 +32,7 @@ Added separately reported actual setup at approximately 20:39 UTC on 12 November
 Directly read Lima v2.0.3 pkg/instance/stop.go and cmd/limactl/stop.go. Added force-stop semantics and concrete fail-closed observer/guardian design; implementation deliberately withheld because process identity/observer access and full containment semantics are unverified. No process-inspection denial retried. Notebook now has 17 Markdown-only cells; documentation JSON, unique cell IDs and no executable-cell checks passed. No lifecycle or study test occurred.
 
 Separate AI-assisted source review confirmed force-stop claims and identified wider reconciliation scope. Added explicit unresolved network side-effect review and eventual approval disclosure for disk unlock, metadata removal and reconciliation. Exact target binding does not imply the whole CLI is profile-scoped.
+
+## Narrow observer-readiness documentation addendum
+
+Added the separately reported, explicitly authorized 21:02:28 UTC identity/registration check and initial missing-constant attempt. Recorded observer closure, no remaining registration, no event delivery/stop proof, and source limits. Updated earlier design blocker wording chronologically instead of erasing it. Notebook now has 18 Markdown-only cells. No code or study tests were performed by this documentation update; JSON serialization/cell-count checks only.
