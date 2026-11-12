@@ -36,3 +36,7 @@ Separate AI-assisted source review confirmed force-stop claims and identified wi
 ## Narrow observer-readiness documentation addendum
 
 Added the separately reported, explicitly authorized 21:02:28 UTC identity/registration check and initial missing-constant attempt. Recorded observer closure, no remaining registration, no event delivery/stop proof, and source limits. Updated earlier design blocker wording chronologically instead of erasing it. Notebook now has 18 Markdown-only cells. No code or study tests were performed by this documentation update; JSON serialization/cell-count checks only.
+
+## Harmless-child check documentation addendum
+
+Recorded the single separately authorized check and exact reported timing/result, with cooperative-child limits and wall-time distinction. Notebook now has 19 Markdown-only cells. This documentation update performed serialization/cell checks only; it ran no child check, study test, VM action or merge.

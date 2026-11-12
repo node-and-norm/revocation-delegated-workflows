@@ -67,3 +67,7 @@ Next decision: obtain an explicitly permitted observation route with documented 
 The explicitly authorized targeted identity/registration check succeeded at a specific time, with identity rechecked unchanged. See [OBSERVER_READINESS.md](OBSERVER_READINESS.md) for both the initial missing-Python-constant attempt and the corrected successful registration. No process-inspection denial was bypassed. The descriptor was closed; no observer remains armed.
 
 This updates the earlier unknown permission/registration prerequisite, not the full gate. Event delivery, complete VM process coverage, force-stop/lifecycle side effects and independent deadline reliability remain unqualified. No lifecycle stop or study test occurred. No guardian executable was added. Further tests and merge require checking with the owner first.
+
+## Later harmless-child event check · 21:14:16 UTC
+
+One expressly approved supervisor-owned cooperative child produced a matching native exit event in 1.480987333 seconds within a 3-second event wait, then exited 0 and was reaped; observer closed. See [CHILD_OBSERVER_CHECK.md](CHILD_OBSERVER_CHECK.md). This establishes one normal child-event delivery, not VM exit delivery, forced cleanup or full guardian reliability. No VM stop or study case occurred.
