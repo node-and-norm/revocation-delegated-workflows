@@ -40,3 +40,7 @@ Added the separately reported, explicitly authorized 21:02:28 UTC identity/regis
 ## Harmless-child check documentation addendum
 
 Recorded the single separately authorized check and exact reported timing/result, with cooperative-child limits and wall-time distinction. Notebook now has 19 Markdown-only cells. This documentation update performed serialization/cell checks only; it ran no child check, study test, VM action or merge.
+
+## Local supervisor review documentation addendum
+
+Recorded local-only source review/corrections and final AI-assisted re-review, with four unresolved blockers and a written operation-and-evidence contract as the next no-test step. No candidate code uploaded. Notebook now has 20 Markdown-only cells. This update checked documentation serialization/cell structure only; no candidate compilation, tests, VM lifecycle action or merge.
