@@ -44,3 +44,7 @@ Recorded the single separately authorized check and exact reported timing/result
 ## Local supervisor review documentation addendum
 
 Recorded local-only source review/corrections and final AI-assisted re-review, with four unresolved blockers and a written operation-and-evidence contract as the next no-test step. No candidate code uploaded. Notebook now has 20 Markdown-only cells. This update checked documentation serialization/cell structure only; no candidate compilation, tests, VM lifecycle action or merge.
+
+## Operation-and-evidence contract addendum
+
+Added proposed contract v0.1 and notebook summary (21 Markdown-only cells). Separate AI-assisted review found no unsafe scope expansion, but requested an explicit persistence-versus-observation timing rule and clearer no-event terminology. Corrected: T0 precedes intent submission; asynchronous receipt wait consumes the original window; no release after either cutoff, no clock reset; actual write timestamp separate. No event observed never means process absent. Four blockers remain open. Documentation serialization only; no code test, VM action or merge.
