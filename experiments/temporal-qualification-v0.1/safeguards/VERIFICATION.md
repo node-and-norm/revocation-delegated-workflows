@@ -71,3 +71,8 @@ Added four static sections near the notebook entrance: requirement → scope →
 
 Added the prepared ten-method pure-policy test proposal and exact local source hashes. Separate AI-assisted source review found the suite suitable to ask permission to run; no candidate imports, compilation or execution occurred. The code remains local, not uploaded; the notebook explicitly warns the proposed command cannot run from this PR alone. No passing test result, RAM-first acceptance, VM action or merge is claimed. Notebook now has 29 Markdown-only cells; this addition has not been visually rendered.
 
+
+## Approved pure-policy execution · 13 November 2026
+
+Following explicit approval, ran the exact reviewed command once. Both reviewed source hashes matched beforehand. Ten test methods passed, exit 0; unittest reported 0.001s. Exact captured text is preserved in POLICY_CHECKS_20261113.log. No fixes/repeats, VM/network/native observer actions, measured collection or merge. These pure examples do not qualify operational adapters or native Temporal. Notebook now has 30 Markdown-only cells, with proposal history retained and later result separate. New result cell has not been visually rendered.
+

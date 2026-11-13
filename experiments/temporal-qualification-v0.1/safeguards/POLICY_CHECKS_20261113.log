@@ -1,0 +1,15 @@
+test_01_lifecycle_entry_refuses (test_lifecycle_ram_first_candidate.PolicyChecks.test_01_lifecycle_entry_refuses) ... ok
+test_02_timestamp_type_admission_and_order (test_lifecycle_ram_first_candidate.PolicyChecks.test_02_timestamp_type_admission_and_order) ... ok
+test_03_tick_event_cap_and_omitted_ids (test_lifecycle_ram_first_candidate.PolicyChecks.test_03_tick_event_cap_and_omitted_ids) ... ok
+test_04_tick_bytes_and_late_stream_are_separate (test_lifecycle_ram_first_candidate.PolicyChecks.test_04_tick_bytes_and_late_stream_are_separate) ... ok
+test_05_fixed_cleanup_deadlines_and_idempotent_unresolved (test_lifecycle_ram_first_candidate.PolicyChecks.test_05_fixed_cleanup_deadlines_and_idempotent_unresolved) ... ok
+test_06_missed_action_window_never_issues_stale_signal (test_lifecycle_ram_first_candidate.PolicyChecks.test_06_missed_action_window_never_issues_stale_signal) ... ok
+test_07_late_ack_history_survives_late_reap (test_lifecycle_ram_first_candidate.PolicyChecks.test_07_late_ack_history_survives_late_reap) ... ok
+test_08_premature_freeze_and_postfreeze_mutation_refused (test_lifecycle_ram_first_candidate.PolicyChecks.test_08_premature_freeze_and_postfreeze_mutation_refused) ... ok
+test_09_receipt_mismatch_boolean_and_extra_field_rejected (test_lifecycle_ram_first_candidate.PolicyChecks.test_09_receipt_mismatch_boolean_and_extra_field_rejected) ... ok
+test_10_snapshot_metadata_binding (test_lifecycle_ram_first_candidate.PolicyChecks.test_10_snapshot_metadata_binding) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
