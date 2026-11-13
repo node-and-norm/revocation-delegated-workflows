@@ -61,3 +61,8 @@ Recorded separately reported read-only empty-autostart and detached-helper ident
 
 Read Apple’s archived fsync/fcntl manuals and Lima issue #5087. Added supervisor-failure versus OS/power-loss distinction, without asserting current filesystem semantics or issue applicability. Notebook now has 24 Markdown-only cells. Documentation serialization only; no code execution, tests, VM action or merge. Independent text-only review found no blocking wording issue; reviewer did not re-fetch sources or perform runtime validation.
 
+
+## Specification-led walkthrough addendum · 13 November 2026
+
+Added four static sections near the notebook entrance: requirement → scope → expected evidence → actual record → conclusion → uncertainty. S4/S5 values were read from the pinned historical summary and post-run review; independent AI-assisted review separately checked the summary rows and found no blocking content issue. Historical LangGraph/direct study, proposed native Temporal work and VM-safety preparation remain distinct. The SDD paper supplies conceptual inspiration, not validation of this adaptation. Notebook serialization shows 28 Markdown-only cells. New repository link targets were checked against the current tree; cited source files were read. No raw archive audit, cell execution, test, actual viewer rendering, VM action or merge occurred. Original historical records remain unchanged.
+
