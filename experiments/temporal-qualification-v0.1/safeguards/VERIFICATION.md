@@ -76,3 +76,9 @@ Added the prepared ten-method pure-policy test proposal and exact local source h
 
 Following explicit approval, ran the exact reviewed command once. Both reviewed source hashes matched beforehand. Ten test methods passed, exit 0; unittest reported 0.001s. Exact captured text is preserved in POLICY_CHECKS_20261113.log. No fixes/repeats, VM/network/native observer actions, measured collection or merge. These pure examples do not qualify operational adapters or native Temporal. Notebook now has 30 Markdown-only cells, with proposal history retained and later result separate. New result cell has not been visually rendered.
 
+
+## Later process observations and checkpoint review · 13 November 2026
+
+Two separate expressly approved one-run controls followed the ten pure-policy checks: [cooperative reply](cooperative-run-001/summary.json) and [finite received-then-EOF](finite-eof-run-001/summary.json). Both met their distinct control criteria; the EOF exchange correctly remained uncertain with expected worker EOFError/exit 1. Both runs reaped their two owned children without fallback signals. No pooled reliability estimate, hard deadline, whole-helper containment, VM shutdown or Temporal qualification follows. Original results/sources remain preserved; no rerun occurred during this review.
+
+Independent AI-assisted source/evidence review of PR #7 at cea8936b7d4a763cf4ec6dcf89c5f4f229efdf1a fetched all 35 changed files: all additions inside this experimental directory. All 34 manifest entries matched fetched UTF-8 contents. This is repository content review, not independent runtime attestation or human validation. GitHub metadata reported mergeable/clean; inspected commit-status and PR-workflow connectors returned no entries, not a CI pass. Current README and historical STATUS chronology were then clarified. Further tests and merge still require separate approval.

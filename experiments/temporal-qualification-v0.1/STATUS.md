@@ -1,6 +1,12 @@
 # Ownership and observation-handoff qualification candidate
 
-11 November 2026. Unintegrated engineering candidate, not a Temporal qualification pass.
+11 November 2026 historical snapshot. Unintegrated engineering candidate, not a Temporal qualification pass.
+
+## Later evidence status · 13 November 2026
+
+The original sections below describe the 11 November state and are preserved as history. Since then, ten separate local synthetic policy checks passed, followed by two explicitly approved one-run process controls: cooperative fixed reply and finite received-then-EOF. The latter correctly returned uncertain, with actual worker EOF evidence. Exact executed process harnesses and records are now preserved. See the [current notebook result sections](05_safeguard_review_and_qualification_plan.ipynb). These evidence groups must not be pooled into an empirical reliability estimate. Neither process control tested stuck peers, forced cleanup, hard deadlines, full helper containment, VM shutdown or native Temporal. No additional test or merge is authorized by preservation.
+
+## Original 11 November record
 
 ## Implemented mechanism
 

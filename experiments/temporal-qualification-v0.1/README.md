@@ -1,10 +1,10 @@
 # Experimental Temporal qualification candidate
 
-**Mock-tested development code only. Not integrated into native collection, not production-ready, not a measured study.**
+**Experimental development code with mock/pure checks and two separately approved, limited real-process observations. Not integrated into native collection, not production-ready, not a measured study or native Temporal qualification.**
 
 ## Guided safeguard review
 
-[Open the visual safeguard review and qualification plan](05_safeguard_review_and_qualification_plan.ipynb). This static Jupyter chapter distinguishes proposed controls, observed cloud metadata, the ten-scenario plan and the still-closed execution gate. No real-process or Temporal run is claimed. [Inspection record](safeguards/RUNTIME_INSPECTION.md).
+[Open the visual safeguard review and qualification plan](05_safeguard_review_and_qualification_plan.ipynb). This static Jupyter chapter distinguishes design history, dated environment observations, ten later pure-policy checks and two approved process observations: cooperative reply and finite received-then-EOF. Their exact sources and saved records are preserved. Broader fault containment and native Temporal remain unqualified; any further test or merge requires separate approval. [Inspection record](safeguards/RUNTIME_INSPECTION.md).
 
 ## What this adds
 
@@ -14,7 +14,7 @@
 
 `handoff_complete` means these declared inputs passed the handoff checks. It does **not** establish an atomic distributed snapshot, completeness/truth of exporter content, absence of an effect, or a qualified treatment result. All acknowledgments are trusted inputs. No exporter is wired to the gate.
 
-## Safe local tests
+## Historical mock/pure suite (execution needs separate approval)
 
 From this directory:
 
@@ -37,4 +37,3 @@ Do not integrate this code into native collection until channel/descriptor owner
 ## Provenance and preservation
 
 Built through staged 11 November 2026 AI-assisted engineering/review increments following the [partial qualification decision](../../docs/decisions/2026-11-04-temporal-partial-qualification.md). Original frozen archives and historical study data remain unchanged. No denied EPERM operation was retried. See STATUS.md, REVIEW.md, tests.log and SHA256SUMS. AI assistance produced implementation/tests/review; this is not independent human validation.
-
