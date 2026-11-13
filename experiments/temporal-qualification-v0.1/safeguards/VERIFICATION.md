@@ -66,3 +66,8 @@ Read Apple’s archived fsync/fcntl manuals and Lima issue #5087. Added supervis
 
 Added four static sections near the notebook entrance: requirement → scope → expected evidence → actual record → conclusion → uncertainty. S4/S5 values were read from the pinned historical summary and post-run review; independent AI-assisted review separately checked the summary rows and found no blocking content issue. Historical LangGraph/direct study, proposed native Temporal work and VM-safety preparation remain distinct. The SDD paper supplies conceptual inspiration, not validation of this adaptation. Notebook serialization shows 28 Markdown-only cells. New repository link targets were checked against the current tree; cited source files were read. No raw archive audit, cell execution, test, actual viewer rendering, VM action or merge occurred. Original historical records remain unchanged.
 
+
+## Concrete next test gate · 13 November 2026
+
+Added the prepared ten-method pure-policy test proposal and exact local source hashes. Separate AI-assisted source review found the suite suitable to ask permission to run; no candidate imports, compilation or execution occurred. The code remains local, not uploaded; the notebook explicitly warns the proposed command cannot run from this PR alone. No passing test result, RAM-first acceptance, VM action or merge is claimed. Notebook now has 29 Markdown-only cells; this addition has not been visually rendered.
+
