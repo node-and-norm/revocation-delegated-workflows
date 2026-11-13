@@ -1,0 +1,1 @@
+{"channel_reusable": false, "cleanup_complete": true, "errors": [], "outcome": "reply_observed", "record_complete": true, "reply": {"gateway_result": {"fixture": "cooperative-echo", "received_exact_request": true, "request_id": "cooperative-pipe-001"}, "request_id": "cooperative-pipe-001"}, "request_id": "cooperative-pipe-001", "retry_allowed": false}
