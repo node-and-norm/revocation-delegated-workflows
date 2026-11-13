@@ -107,3 +107,23 @@ The existing user-v2 PID file identified PID 6394. A targeted permitted identity
 
 
 Use the [three-outcome proposal](LIFECYCLE_SOURCE_MAP.md#simplified-proposal-observe-three-distinct-outcomes): separately observe the original VM-host, preexisting shared helper and CLI. No broad process-tree termination is proposed. The earlier next-step map is now available; next review dual-observer admission/failure behavior and evidence persistence, while keeping execution disabled. The four gate categories remain unresolved, though autostart and one helper identity are better evidenced.
+
+## Persistence acknowledgment is not a power-loss guarantee
+
+Source review, 13 November 2026. Separate two failure models:
+
+| Failure model | Narrow claim allowed | Not established |
+|---|---|---|
+| Supervisor process fails while host remains available | A previously acknowledged, preserved snapshot may be recoverable; unsaved RAM records remain unknown | Complete dispatch or outcome history after a crash |
+| OS crashes or host loses power | Record which persistence operations returned and their exact receipt scope | Survival of file contents, ordering and directory entries on this Mac |
+
+Apple's archived [fsync manual](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/fsync.2.html) warns that flushing to a drive does not establish that its internal buffers reached permanent storage. Its archived [fcntl manual](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/fcntl.2.html) describes F_FULLFSYNC as a stronger flush request, but notes possible long completion times and hardware that ignores it. These historical documents do not verify current macOS, APFS, drive or mounted-filesystem behavior.
+
+Design rule: call a receipt **acknowledgment of specified persistence operations**, not “power-loss durable.” Declare file flush, replacement and directory synchronization separately. Supported directory-entry persistence and rename behavior remain platform questions; neither a hash nor successful file synchronization proves them. Keep storage work outside the observation/cleanup deadline path. Do not add F_FULLFSYNC calls or change the accepted contract without separate implementation review.
+
+The RAM-first alternative intentionally permits loss of unsaved observations if the supervisor fails. It has not replaced the stronger pre-release persistence contract or been authorized as an experiment.
+
+Related issue [Lima #5087](https://github.com/lima-vm/lima/issues/5087) reports a LaunchDaemon/reboot scenario on Lima 2.1.1 plus development changes. It is a lead for version-specific review, not evidence the inspected Lima 2.0.3 VM is affected. No workaround, forced shutdown or restart is proposed from that issue.
+
+No tests, VM operations or persistence qualification were performed for this addendum.
+

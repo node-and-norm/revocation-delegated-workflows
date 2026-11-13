@@ -56,3 +56,8 @@ Directly read Lima v2.0.3 usernet, network config, directory resolution and laun
 ## Active-state / dual-observation documentation addendum
 
 Recorded separately reported read-only empty-autostart and detached-helper identity observations. Proposed separate VM/helper/CLI outcomes; no new kill authority, no armed observer and no execution. Notebook has 23 Markdown-only cells. This increment serializes documentation only; no candidate code, tests, VM actions or merge. Separate AI-assisted review found the refinement appropriately narrow and requested two wording corrections: observer spans the command/window, and no-force shorthand explicitly excludes requested VM force/additional helper kills without denying Lima’s built-in escalation. Both corrected. Runtime facts are attributed, not independently revalidated by this document review.
+
+## Persistence failure-model addendum
+
+Read Apple’s archived fsync/fcntl manuals and Lima issue #5087. Added supervisor-failure versus OS/power-loss distinction, without asserting current filesystem semantics or issue applicability. Notebook now has 24 Markdown-only cells. Documentation serialization only; no code execution, tests, VM action or merge. Independent text-only review found no blocking wording issue; reviewer did not re-fetch sources or perform runtime validation.
+
