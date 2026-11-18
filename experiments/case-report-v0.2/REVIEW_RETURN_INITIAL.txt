@@ -1,0 +1,10 @@
+Source review found blockers:
+
+- Invalid effect outcomes can still be counted as matched.
+- Event kind and result outcome can disagree without preventing attribution.
+- Effect payload is not compared with the requested payload.
+- Reused request IDs can ambiguously inherit the same outcome.
+
+Also tighten unrelated-root handling and add A7’s resolving-evidence request.
+
+No candidate code or tests were executed. Awaiting corrected source for re-review.

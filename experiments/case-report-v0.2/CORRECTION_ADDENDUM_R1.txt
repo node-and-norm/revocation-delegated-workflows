@@ -1,0 +1,1 @@
+R1 addendum from reviewer: outcome loop elif currently accepts result.outcome=='effect' on an event.kind=='denied'; require both kind and outcome consistently. Snapshot scope may be presented as directly recorded but must explicitly separate unbound to selected action, not erase raw observation. Preserve this addendum too; no tests.

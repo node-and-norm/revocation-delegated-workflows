@@ -5,6 +5,10 @@ When a caller asks to withdraw authority, what distinguishes receipt of the requ
 
 [Research reader: understand in 90 seconds](#research-in-90-seconds) · [Reviewer: inspect evidence and limits](#evidence-and-known-limits) · [Engineer: reproduce the fixed study](#reproduce-the-request-to-fence-study)
 
+## Saved case-report candidate · 18 November 2026
+
+The [specification notebook](notebooks/spec_01_case_report_contract.ipynb) now links the preserved implementation, actual AI-assisted assignment/review records and the separately approved 14 November run: 19 check methods passed once. See the [preservation guide](experiments/case-report-v0.2/PRESERVATION.md) for exact source identities, labeled locator redactions and remaining gaps. This update preserves existing work; it did not rerun tests or merge. Earlier preparation-stage “not executed” wording remains historical. Further tests and merging require separate approval.
+
 ## Start here
 
 **[Research-book contents and reading routes](notebooks/00_start_here.ipynb)** connect the report and four focused chapters with previous/contents/next navigation. Notebook 04 includes every preserved scripted invocation in saved static output.

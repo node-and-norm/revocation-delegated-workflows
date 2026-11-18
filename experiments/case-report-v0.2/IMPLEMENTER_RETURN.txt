@@ -1,0 +1,9 @@
+Prepared a local source draft in case_report_candidate against specification v0.2 at 6eaf9b7e9ddb67f0e2fc25849ca031373805db57.
+
+Files: case_report.py, test_case_report.py, README.md, REQUIREMENT_MAP.md, ASSIGNMENT.txt, IMPLEMENTER_RETURN.txt.
+
+The candidate includes pinned allowlist extraction, strict packet/receipt intake, exact-byte binding, deterministic four-panel classification with explicit identity joins, and escaped HTML with source locators and a timeline/table. The source-only test module proposes original, missing, conflicting, unbound, incomplete-coverage and malformed-input checks.
+
+No candidate imports, compilation, tests, notebook cells, model calls, VM actions or repository writes were performed. Existing source/archive content was inspected and files were authored using shell tools. Historical artifacts were not changed. No generated component output exists from this preparation.
+
+Remaining limitations: exact schema field choices require independent source review; only two pinned source members are supported; receipts rely on trusted local custody, not authenticity; conflict handling is narrow; A8a wrong-original-member extraction-boundary fixture coverage is not implemented, because arbitrary archive mutation first fails the archive digest. Tests and rendering remain entirely unverified. This is not test-ready or merge-ready certification. Exact deployed model/version metadata was unavailable and is not asserted.
