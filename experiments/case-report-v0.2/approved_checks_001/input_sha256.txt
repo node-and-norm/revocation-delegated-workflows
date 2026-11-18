@@ -1,0 +1,5 @@
+[Preservation export: local/private task locators redacted; remaining text unchanged. Not a verbatim byte copy.]
+
+7564473e506900115f5a6688bd88aa7dace2e4b9e3127873a01a2a39394871c6  case_report.py
+a18ea5b1890cfecc4a60bc340b350ef96dca77f99d850ad40b341c9c6e98730f  test_case_report.py
+adf5e66cb0ad90038cde189330ee46877fabda26f1d829d3ae9b734c44af827c  [local archive directory]/withdrawal_interface_study_v01_20261103.zip

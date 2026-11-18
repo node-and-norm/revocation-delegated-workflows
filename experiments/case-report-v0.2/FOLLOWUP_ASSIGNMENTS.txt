@@ -1,0 +1,18 @@
+Actual coordinator follow-up messages to the implementer, in dispatch order.
+This is not a complete conversation export. Message bodies are preserved below;
+per-message timestamps and deployed model version were not captured here.
+
+1.
+Current remote README confirms private release, immutable historical archives, model scripted, source integrity≠truth. Existing notebook instructions include run commands but current explicit no-execution overrides. Avoid any invocation of candidate, unit tests, compile/import or notebook verification. Readiness must remain source-reviewed/not executed. Keep payload/receipt trust local and source-backed. Assignment captured exactly may include workspace path; for later repo copy use labeled redaction with exact original local, do not silently alter.
+
+2.
+I independently inspected original S4 sink events: grant seq3 result root/epoch/scope/owner/parent; admission5 root/epoch/grant/scope/ticket; revoke receipt6 then revocation7; execute receipt8 includes actor/claim/grant/id/op/scope/ticket; denial9 only request_id+outcome/reason. Join must check compatible identities across grant/admission/receipt, not merely request_id; preserve denial-derived root distinction and sequence ordering. No classifier access to source_case expected answer.
+
+3.
+Reviewer checklist adds: compare receipt expected/observed source hashes to trusted pinned reference, not verification_result alone; validate both exact schema/types (bool not int where relevant), escape HTML; every conclusion item IDs/rule/pointers, mismatch blocks affected packet source-bound conclusions. A7 retains both synthetic/original and no claim later inactive vs earlier effect conflict. Scope remaining spec decisions in limitations.
+
+4.
+Please send current status and any consequential spec blockers; continue to completion within bounded effort. Need reviewable source draft and candid limitations, not unbounded feature expansion. Parent waiting for actual review outcome.
+
+5.
+For transparency preserve raw exact assignment/return locally; mark shareable transcripts with explicit local-path redaction if needed later. Ensure source reads and file-authoring commands are not described as zero execution overall: no candidate/tests/cells executed is precise. No generated report output until separately approved.

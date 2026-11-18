@@ -1,0 +1,6 @@
+[Preservation export: local/private task locators redacted; remaining text unchanged. Not a verbatim byte copy.]
+
+Actual final implementation-review assignment body, preserved verbatim below.
+Earlier checklist discussion is not represented as a complete exported transcript.
+
+Candidate source now [local workspace]/case_report_candidate/{case_report.py,test_case_report.py,README.md,REQUIREMENT_MAP.md,ASSIGNMENT.txt}. Implementer finishing link tightening and exactreturn; start independent source review now, no imports/tests/compiles/cells. Communicate concrete defects to me and implementer; then review final source after changes. Do not edit candidate. Need bounded no-readiness-overclaim outcome.

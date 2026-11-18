@@ -1,0 +1,61 @@
+{
+  "cleanup": [
+    {
+      "closed": true,
+      "exitcode": 1,
+      "pid": 7,
+      "reaped": true,
+      "signals": []
+    },
+    {
+      "closed": true,
+      "exitcode": 0,
+      "pid": 6,
+      "reaped": true,
+      "signals": []
+    }
+  ],
+  "ended_monotonic": 205.247085956,
+  "errors": [],
+  "exchange": {
+    "channel_reusable": false,
+    "cleanup_complete": true,
+    "errors": [
+      {
+        "error": "RuntimeError('worker_failed')",
+        "stage": "exchange"
+      }
+    ],
+    "outcome": "uncertain",
+    "record_complete": true,
+    "reply": null,
+    "request_id": "finite-eof-001",
+    "retry_allowed": false
+  },
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "pass": true,
+  "peer_record": {
+    "end_reason": "close_without_reply",
+    "received_count": 1,
+    "reply_sent": false,
+    "request": {
+      "claim": "childC",
+      "grant": "child-1",
+      "id": "finite-eof-001",
+      "op": "execute",
+      "payload": "inert summary",
+      "scope": "summary:task1",
+      "ticket": "ticket-1"
+    }
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "record_complete": true,
+  "saved_records_match": true,
+  "scope": "one finite received-then-EOF anonymous-pipe check",
+  "source_sha256": {
+    "bounded_exchange.py": "af88deb69a62f18ecec1c256bff505b17ab76a1c537e99107c607f31121fc53a",
+    "bridge.py": "d6400015a0d95571a2dd18d7f654583442c45dba05294e6ade097eb69b40e728",
+    "finite_eof_check.py": "dce25a5ee756beb7db65f0e6ec05a63f06d6294327851f638f6cf466e5cd43e7"
+  },
+  "started_monotonic": 205.099721372
+}

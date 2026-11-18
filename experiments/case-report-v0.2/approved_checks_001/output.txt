@@ -1,0 +1,24 @@
+test_a1_s4 (test_case_report.PlannedAcceptance.test_a1_s4) ... ok
+test_a2_s5 (test_case_report.PlannedAcceptance.test_a2_s5) ... ok
+test_a3_caller_only (test_case_report.PlannedAcceptance.test_a3_caller_only) ... ok
+test_a4_no_action (test_case_report.PlannedAcceptance.test_a4_no_action) ... ok
+test_a5_denial_no_inventory (test_case_report.PlannedAcceptance.test_a5_denial_no_inventory) ... ok
+test_a6_positive_unknown_coverage (test_case_report.PlannedAcceptance.test_a6_positive_unknown_coverage) ... ok
+test_a7_same_boundary_conflict (test_case_report.PlannedAcceptance.test_a7_same_boundary_conflict) ... ok
+test_a8b_unrelated_effect (test_case_report.PlannedAcceptance.test_a8b_unrelated_effect) ... ok
+test_a8c_missing_member_hash (test_case_report.PlannedAcceptance.test_a8c_missing_member_hash) ... ok
+test_byte_binding_and_missing_receipt (test_case_report.PlannedAcceptance.test_byte_binding_and_missing_receipt) ... ok
+test_html_escape (test_case_report.PlannedAcceptance.test_html_escape) ... ok
+test_r1_conflict_requests_evidence (test_case_report.PlannedAcceptance.test_r1_conflict_requests_evidence) ... ok
+test_r1_effect_result_and_event_kind (test_case_report.PlannedAcceptance.test_r1_effect_result_and_event_kind) ... ok
+test_r1_payload_not_request (test_case_report.PlannedAcceptance.test_r1_payload_not_request) ... ok
+test_r1_repeated_execute_id (test_case_report.PlannedAcceptance.test_r1_repeated_execute_id) ... ok
+test_r1_unrelated_authority (test_case_report.PlannedAcceptance.test_r1_unrelated_authority) ... ok
+test_r2_duplicate_effect_is_not_another_effect (test_case_report.PlannedAcceptance.test_r2_duplicate_effect_is_not_another_effect) ... ok
+test_receipt_and_self_hash_rejection (test_case_report.PlannedAcceptance.test_receipt_and_self_hash_rejection) ... ok
+test_strict_json (test_case_report.PlannedAcceptance.test_strict_json) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.045s
+
+OK

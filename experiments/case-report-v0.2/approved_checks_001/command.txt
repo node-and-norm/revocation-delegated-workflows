@@ -1,0 +1,3 @@
+[Preservation export: local/private task locators redacted; remaining text unchanged. Not a verbatim byte copy.]
+
+CASE_REPORT_ARCHIVE=[local workspace]/book_navigation_20261107/archives/withdrawal_interface_study_v01_20261103.zip PYTHONDONTWRITEBYTECODE=1 python -m unittest -v test_case_report

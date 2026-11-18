@@ -1,0 +1,3 @@
+R2 source correction is prepared. Matched effect evidence now uses the packet/case/archive/member namespace plus event sequence, root, epoch and effect key as its distinct identity, rather than item ID. Duplicate copies remain inspectable and receive a duplicate-evidence label; they do not increase A6's distinct-effect lower bound. Inventory entry count is explicitly separated from distinct effect identity count.
+
+One prospective regression method was added; README and requirement map state the bounded deduplication scope. Original and R1 returns remain unchanged. No candidate execution, imports, compilation, tests, notebook cells, VM actions or upload occurred. Targeted independent source reread is requested; all previous verification limits remain.

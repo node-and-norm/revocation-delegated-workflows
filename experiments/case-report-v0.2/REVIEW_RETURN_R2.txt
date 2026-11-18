@@ -1,0 +1,5 @@
+Independent AI-assisted targeted source review, R2. The original R1 review is preserved separately.
+
+The duplicate-evidence correction is present. Matched effects are counted by packet/case/archive/member and event identity fields rather than item ID. A repeated matched identity remains visible with duplicate_evidence classification and does not increase the distinct matched-effect lower bound. Complete-inventory wording now separates supplied entry count from distinct matched effect identities. The added prospective regression retains both supplied copies and expects one counted identity plus the duplicate label.
+
+No blocking issue found within this final bounded R2 correction scope. This closes the specific duplicate-count concern at source-inspection level only. No candidate import, compilation, test, notebook cell or runtime action was performed; the regression has not been shown to pass. Broader R1 limitations, including missing A8a extraction-boundary fixture coverage, trusted local custody and limited conflict coverage, remain. This is neither empirical validation nor permission to execute or merge.

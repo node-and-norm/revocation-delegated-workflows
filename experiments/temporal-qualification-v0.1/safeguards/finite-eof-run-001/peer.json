@@ -1,0 +1,1 @@
+{"end_reason": "close_without_reply", "received_count": 1, "reply_sent": false, "request": {"claim": "childC", "grant": "child-1", "id": "finite-eof-001", "op": "execute", "payload": "inert summary", "scope": "summary:task1", "ticket": "ticket-1"}}

@@ -1,0 +1,1 @@
+{"received_count": 1, "reply_sent": true, "request": {"claim": "childC", "grant": "child-1", "id": "cooperative-pipe-001", "op": "execute", "payload": "inert summary", "scope": "summary:task1", "ticket": "ticket-1"}}
