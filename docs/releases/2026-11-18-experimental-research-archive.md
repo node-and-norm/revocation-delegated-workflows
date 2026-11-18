@@ -1,6 +1,6 @@
 # Experimental research archive · 18 November 2026
 
-**Release notes authored; GitHub Release and tag not created.** Suggested tag: `research-archive-2026-11-18`. If published later, mark it **pre-release**, not latest/stable. The repository remains private; no public release or license grant is authorized by this record.
+**Published as a private experimental pre-release:** [research-archive-2026-11-18](https://github.com/node-and-norm/revocation-delegated-workflows/releases/tag/research-archive-2026-11-18). Tag snapshot: `2ec55580a864d55c261de5770f2c58e58e828332`. Not a stable or production-ready release. The repository remains private; no public release or license grant is authorized by this record.
 
 ## Archive target
 
@@ -29,4 +29,4 @@ No comprehensive correctness, production readiness, native Temporal Workflow/Act
 
 No new candidate tests, imports, notebook execution, historical workflows, VM actions or model calls were performed for this merge or these notes. No CI pass is claimed. Further tests require separate approval.
 
-GitHub Release creation and merged-branch cleanup could not be completed with the available connector controls; cloud browser access was signed out. No release/tag was fabricated and no branch was deleted. The fully merged research branch remains recoverable and untouched. These notes preserve a proposed private pre-release description for later publication with authorized access.
+The initial publication attempt was blocked by signed-out cloud browser access. After the owner completed secure sign-in, the private pre-release was published and visibly verified. The fully merged `research/temporal-mock-qualification` branch was then deleted after comparison confirmed its head was an ancestor of main with no unmerged commits. GitHub displayed Restore branch and confirmed the branch was merged. All commits remain preserved in main and the release snapshot. No other branches were deleted. This dated status update postdates the immutable release snapshot; its earlier pending-status wording is historical.
