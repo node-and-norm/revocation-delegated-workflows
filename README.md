@@ -11,6 +11,8 @@ The [specification notebook](notebooks/spec_01_case_report_contract.ipynb) now l
 
 ## Start here
 
+**[Practitioner guide: Did the withdrawal actually stop the action?](notebooks/learning_03_revocation_practitioner_guide.ipynb)** starts with two saved cases that gave the requester the same status but ended differently. It includes a worksheet for reconstructing an outcome and a proposed, separate review-assistance evaluation. This guide reads saved evidence only.
+
 **[Research-book contents and reading routes](notebooks/00_start_here.ipynb)** connect the report and four focused chapters with previous/contents/next navigation. Notebook 04 includes every preserved scripted invocation in saved static output.
 
 **[Open the guided study report → RESEARCH_STUDY.ipynb](RESEARCH_STUDY.ipynb)**. Read the question, method, saved-case findings, limitations, roadmap and completion gates in one notebook. The report reads existing evidence; it does not rerun experiments.
