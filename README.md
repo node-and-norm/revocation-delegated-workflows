@@ -1,3 +1,9 @@
+> **Research status · November 24, 2026 · Local study closed**
+>
+> **Held:** In 12 scripted cases, the saved records show whether permission ended and whether the action took effect. A requester who received no reply saw the same status in two scenarios with opposite outcomes.
+>
+> **Open:** Independent replication, behavior with live AI agents and reliability in deployed systems.
+
 <h1 id="revocation-in-delegated-workflows">
 <a href="https://nodeandnorm.org/">
 <picture>
@@ -7,47 +13,95 @@
 </a>
 </h1>
 
-A person asks a system to stop work it has already handed off. How can anyone tell whether the action still went ahead? This Node & Norm study followed each request to the place where the action would take effect. In two scenarios the requester received no confirmation. In one, the system blocked the action. In the other, the action went ahead.
+[![Status: Local study closed](assets/research/badges/status-dark.svg)](https://nodeandnorm.org/research/#current-study) [![Evidence: 12 scripted cases](assets/research/badges/evidence-dark.svg)](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json) [![Archive: Nov 18, 2026](assets/research/badges/archive-dark.svg)](https://github.com/node-and-norm/revocation-delegated-workflows/releases/tag/research-archive-2026-11-18)
 
-**The bounded local study closed on November 24, 2026.** The closeout examined the saved records from 12 scripted workflow cases. [Study overview](https://nodeandnorm.org/research/#current-study) · [Read the essay, *You asked it to stop. Did it?*](https://nodeandnorm.org/research/revocation/essay/)
+When someone withdraws permission for work already underway, what can they tell the person waiting for the outcome? This study follows a request to stop from the requester to the system where the action takes effect. [Read Essay 01, *You asked it to stop. Did it?*](https://nodeandnorm.org/research/revocation/essay/)
 
-## What the requester could know
+[Policy reader · Understand the finding](#research-in-90-seconds) · [Reviewer · Inspect the evidence](#evidence-and-known-limits) · [Engineer · Reproduce the checks](#reproduce-the-checks)
 
-The study ran six fixed schedules twice, once directly and once through a LangGraph workflow that could pause and resume. A local SQLite database recorded both when permission ended and whether the action went through. Three schedules show why a reviewer needs both records.
+## At a glance
 
-| Schedule | What the requester knew | What the authority and destination records showed |
-| --- | --- | --- |
-| S4 · Reply withheld | No confirmation arrived. | Permission ended before the worker tried to act. The system denied the attempt. |
-| S5 · Request withheld | No confirmation arrived. | The request had yet to reach the authority when observation ended. The worker completed one action with permission. |
-| S2 · Action first | The requester received confirmation that permission had ended. | The action had already taken effect. Withdrawal left it in place. |
+| | Current account |
+| :--- | :--- |
+| Purpose | Determine what a requester can know about an action after asking for it to stop. [Study design](docs/review/WITHDRAWAL_INTERFACE_DESIGN_v0.1.md) |
+| Status | The November 24, 2026 closeout reviewed the saved evidence. [Public study overview](https://nodeandnorm.org/research/#current-study) |
+| Evidence type | Six fixed schedules, each run directly and through a LangGraph workflow that could pause and resume. [Case records](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json) |
+| Version | Experimental software archive, November 18, 2026. [Tagged pre-release](https://github.com/node-and-norm/revocation-delegated-workflows/releases/tag/research-archive-2026-11-18) |
+| License | The public repository carries no open-source license grant for the original study materials. Bundled third-party materials retain their own notices. |
+| Cite | Cite the [software archive](CITATION.cff) for the code and the [November 24 essay](https://nodeandnorm.org/research/revocation/essay/) for the published account. |
 
-Across the 12 cases, six actions took effect and six attempts were denied. Every recorded action occurred while permission was still active. Both paths used the same local authority, one handoff and at most one outstanding withdrawal. The schedules were chosen in advance. Production failure rates, behavior across independent services, live AI agents and benefits for human reviewers remain open questions. [All six schedules](docs/decisions/2026-11-03-request-to-fence-interface-study.md) · [Machine-readable outcomes](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json)
+## Research in 90 seconds
 
-## Inspect or reproduce the evidence
+A requester sent a stop request and waited. No reply came. In one scenario, the request arrived, permission ended and the system blocked the worker’s next action. In the other, the request never reached the authority during observation. The worker went ahead. The requester saw silence both times. A reviewer could tell the outcomes apart by checking whether permission had changed and whether the destination had recorded an action.
 
-| To examine | Start here |
-| --- | --- |
-| The original research question, records and limits | [Guided study notebook](RESEARCH_STUDY.ipynb) and [research-book contents](notebooks/00_start_here.ipynb) |
-| What the requester saw and what the destination did in S4 and S5 | [Exact saved records](notebooks/learning_02a_exact_s4_s5_records.ipynb) and [evidence workbench](notebooks/01_revocation_evidence_workbench.ipynb) |
-| The study design, execution and review | [Methods notebook](notebooks/03_methods_and_reproduction.ipynb), [recorded inputs and outputs](notebooks/04_exact_scripted_inputs_outputs.ipynb) and [post-run review](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md) |
-| Historical stages and detailed operational notes | [Dated study synthesis](docs/reports/2026-11-06-current-study-synthesis.md) and [complete November 18 reading guide](https://github.com/node-and-norm/revocation-delegated-workflows/blob/032575d799cf2efb819508813f35bc9ffa2556a0/README.md) |
+### What the requester could know
 
-### Reproduce the request-to-fence study
+| Schedule | What the requester saw | What the authority and destination recorded |
+| :--- | :--- | :--- |
+| S4 · Reply withheld | No confirmation arrived. | Permission ended before the worker tried to act. The attempt was denied. |
+| S5 · Request withheld | No confirmation arrived. | Permission stayed active during observation. One action went through. |
+| S2 · Action first | Confirmation arrived that permission had ended. | The action had already taken effect. It remained in the record. |
 
-Extract the [complete study archive](archives/withdrawal_interface_study_v01_20261103.zip). Start with `measured01/SUMMARY.json`. Each case under `measured01/direct/` or `measured01/framework/` contains a `record.json` and a `sink.sqlite` destination database. The [reproduction instructions](docs/review/WITHDRAWAL_INTERFACE_REPRODUCTION_v0.1.md) distinguish inspecting saved files from running the frozen instrument in a compatible environment. The recorded reproduction used the same host and instrument with an external collection of dependencies. [Reproduction report](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md)
+For a reviewer, S2 poses a further question. A confirmation can establish that permission ended. To tell someone that the intervention stopped a particular action, the reviewer also needs to know whether that action had already happened. [Inspect the S4 and S5 records](notebooks/learning_02a_exact_s4_s5_records.ipynb) · [See all six schedules](docs/decisions/2026-11-03-request-to-fence-interface-study.md)
+
+## Method in brief
+
+The test set the order of events in advance. Each schedule ran on two paths with the same local permission rules and destination. The checker compared what the requester could see with what the destination recorded.
+
+```mermaid
+flowchart TD
+  accTitle: How the Revocation study compared twelve cases
+  accDescr: Each of six schedules ran directly and through a checkpointed LangGraph workflow. Both paths used the same local authority and destination. The checker compared the requester's observation with the saved outcome.
+  S["Six fixed schedules"] -->|run directly| D["Scripted worker"]
+  S -->|pause and resume| L["LangGraph worker"]
+  D -->|attempt action| A["Local permission authority and destination"]
+  L -->|attempt action| A
+  A -->|inspect each case| C["Compare requester status with the recorded action or denial"]
+```
+
+The permission and destination records shared one trusted SQLite database. Each case used one handoff and at most one outstanding withdrawal. [Study protocol](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_v0.1.md) · [Post-run review](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md)
+
+## Evidence and known limits
+
+| Evidence | What the records support | What remains open |
+| :--- | :--- | :--- |
+| [12 workflow cases](docs/review/WITHDRAWAL_INTERFACE_SUMMARY_v0.1.json) | Six actions went through while permission was active. Six attempts were denied after it ended. Each pair of paths produced the same outcome under its assigned schedule. | How often these outcomes occur in production, and how independent services or live AI agents behave. |
+| [Local reproduction](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) | A fresh environment on the same host reproduced the outcomes with the frozen instrument. | Independent replication with a separate implementation or operating environment. |
+| [Requester observations](notebooks/01_revocation_evidence_workbench.ipynb) | The saved records distinguish what the requester could know from what a reviewer with access to the destination could establish. | Whether giving people this evidence improves review or decisions in practice. |
 
 ### Preserved v0.2 qualification
 
-An earlier phase used 18 configured cases to test the measurement rules. Review found three errors in the checker. The corrections and original counterexamples are preserved. A separate integration pilot used eight fixed cases. Each stage has its own protocol and results. [Qualification record](qualification/v0.2/README.md) · [Integration pilot](integration/v0.3/README.md)
+An earlier phase used 18 configured cases to test the measurement rules. Review found three checker errors. The record preserves the counterexamples and corrections. A separate integration pilot used eight fixed cases. Each stage has its own protocol and results. [Qualification record](qualification/v0.2/README.md) · [Integration pilot](integration/v0.3/README.md)
+
+## Reproduce the checks
+
+### Inspect or reproduce the evidence
+
+Start with the [guided study notebook](RESEARCH_STUDY.ipynb) or [research-book contents](notebooks/00_start_here.ipynb). The [methods notebook](notebooks/03_methods_and_reproduction.ipynb) and [recorded inputs and outputs](notebooks/04_exact_scripted_inputs_outputs.ipynb) lead to individual cases.
+
+### Reproduce the request-to-fence study
+
+Extract the [study archive](archives/withdrawal_interface_study_v01_20261103.zip). From the study directory containing `measured01/` and `frozen_candidate_v02/`, this command checks the saved records against the destination databases using Python’s standard library.
+
+```sh
+python3 frozen_candidate_v02/independent_checker.py measured01/direct/S*/record.json measured01/framework/S*/record.json
+```
+
+The [reproduction instructions](docs/review/WITHDRAWAL_INTERFACE_REPRODUCTION_v0.1.md) also cover running the workflows again in a compatible environment. The [local reproduction report](docs/review/WITHDRAWAL_INTERFACE_LOCAL_REPRODUCTION_v0.1.md) records the dependencies and the comparison with the originals.
 
 ## AI assistance and research responsibility
 
-Mark Julius Banasihan is responsible for the research decisions. AI tools assisted with design, implementation, checking, separately assigned reviews and writing. The workbook identifies recorded human decisions and the checks actually performed. Independent human validation and independent replication remain open. [Study disclosure notebook](notebooks/02_traceability_and_disclosure.ipynb) · [Node & Norm research integrity](https://nodeandnorm.org/about/research-integrity/#ai-use)
+Mark Julius Banasihan is responsible for the research decisions. AI tools assisted with design, implementation, checking, separately assigned reviews and writing. The study workbook identifies recorded human decisions and the checks performed. Independent human validation remains open. [Study disclosure notebook](notebooks/02_traceability_and_disclosure.ipynb) · [Node & Norm research integrity](https://nodeandnorm.org/about/research-integrity/#ai-use)
 
 ## Release and citation
 
-The November 18 experimental GitHub pre-release preserves the study materials as they stood on that date. Its release notes describe the repository’s private status at the time. The repository is now public. The November 24 closeout reviewed existing evidence and is documented in the [public study account](https://nodeandnorm.org/research/#current-study). Original study materials carry no open-source license grant. Bundled third-party materials retain their own notices.
-
-To cite the archived code and evidence, use **Cite this repository** or the [citation file](CITATION.cff).
+The November 18 release notes describe the repository when it was private. The repository is now public. The [November 24 closeout](https://nodeandnorm.org/research/#current-study) examined the existing evidence. To cite the archived code, use **Cite this repository** or the [citation file](CITATION.cff).
 
 > Banasihan, Mark Julius (2026). *Revocation in delegated workflows*. Experimental research archive, November 18, 2026. [GitHub pre-release](https://github.com/node-and-norm/revocation-delegated-workflows/releases/tag/research-archive-2026-11-18) · [Exact source revision](https://github.com/node-and-norm/revocation-delegated-workflows/tree/2ec55580a864d55c261de5770f2c58e58e828332)
+
+<details>
+<summary>Study history and earlier reading guide</summary>
+
+The [dated study synthesis](docs/reports/2026-11-06-current-study-synthesis.md) and the [November 18 reading guide](https://github.com/node-and-norm/revocation-delegated-workflows/blob/032575d799cf2efb819508813f35bc9ffa2556a0/README.md) preserve the earlier stages and technical notes.
+
+</details>
