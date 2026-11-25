@@ -1,6 +1,11 @@
-[![Node & Norm. Independent research on human control in AI.](https://raw.githubusercontent.com/node-and-norm/.github/main/assets/brand/current/banner.png)](https://nodeandnorm.org/)
-
-# Revocation in delegated workflows
+<h1 id="revocation-in-delegated-workflows">
+<a href="https://nodeandnorm.org/">
+<picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/node-and-norm/.github/13bac647d54ab62f3e6a8b500b2e5edc03e5227e/assets/research/v2/revocation-delegated-workflows/banner-mobile.svg">
+  <img src="https://raw.githubusercontent.com/node-and-norm/.github/13bac647d54ab62f3e6a8b500b2e5edc03e5227e/assets/research/v2/revocation-delegated-workflows/banner.svg" alt="Revocation in delegated workflows" width="1000">
+</picture>
+</a>
+</h1>
 
 A person asks a system to stop work it has already handed off. How can anyone tell whether the action still went ahead? This Node & Norm study followed each request to the place where the action would take effect. In two scenarios the requester received no confirmation. In one, the system blocked the action. In the other, the action went ahead.
 
