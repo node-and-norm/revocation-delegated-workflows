@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="416" viewBox="0 0 420 416"
+     role="img" aria-labelledby="title description">
+  <title id="title">How the Revocation study compared twelve cases</title>
+  <desc id="description">Each of six schedules ran directly and through a checkpointed LangGraph workflow. Both paths used the same local permission authority and destination. The checker compared what the requester saw with the recorded action or denial.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7"
+            markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#514788"/>
+    </marker>
+  </defs>
+  <rect width="420" height="416" rx="8" fill="#faf9fc"/>
+  <g fill="none" stroke="#514788" stroke-width="2" stroke-linejoin="round">
+    <path d="M210 62V81"/>
+    <path d="M210 81H107V99" marker-end="url(#arrow)"/>
+    <path d="M210 81H313V99" marker-end="url(#arrow)"/>
+    <path d="M107 164V184H313V164"/>
+    <path d="M210 184V204" marker-end="url(#arrow)"/>
+    <path d="M210 286V318" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#211e31"
+     font-size="18" font-weight="600">
+    <g>
+      <rect x="99" y="16" width="222" height="46" rx="6" fill="#eeebff" stroke="#887aca"/>
+      <text x="210" y="45">Six fixed schedules</text>
+    </g>
+    <g>
+      <rect x="14" y="100" width="186" height="64" rx="6" fill="#eeebff" stroke="#887aca"/>
+      <text x="107" y="128">Scripted worker</text>
+      <text x="107" y="150" font-size="16" font-weight="400" fill="#514788">Run directly</text>
+    </g>
+    <g>
+      <rect x="220" y="100" width="186" height="64" rx="6" fill="#eeebff" stroke="#887aca"/>
+      <text x="313" y="128">LangGraph worker</text>
+      <text x="313" y="150" font-size="16" font-weight="400" fill="#514788">Pause and resume</text>
+    </g>
+    <g>
+      <rect x="54" y="205" width="312" height="81" rx="6" fill="#eeebff" stroke="#887aca"/>
+      <text x="210" y="228" font-size="16" font-weight="400" fill="#514788">Attempt the action</text>
+      <text x="210" y="252">Local permission authority</text>
+      <text x="210" y="273">and destination</text>
+    </g>
+    <g>
+      <rect x="24" y="319" width="372" height="81" rx="6" fill="#e4dfff" stroke="#7465bc"/>
+      <text x="210" y="342" font-size="16" font-weight="400" fill="#514788">Inspect each case</text>
+      <text x="210" y="366">Compare what the requester saw</text>
+      <text x="210" y="387">with the recorded action or denial</text>
+    </g>
+  </g>
+</svg>

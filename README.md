@@ -48,16 +48,7 @@ For a reviewer, S2 poses a further question. A confirmation can establish that p
 
 The test set the order of events in advance. Each schedule ran on two paths with the same local permission rules and destination. The checker compared what the requester could see with what the destination recorded.
 
-```mermaid
-flowchart TD
-  accTitle: How the Revocation study compared twelve cases
-  accDescr: Each of six schedules ran directly and through a checkpointed LangGraph workflow. Both paths used the same local authority and destination. The checker compared the requester's observation with the saved outcome.
-  S["Six fixed schedules"] -->|run directly| D["Scripted worker"]
-  S -->|pause and resume| L["LangGraph worker"]
-  D -->|attempt action| A["Local permission authority and destination"]
-  L -->|attempt action| A
-  A -->|inspect each case| C["Compare requester status with the recorded action or denial"]
-```
+![Each of six schedules ran twice, directly and through a LangGraph worker that paused and resumed. Both used the same local permission authority and destination. In all twelve cases, the checker compared what the requester saw with the recorded action or denial.](assets/research/revocation-method.svg)
 
 The permission and destination records shared one trusted SQLite database. Each case used one handoff and at most one outstanding withdrawal. [Study protocol](docs/review/WITHDRAWAL_INTERFACE_PROTOCOL_v0.1.md) · [Post-run review](docs/review/WITHDRAWAL_INTERFACE_POSTRUN_REVIEW_v0.1.md)
 
