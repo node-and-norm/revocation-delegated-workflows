@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Use this citation for the November 18 experimental research archive. The November 24 study closeout is described separately in the public study overview."
+type: software
+title: "Revocation in delegated workflows"
+authors:
+  - family-names: Banasihan
+    given-names: Mark Julius
+version: research-archive-2026-11-18
+date-released: "2026-11-18"
+commit: 2ec55580a864d55c261de5770f2c58e58e828332
+repository-code: "https://github.com/node-and-norm/revocation-delegated-workflows"
+url: "https://github.com/node-and-norm/revocation-delegated-workflows/releases/tag/research-archive-2026-11-18"
